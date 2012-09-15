@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/Jibone/cake'
+let g:netrw_dirhist_2='/Applications/MAMP/htdocs/chicky/app'
+let g:netrw_dirhist_3='/Users/Jibone/Desktop/benbenedm'
+let g:netrw_dirhist_4='/Users/Jibone/Codex/blueimp-jQuery-File-Upload-02efca0'
