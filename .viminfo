@@ -14,6 +14,8 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
+:e .vimrc
 :w
 :NERDTree
 :e index.html
@@ -32,8 +34,6 @@ $
 :Q
 :e
 :326
-:157
-:e bootstrap.php
 
 # Search String History (newest to oldest):
 ?/ezypzy.com
@@ -66,7 +66,7 @@ $
 # Registers:
 "0	LINE	0
 			self::$db_config['host'] = c::get('db_host');
-""1	LINE	0
+"1	LINE	0
 	 *	Underscore: 1.3.1 (http://brianhaveri.github.com/Underscore.php/)
 "2	LINE	0
 	 *	Rain:				2.7.2 (http://www.raintpl.com/)	
@@ -96,18 +96,21 @@ $
 	ytplayer.getCurrentTime()
 
 # File marks:
-'0  1  0  ~/.vimrc
-'1  31  14  ~/.vimrc
-'2  32  4  ~/.vimrc
-'3  20  12  ~/Dropbox/Projects/Siru/NERD_tree_1
-'4  5  1  /Applications/MAMP/htdocs/newphp/try.php
-'5  59  35  ~/Library/Caches/Cleanup At Startup/Transmit/F4642646-5142-4AE7-A804-51A068669FE1/index.php
-'6  1037  0  ~/Library/Caches/Cleanup At Startup/Transmit/52159216-F403-430B-9B3B-800CBC7A5670/httpd.conf
-'7  1  0  ~/Dropbox/node/playlistmy/views/index.jade
-'8  35  36  ~/Dropbox/node/ytsocket/index.html
-'9  72  1  ~/Dropbox/EzyPzy/nodetweet/app.js
+'0  30  0  ~/.vimrc
+'1  1  0  ~/.vimrc
+'2  31  14  ~/.vimrc
+'3  32  4  ~/.vimrc
+'4  20  12  ~/Dropbox/Projects/Siru/NERD_tree_1
+'5  5  1  /Applications/MAMP/htdocs/newphp/try.php
+'6  59  35  ~/Library/Caches/Cleanup At Startup/Transmit/F4642646-5142-4AE7-A804-51A068669FE1/index.php
+'7  1037  0  ~/Library/Caches/Cleanup At Startup/Transmit/52159216-F403-430B-9B3B-800CBC7A5670/httpd.conf
+'8  1  0  ~/Dropbox/node/playlistmy/views/index.jade
+'9  35  36  ~/Dropbox/node/ytsocket/index.html
 
 # Jumplist (newest first):
+-'  30  0  ~/.vimrc
+-'  5  6  ~/.gitignore
+-'  1  0  ~/.gitignore
 -'  1  0  ~/.vimrc
 -'  31  14  ~/.vimrc
 -'  32  4  ~/.vimrc
@@ -204,13 +207,22 @@ $
 -'  1  0  ~/Dropbox/EzyPzy/faceoff/views/layout.html
 -'  91  65  ~/Dropbox/EzyPzy/faceoff/views/layout.html
 -'  20  12  ~/Dropbox/Projects/Siru/NERD_tree_1
--'  21  2  ~/Dropbox/Projects/Siru/NERD_tree_1
--'  1  5  ~/Dropbox/Projects/Siru/NERD_tree_1
 
 # History of marks within files (newest to oldest):
 
+> ~/.gitignore
+	"	5	6
+	^	5	7
+	.	5	6
+	+	1	1
+	+	1	0
+	+	3	5
+	+	2	10
+	+	4	9
+	+	5	6
+
 > ~/.vimrc
-	"	1	0
+	"	30	0
 	^	31	15
 	.	31	15
 	+	27	22
@@ -2978,11 +2990,3 @@ $
 	+	95	0
 	+	96	0
 	+	82	19
-
-> ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/js/bnyv.js
-	"	5	0
-	.	5	0
-	+	4	30
-	+	5	18
-	+	5	18
-	+	5	0
