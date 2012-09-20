@@ -7,6 +7,13 @@ set shiftwidth=4
 set listchars=tab:▸\ ,eol:¬
 "set list
 
+" folding settings
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+set foldcolumn=4
+
 set nohls
 set incsearch
 set showcmd
