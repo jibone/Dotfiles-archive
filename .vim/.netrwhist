@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/Jibone/cake'
 let g:netrw_dirhist_2='/Applications/MAMP/htdocs/chicky/app'
 let g:netrw_dirhist_3='/Users/Jibone/Desktop/benbenedm'
 let g:netrw_dirhist_4='/Users/Jibone/Codex/blueimp-jQuery-File-Upload-02efca0'
 let g:netrw_dirhist_5='/Users/Jibone/Downloads/fontello-5d645fbf'
 let g:netrw_dirhist_6='/Users/Jibone/Dropbox/Projects/Siru'
+let g:netrw_dirhist_7='/Users/Jibone/Dropbox/Projects/robotzombie/groundzero/app/helpers'
+let g:netrw_dirhist_8='/Users/Jibone/Desktop/web'

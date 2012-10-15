@@ -92,7 +92,7 @@ if [ $IS_INTERACTIVE = 'true' ] ; then # Interactive shell only
   }
   PROMPT_COMMAND=prompt_func
 
-  export PS1="\[${COLOR_GREEN}\]\w\[${COLOR_NC}\] > "  # Primary prompt with only a path
+  export PS1="\[${COLOR_GREEN}\]\W\[${COLOR_NC}\] > "  # Primary prompt with only a path
   # export PS1="\[${COLOR_RED}\]\w > \[${COLOR_NC}\]"  # Primary prompt with only a path, for root, need condition to use this for root
   # export PS1="\[${COLOR_GRAY}\]\u@\h \[${COLOR_GREEN}\]\w > \[${COLOR_NC}\]"  # Primary prompt with user, host, and path 
   # This runs before the prompt and sets the title of the xterm* window.  If you set the title in the prompt

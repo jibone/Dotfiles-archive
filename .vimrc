@@ -30,6 +30,8 @@ filetype plugin on
 set background=dark
 colorscheme solarized
 
+au BufNewFile,BufRead *.ejs set filetype=html
+
 " pathogen stuff
 call pathogen#infect()
 
