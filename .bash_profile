@@ -13,7 +13,7 @@ source ~/.bashrc
 #echo -e "`bash --version`"
 echo -ne "Uptime: "; uptime
 #echo -ne "Server time is: "; date
-#echo -ne "Rock and Roll!"
+echo -e "Ghock and Gholl!"
 
 #export CLICOLOR=1
 #export LSCOLORS=ExFxBxDxCxegedabagacad
@@ -21,6 +21,7 @@ echo -ne "Uptime: "; uptime
 # general path
 PATH=${PATH}:~/bin
 PATH=${PATH}:/usr/local/bin
+PATH=${PATH}:/opt/bin
 
 # MySQL
 export PATH=${PATH}:/usr/local/mysql/bin:

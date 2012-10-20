@@ -38,5 +38,5 @@ call pathogen#infect()
 " remove tool bar from GUI
 if has("gui_running")
 	set guioptions=-t
+	set clipboard=unnamed
 endif
-
