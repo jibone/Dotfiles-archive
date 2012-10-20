@@ -16,6 +16,10 @@ $
 # Command Line History (newest to oldest):
 :wq
 :w
+:W
+:e .bash_profile
+:vsplit
+:e .bashrc
 :q!
 :q
 :NERDTree
@@ -30,10 +34,6 @@ $
 :colorscheme desert
 :colorscheme koehler
 :colorscheme elflord
-:colorscheme default
-:colorscheme blue
-:colorscheme delek
-:colorscheme darkblue
 
 # Search String History (newest to oldest):
 ? \Vlink\%#
@@ -65,48 +65,50 @@ $
 
 # Registers:
 "0	LINE	0
-				$('#pickUpPoint').typeahead({source: from_addresses_tmp});
-				$('#statusPlace').html(data.result[0].label +' '+ data.result[0].city);
-				$('#pickUpPointText').html(from_addresses_tmp[0]);
-				$('#pickUpPoint').val(from_addresses_tmp[0]);
-				$('#pickUpPointLabel').val(data.result[0].label);
-				$('#pickUpPointLat').val(data.result[0].latlng[0]);
-				$('#pickUpPointLng').val(data.result[0].latlng[1]);
-				$('#pickUpPointId').val(data.result[0].id);
-"1	LINE	0
-	set-option -g default-command "reattach-to-user-namespace -l zsh"
+	  alias ls='ls --color=auto' # For linux, etc
+""1	LINE	0
+	alias preview="open -a '$PREVIEW'"
 "2	LINE	0
-						<?php get_sidebar(); ?>
+	alias f='open -a Finder '
 "3	LINE	0
-		#RewriteRule ^(.*)$ proxy_api.php [QSA,L]
+	alias chrome = 'open /Applications/Google\ Chrome.app/'
 "4	LINE	0
-		#RewriteRule ^places_search(.*) proxy_places.php
+	set-option -g default-command "reattach-to-user-namespace -l zsh"
 "5	LINE	0
-		#RewriteRule ^places(.*) proxy_places.php
+						<?php get_sidebar(); ?>
 "6	LINE	0
-	
+		#RewriteRule ^(.*)$ proxy_api.php [QSA,L]
 "7	LINE	0
-		<!-- top navigation container start -->
+		#RewriteRule ^places_search(.*) proxy_places.php
 "8	LINE	0
-			</div><!-- right box container (watch now) ends -->
+		#RewriteRule ^places(.*) proxy_places.php
 "9	LINE	0
-				</div>
-""-	CHAR	0
+	
+"-	CHAR	0
 		@jshint js/tests/unit/*.js --config js/.jshintrc
 
 # File marks:
-'0  8  10  ~/.gitignore
-'1  108  14  ~/Downloads/twitter-bootstrap-7426ced/Makefile
-'2  5  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
-'3  6  63  ~/.tmux.conf
-'4  1  0  ~/.tmux.conf
-'5  1  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/.gitignore
-'6  5  0  ~/.tmux.conf
-'7  11  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
-'8  2  21  ~/.tmux.conf
-'9  16  8  ~/.bash_profile
+'0  19  3  ~/.bashrc
+'1  8  10  ~/.gitignore
+'2  108  14  ~/Downloads/twitter-bootstrap-7426ced/Makefile
+'3  5  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
+'4  6  63  ~/.tmux.conf
+'5  1  0  ~/.tmux.conf
+'6  1  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/.gitignore
+'7  5  0  ~/.tmux.conf
+'8  11  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
+'9  2  21  ~/.tmux.conf
 
 # Jumplist (newest first):
+-'  19  3  ~/.bashrc
+-'  28  0  ~/.bash_profile
+-'  1  0  ~/.bash_profile
+-'  8  10  ~/.gitignore
+-'  1  0  ~/.gitignore
+-'  108  14  ~/Downloads/twitter-bootstrap-7426ced/Makefile
+-'  105  0  ~/Downloads/twitter-bootstrap-7426ced/Makefile
+-'  108  14  ~/Downloads/twitter-bootstrap-7426ced/Makefile
+-'  105  0  ~/Downloads/twitter-bootstrap-7426ced/Makefile
 -'  8  10  ~/.gitignore
 -'  1  0  ~/.gitignore
 -'  108  14  ~/Downloads/twitter-bootstrap-7426ced/Makefile
@@ -115,6 +117,29 @@ $
 -'  105  0  ~/Downloads/twitter-bootstrap-7426ced/Makefile
 
 # History of marks within files (newest to oldest):
+
+> ~/.bash_profile
+	"	31	48
+	^	31	49
+	.	31	48
+	+	16	21
+	+	24	21
+	+	16	6
+	+	34	22
+	+	34	0
+	+	29	65
+	+	32	37
+	+	34	33
+	+	33	0
+	+	30	0
+	+	34	0
+	+	31	0
+	+	32	0
+	+	33	86
+	+	31	48
+
+> ~/.bashrc
+	"	19	3
 
 > ~/.gitignore
 	"	8	10
@@ -417,14 +442,6 @@ $
 	+	39	40
 	+	27	38
 	+	26	44
-
-> ~/.bash_profile
-	"	16	8
-	^	16	6
-	.	16	6
-	+	16	21
-	+	24	21
-	+	16	6
 
 > ~/Dropbox/myteksi/web/index.php
 	"	45	90
@@ -3384,63 +3401,3 @@ $
 	+	133	0
 	+	134	2
 	+	130	24
-
-> ~/Dropbox/Projects/ezyorm/examples/demo.php
-	"	33	25
-	^	33	26
-	.	33	25
-	+	1	5
-	+	2	4
-	+	12	3
-	+	14	29
-	+	17	24
-	+	18	27
-	+	19	22
-	+	20	22
-	+	21	24
-	+	21	24
-	+	22	3
-	+	43	44
-	+	44	27
-	+	45	5
-	+	44	5
-	+	43	5
-	+	45	11
-	+	44	14
-	+	45	32
-	+	46	13
-	+	17	15
-	+	42	1
-	+	47	0
-	+	17	18
-	+	16	4
-	+	23	8
-	+	24	0
-	+	23	20
-	+	24	24
-	+	17	1
-	+	18	2
-	+	19	2
-	+	20	2
-	+	21	2
-	+	22	1
-	+	16	48
-	+	27	5
-	+	16	10
-	+	28	5
-	+	29	0
-	+	38	24
-	+	39	26
-	+	29	44
-	+	34	1
-	+	35	0
-	+	34	11
-	+	35	33
-	+	30	28
-	+	31	34
-	+	35	2
-	+	36	14
-	+	36	15
-	+	37	14
-	+	32	23
-	+	33	25
