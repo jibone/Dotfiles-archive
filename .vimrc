@@ -1,11 +1,12 @@
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set expandtab
 
 " textmate like set invisibles.
 " ctrl-v u25b8 for ▸ and ctrl-v u00ac for ¬
 set listchars=tab:▸\ ,eol:¬
-"set list
+set list
 
 " folding settings
 set foldmethod=indent
