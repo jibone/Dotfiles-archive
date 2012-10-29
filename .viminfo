@@ -8,18 +8,16 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/console.log
+~MSle0~/booking_form_input
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:set list!
-:set list
-:NERDTree
+:q
 :w
 :W
-:q
+:NERDTree
 :wq
 :NEr
 :e 
@@ -34,9 +32,10 @@ $
 :e .bashrc
 :q!
 :e .gitignore
+::q
+:e js/app2.js
 
 # Search String History (newest to oldest):
-?/console.log
 ?/booking_form_input
 ?/typeahead
 ? \Vlink\%#
@@ -56,6 +55,7 @@ $
 ? \Vphp\%#
 ? \Vec\%#
 ?/sidebar
+?/ezypzy.com
 
 # Expression History (newest to oldest):
 
@@ -64,58 +64,50 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-						<source src="video_guide/cozy.mp4" type='video/mp4'>
+"0	LINE	0
+								<?php wp_nav_menu(array(
+									'theme_location'	=> 'footer_links',
+									'container'				=> false,
+									'items_wrap'			=> '<ul id="%1$s" class="unstyled">%3$s</ul>'
+								)); ?>
 "1	LINE	0
-			<script type="text/javascript" src="js/browserdetect.js"></script>
+												//}
 "2	LINE	0
-						<source src="video_guide/cozy.ogv" type='video/ogv'>
+												//	query_posts($q);
 "3	LINE	0
-						<source src="video_guide/cozy.webm" type='video/webm'>
+												//	$q = 'cat=-'.$exclude;
 "4	LINE	0
-						<source src="video_guide/complimentary_food_drink.ogv" type='video/ogv'>
+												//	$exclude = get_cat_ID('Featured');
 "5	LINE	0
-						<source src="video_guide/complimentary_food_drink.webm" type='video/webm'>
+												//if(!is_paged()) {
 "6	LINE	0
-						<source src="video_guide/seat_selection.ogv" type='video/ogv'>
+		<script type="text/javascript" src="/vendor/bootstrap-typeahead.js"></script>
 "7	LINE	0
-						<source src="video_guide/seat_selection.webm" type='video/webm'>
+			});
 "8	LINE	0
-						fs = $('#app').get(0);
+				//$('#seat_selection').modal();		
 "9	LINE	0
-								console.log('continue flash');
+			$(document).ready(function() {
 "-	CHAR	0
-	");
+	load video cozy
 
 # File marks:
-'0  1  0  ~/Dropbox/myteksi/web-bak/index.php
-'1  33  3  ~/Dropbox/myteksi/web-bak/index.php
-'2  16  14  ~/Dropbox/myteksi/web-bak/rates.html
-'3  12  56  ~/Library/Caches/Cleanup At Startup/Transmit/638AAA1F-B7FA-4D7D-A10D-DC3C3032B6E6/index.html
-'4  64  33  /Applications/MAMP/htdocs/flatbed/index.html
-'5  24  7  ~/Dropbox/myteksi/web/NERD_tree_1
-'6  13  15  ~/Dropbox/EzyPzy/drawpost/web/NERD_tree_1
-'7  10  1  /Applications/MAMP/htdocs/fizzbuzz/index.php
-'8  20  2  /Applications/MAMP/htdocs/flatbed/index.html
-'9  8  0  ~/Desktop/flatbed/NERD_tree_1
+'0  15  11  ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/NERD_tree_1
+'1  24  7  ~/Dropbox/myteksi/web/NERD_tree_1
+'2  13  15  ~/Dropbox/EzyPzy/drawpost/web/NERD_tree_1
+'3  10  1  /Applications/MAMP/htdocs/fizzbuzz/index.php
+'4  17  2  /Applications/MAMP/htdocs/flatbed/index.html
+'5  8  0  ~/Desktop/flatbed/NERD_tree_1
+'6  9  12  ~/Dropbox/Projects/rzbackup/robotzombieadmin/NERD_tree_1
+'7  1  0  ~/Dropbox/Projects/robotzombie/groundzero/app/models/users_modal.php
+'8  1  0  ~/Dropbox/Projects/Siru/app/models/users_model.php
+'9  76  0  ~/Dropbox/Projects/Siru/app/helpers/database_helper.php
 
 # Jumplist (newest first):
--'  1  0  ~/Dropbox/myteksi/web-bak/index.php
--'  2  0  ~/Dropbox/myteksi/web-bak/code-of-conduct.html
--'  1  0  ~/Dropbox/myteksi/web-bak/code-of-conduct.html
--'  33  3  ~/Dropbox/myteksi/web-bak/index.php
--'  16  14  ~/Dropbox/myteksi/web-bak/rates.html
--'  26  8  ~/Dropbox/myteksi/web-bak/privacy.html
--'  1  0  ~/Dropbox/myteksi/web-bak/privacy.html
--'  12  56  ~/Library/Caches/Cleanup At Startup/Transmit/638AAA1F-B7FA-4D7D-A10D-DC3C3032B6E6/index.html
--'  47  5  ~/Library/Caches/Cleanup At Startup/Transmit/638AAA1F-B7FA-4D7D-A10D-DC3C3032B6E6/index.html
--'  1  0  ~/Library/Caches/Cleanup At Startup/Transmit/638AAA1F-B7FA-4D7D-A10D-DC3C3032B6E6/index.html
--'  64  33  /Applications/MAMP/htdocs/flatbed/index.html
--'  24  9  /Applications/MAMP/htdocs/flatbed/index.html
--'  125  42  /Applications/MAMP/htdocs/flatbed/index.html
--'  69  84  /Applications/MAMP/htdocs/flatbed/index.html
--'  8  1  /Applications/MAMP/htdocs/flatbed/index.html
--'  1  0  /Applications/MAMP/htdocs/flatbed/index.html
+-'  15  11  ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/NERD_tree_1
+-'  22  2  ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/NERD_tree_1
+-'  1  0  ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/NERD_tree_1
+-'  1  0  ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/index.php
 -'  24  7  ~/Dropbox/myteksi/web/NERD_tree_1
 -'  32  2  ~/Dropbox/myteksi/web/NERD_tree_1
 -'  1  5  ~/Dropbox/myteksi/web/NERD_tree_1
@@ -126,20 +118,21 @@ $
 -'  1  0  ~/Dropbox/EzyPzy/drawpost/web/bootstrap.php
 -'  10  1  /Applications/MAMP/htdocs/fizzbuzz/index.php
 -'  1  0  /Applications/MAMP/htdocs/fizzbuzz/index.php
--'  20  2  /Applications/MAMP/htdocs/flatbed/index.html
--'  47  18  /Applications/MAMP/htdocs/flatbed/index.html
--'  39  18  /Applications/MAMP/htdocs/flatbed/index.html
--'  51  6  /Applications/MAMP/htdocs/flatbed/index.html
--'  43  7  /Applications/MAMP/htdocs/flatbed/index.html
--'  49  5  /Applications/MAMP/htdocs/flatbed/index.html
--'  41  9  /Applications/MAMP/htdocs/flatbed/index.html
--'  86  0  /Applications/MAMP/htdocs/flatbed/index.html
--'  73  1  /Applications/MAMP/htdocs/flatbed/index.html
--'  61  2  /Applications/MAMP/htdocs/flatbed/index.html
+-'  17  2  /Applications/MAMP/htdocs/flatbed/index.html
+-'  42  18  /Applications/MAMP/htdocs/flatbed/index.html
+-'  34  18  /Applications/MAMP/htdocs/flatbed/index.html
+-'  46  6  /Applications/MAMP/htdocs/flatbed/index.html
+-'  38  7  /Applications/MAMP/htdocs/flatbed/index.html
+-'  44  5  /Applications/MAMP/htdocs/flatbed/index.html
+-'  36  9  /Applications/MAMP/htdocs/flatbed/index.html
+-'  61  78  /Applications/MAMP/htdocs/flatbed/index.html
+-'  77  0  /Applications/MAMP/htdocs/flatbed/index.html
+-'  66  1  /Applications/MAMP/htdocs/flatbed/index.html
+-'  56  2  /Applications/MAMP/htdocs/flatbed/index.html
 -'  10  11  /Applications/MAMP/htdocs/flatbed/NERD_tree_2
 -'  12  2  /Applications/MAMP/htdocs/flatbed/NERD_tree_2
 -'  1  0  /Applications/MAMP/htdocs/flatbed/NERD_tree_2
--'  23  2  /Applications/MAMP/htdocs/flatbed/NERD_tree_1
+-'  12  2  /Applications/MAMP/htdocs/flatbed/NERD_tree_1
 -'  1  0  /Applications/MAMP/htdocs/flatbed/NERD_tree_1
 -'  8  0  ~/Desktop/flatbed/NERD_tree_1
 -'  10  2  ~/Desktop/flatbed/NERD_tree_1
@@ -195,11 +188,746 @@ $
 -'  1  0  ~/.gitignore
 -'  108  14  ~/Downloads/twitter-bootstrap-7426ced/Makefile
 -'  105  0  ~/Downloads/twitter-bootstrap-7426ced/Makefile
--'  74  7  ~/Library/Caches/Cleanup At Startup/Transmit/914E5205-44B0-4992-98AA-7F1E01CC9CDF/index.html
--'  1  0  ~/Library/Caches/Cleanup At Startup/Transmit/914E5205-44B0-4992-98AA-7F1E01CC9CDF/index.html
--'  79  0  ~/Dropbox/Projects/rzbackup/robotzombieadmin/app/helpers/session.php
+-'  86  0  ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/functions.php
+-'  10  26  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/index.php
+-'  1  3  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/index.php
+-'  1  0  ~/Dropbox/myteksi/web-bak/index.php
+-'  2  0  ~/Dropbox/myteksi/web-bak/code-of-conduct.html
+-'  1  0  ~/Dropbox/myteksi/web-bak/code-of-conduct.html
+-'  33  3  ~/Dropbox/myteksi/web-bak/index.php
+-'  16  14  ~/Dropbox/myteksi/web-bak/rates.html
+-'  26  8  ~/Dropbox/myteksi/web-bak/privacy.html
+-'  1  0  ~/Dropbox/myteksi/web-bak/privacy.html
+-'  12  56  ~/Library/Caches/Cleanup At Startup/Transmit/638AAA1F-B7FA-4D7D-A10D-DC3C3032B6E6/index.html
+-'  47  5  ~/Library/Caches/Cleanup At Startup/Transmit/638AAA1F-B7FA-4D7D-A10D-DC3C3032B6E6/index.html
+-'  1  0  ~/Library/Caches/Cleanup At Startup/Transmit/638AAA1F-B7FA-4D7D-A10D-DC3C3032B6E6/index.html
+-'  64  33  /Applications/MAMP/htdocs/flatbed/index.html
 
 # History of marks within files (newest to oldest):
+
+> ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/index.php
+	"	55	0
+	.	76	0
+	+	75	0
+	+	76	12
+	+	76	12
+	+	76	12
+	+	76	13
+	+	76	12
+	+	76	0
+
+> ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/NERD_tree_1
+	"	15	11
+	.	1	0
+	+	1	0
+
+> ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/header.php
+	"	59	30
+	^	45	37
+	.	45	36
+	+	45	36
+
+> ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/footer.php
+	"	22	30
+
+> ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/functions.php
+	"	31	7
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/index.php
+	"	9	0
+	^	9	2
+	.	9	2
+	+	10	33
+	+	10	24
+	+	10	15
+	+	10	15
+	+	10	15
+	+	10	16
+	+	10	15
+	+	10	16
+	+	10	0
+	+	10	8
+	+	10	7
+	+	10	0
+	+	10	9
+	+	10	9
+	+	10	24
+	+	10	34
+	+	10	0
+	+	10	9
+	+	10	37
+	+	10	29
+	+	10	28
+	+	10	37
+	+	10	55
+	+	10	29
+	+	10	28
+	+	10	0
+	+	10	39
+	+	10	47
+	+	10	47
+	+	10	49
+	+	10	38
+	+	10	48
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	45
+	+	10	37
+	+	10	47
+	+	10	40
+	+	10	37
+	+	10	45
+	+	10	0
+	+	10	36
+	+	10	36
+	+	10	48
+	+	10	0
+	+	10	38
+	+	10	40
+	+	10	40
+	+	10	83
+	+	10	0
+	+	10	3
+	+	1	19
+	+	10	0
+	+	10	18
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	15
+	+	10	16
+	+	10	3
+	+	10	9
+	+	10	0
+	+	10	9
+	+	10	17
+	+	10	0
+	+	10	5
+	+	10	5
+	+	10	42
+	+	10	42
+	+	10	0
+	+	9	1
+	+	3	20
+	+	7	0
+	+	4	3
+	+	7	7
+	+	3	18
+	+	4	2
+	+	5	0
+	+	4	34
+	+	6	38
+	+	7	1
+	+	8	14
+	+	6	16
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	9	2
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
+	"	15	8
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/jshamsul.less
+	"	114	9
+	^	115	26
+	.	115	26
+	+	69	6
+	+	69	26
+	+	27	20
+	+	27	20
+	+	173	8
+	+	175	5
+	+	175	24
+	+	175	22
+	+	174	28
+	+	175	5
+	+	175	22
+	+	109	16
+	+	69	34
+	+	69	36
+	+	70	9
+	+	70	9
+	+	70	23
+	+	70	30
+	+	176	21
+	+	178	0
+	+	177	22
+	+	135	20
+	+	137	1
+	+	84	12
+	+	137	12
+	+	137	23
+	+	137	10
+	+	138	17
+	+	139	12
+	+	138	0
+	+	136	18
+	+	137	1
+	+	138	3
+	+	139	3
+	+	168	1
+	+	140	16
+	+	142	15
+	+	143	36
+	+	143	20
+	+	146	18
+	+	150	0
+	+	34	0
+	+	146	18
+	+	147	27
+	+	150	0
+	+	145	14
+	+	146	13
+	+	147	21
+	+	143	20
+	+	145	14
+	+	146	13
+	+	147	25
+	+	150	0
+	+	148	17
+	+	151	16
+	+	152	22
+	+	153	23
+	+	161	15
+	+	162	21
+	+	155	31
+	+	165	17
+	+	154	24
+	+	163	22
+	+	159	20
+	+	166	20
+	+	155	20
+	+	149	23
+	+	158	25
+	+	157	18
+	+	158	22
+	+	139	12
+	+	141	23
+	+	143	7
+	+	144	7
+	+	147	7
+	+	144	18
+	+	143	0
+	+	147	0
+	+	77	16
+	+	112	10
+	+	113	8
+	+	120	18
+	+	121	23
+	+	122	23
+	+	27	0
+	+	126	19
+	+	128	15
+	+	127	12
+	+	128	21
+	+	129	22
+	+	130	16
+	+	30	0
+	+	31	0
+	+	114	10
+	+	115	23
+	+	119	0
+	+	115	21
+	+	116	17
+	+	117	23
+	+	115	26
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_2
+	"	1	5
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/bootstrap/bootstrap.less
+	"	45	25
+	^	26	21
+	.	26	21
+	+	26	21
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/variables.less
+	"	30	31
+	^	30	32
+	.	30	31
+	+	8	73
+	+	8	0
+	+	61	0
+	+	51	24
+	+	50	0
+	+	51	0
+	+	50	24
+	+	47	29
+	+	28	0
+	+	28	0
+	+	33	0
+	+	47	0
+	+	28	32
+	+	30	31
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/bootstrap/variables.less
+	"	20	0
+	^	22	28
+	.	22	28
+	+	10	0
+	+	22	28
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/Makefile
+	"	21	53
+	^	20	31
+	.	20	31
+	+	8	0
+	+	7	19
+	+	11	16
+	+	12	32
+	+	13	16
+	+	14	8
+	+	1	0
+	+	3	29
+	+	4	0
+	+	3	5
+	+	4	25
+	+	5	0
+	+	5	0
+	+	14	44
+	+	15	2
+	+	14	37
+	+	15	59
+	+	17	50
+	+	19	32
+	+	19	50
+	+	16	10
+	+	11	16
+	+	13	9
+	+	5	65
+	+	19	0
+	+	20	1
+	+	21	1
+	+	20	31
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/bootstrap/mixins.less
+	"	231	0
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/bootstrap/navs.less
+	"	23	0
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/css/jshamsul.css
+	"	3	39
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/icons.less
+	"	11	24
+	^	20	20
+	.	1	0
+	+	1	0
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/header.php
+	"	31	3
+	^	17	4
+	.	19	0
+	+	54	0
+	+	1	0
+	+	43	11
+	+	49	12
+	+	38	15
+	+	42	16
+	+	50	39
+	+	36	32
+	+	44	10
+	+	45	11
+	+	46	11
+	+	47	11
+	+	48	9
+	+	46	29
+	+	45	29
+	+	47	29
+	+	45	50
+	+	47	75
+	+	49	0
+	+	15	0
+	+	17	0
+	+	18	4
+	+	15	71
+	+	17	75
+	+	16	15
+	+	19	0
+	+	18	15
+	+	19	0
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/footer.php
+	"	16	6
+	.	1	0
+	+	1	0
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/functions.php
+	"	33	4
+	^	76	54
+	.	76	51
+	+	133	11
+	+	134	9
+	+	133	10
+	+	134	8
+	+	135	3
+	+	135	30
+	+	136	0
+	+	136	0
+	+	143	0
+	+	137	66
+	+	138	0
+	+	138	34
+	+	139	54
+	+	140	0
+	+	143	0
+	+	144	5
+	+	146	3
+	+	147	3
+	+	148	8
+	+	149	2
+	+	150	2
+	+	154	32
+	+	152	6
+	+	154	46
+	+	155	43
+	+	156	33
+	+	182	0
+	+	157	0
+	+	157	3
+	+	156	37
+	+	157	21
+	+	157	3
+	+	157	21
+	+	158	2
+	+	159	3
+	+	160	2
+	+	161	2
+	+	162	3
+	+	163	2
+	+	164	2
+	+	165	3
+	+	166	4
+	+	167	3
+	+	168	2
+	+	169	3
+	+	170	2
+	+	172	2
+	+	173	3
+	+	174	3
+	+	176	3
+	+	177	4
+	+	178	3
+	+	179	4
+	+	180	3
+	+	181	2
+	+	184	0
+	+	184	0
+	+	184	0
+	+	184	43
+	+	184	37
+	+	184	0
+	+	184	3
+	+	184	3
+	+	184	3
+	+	184	35
+	+	184	0
+	+	184	0
+	+	184	41
+	+	184	16
+	+	184	45
+	+	184	1
+	+	184	3
+	+	184	3
+	+	184	5
+	+	184	42
+	+	184	41
+	+	184	70
+	+	91	37
+	+	91	4
+	+	91	10
+	+	91	10
+	+	91	10
+	+	91	10
+	+	91	10
+	+	91	26
+	+	91	22
+	+	91	19
+	+	91	19
+	+	75	40
+	+	86	27
+	+	91	0
+	+	184	0
+	+	184	0
+	+	184	0
+	+	184	0
+	+	184	0
+	+	184	0
+	+	76	6
+	+	75	21
+	+	76	51
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/page-landing.php
+	"	10	49
+	^	22	29
+	.	24	0
+	+	28	18
+	+	7	23
+	+	26	0
+	+	8	27
+	+	25	0
+	+	9	29
+	+	11	0
+	+	10	42
+	+	11	16
+	+	11	6
+	+	11	52
+	+	15	0
+	+	14	0
+	+	13	13
+	+	15	13
+	+	14	7
+	+	12	28
+	+	20	40
+	+	24	0
+	+	24	7
+	+	13	7
+	+	14	9
+	+	16	0
+	+	15	9
+	+	16	34
+	+	18	0
+	+	17	10
+	+	24	8
+	+	24	0
+	+	2	0
+	+	3	21
+	+	21	7
+	+	21	4
+	+	22	5
+	+	23	4
+	+	21	38
+	+	22	28
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/content-loop.php
+	"	40	43
+	^	40	44
+	.	40	43
+	+	38	27
+	+	42	0
+	+	38	38
+	+	42	0
+	+	38	53
+	+	43	0
+	+	42	6
+	+	43	32
+	+	52	0
+	+	44	8
+	+	45	5
+	+	46	6
+	+	47	5
+	+	48	6
+	+	49	5
+	+	50	3
+	+	54	24
+	+	48	15
+	+	48	0
+	+	41	0
+	+	38	8
+	+	41	0
+	+	40	9
+	+	38	7
+	+	7	40
+	+	5	24
+	+	55	3
+	+	6	5
+	+	7	7
+	+	35	5
+	+	36	5
+	+	37	7
+	+	38	9
+	+	40	11
+	+	41	11
+	+	41	9
+	+	42	7
+	+	43	7
+	+	44	9
+	+	50	6
+	+	52	7
+	+	53	5
+	+	54	5
+	+	41	0
+	+	39	48
+	+	44	28
+	+	34	0
+	+	7	7
+	+	34	7
+	+	8	13
+	+	33	0
+	+	9	10
+	+	10	46
+	+	10	24
+	+	44	0
+	+	10	44
+	+	9	9
+	+	10	28
+	+	10	0
+	+	50	9
+	+	45	7
+	+	46	8
+	+	47	11
+	+	48	8
+	+	49	7
+	+	51	40
+	+	10	10
+	+	10	14
+	+	10	17
+	+	9	14
+	+	10	33
+	+	32	0
+	+	10	0
+	+	11	24
+	+	13	19
+	+	12	38
+	+	31	18
+	+	30	13
+	+	31	13
+	+	30	49
+	+	14	31
+	+	15	49
+	+	16	20
+	+	17	26
+	+	18	50
+	+	19	20
+	+	20	28
+	+	21	51
+	+	22	19
+	+	23	24
+	+	24	38
+	+	25	19
+	+	24	38
+	+	21	40
+	+	26	28
+	+	27	51
+	+	28	19
+	+	22	19
+	+	21	41
+	+	40	43
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/js/upload-script.js
+	"	3	24
+	^	3	25
+	.	3	25
+	+	1	35
+	+	2	44
+	+	3	4
+	+	4	3
+	+	5	3
+	+	4	24
+	+	2	29
+	+	9	2
+	+	9	0
+	+	6	3
+	+	7	3
+	+	3	25
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/css/icon-fonts-codes.css
+	"	28	0
+
+> ~/Downloads/fontello-5c18b06b/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Downloads/fontello-5c18b06b/NERD_tree_2
+	"	8	8
+	.	1	0
+	+	1	0
+
+> ~/Downloads/fontello-5c18b06b/demo.html
+	"	316	0
+
+> ~/Downloads/fontello-5c18b06b/NERD_tree_3
+	"	12	7
+	.	1	0
+	+	1	0
+	+	1	0
+
+> ~/Downloads/fontello-5c18b06b/css/icon-fonts.css
+	"	18	12
+
+> ~/Downloads/fontello-5c18b06b/css/icon-fonts-codes.css
+	"	15	26
+
+> ~/Downloads/fontello-5c18b06b/css/icon-fonts-ie7.css
+	"	10	0
+
+> ~/Downloads/custom-post-type-image-upload/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Downloads/custom-post-type-image-upload/NERD_tree_2
+	"	5	18
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Downloads/custom-post-type-image-upload/custom-post-type-image-upload.php
+	"	63	0
+
+> ~/Downloads/fontello-b756ca77/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Downloads/fontello-b756ca77/NERD_tree_2
+	"	8	10
+	.	1	0
+	+	1	0
+
+> ~/Downloads/fontello-b756ca77/demo.html
+	"	297	7
+
+> ~/Downloads/fontello-b756ca77/NERD_tree_3
+	"	9	8
+	.	1	0
+	+	1	0
+	+	1	0
+
+> ~/Downloads/fontello-b756ca77/css/icon-fonts.css
+	"	1	0
 
 > ~/Dropbox/myteksi/web-bak/code-of-conduct.html
 	"	2	0
@@ -1554,1105 +2282,3 @@ $
 	+	103	0
 	+	106	0
 	+	108	14
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/Makefile
-	"	21	53
-	^	20	31
-	.	20	31
-	+	8	0
-	+	7	19
-	+	11	16
-	+	12	32
-	+	13	16
-	+	14	8
-	+	1	0
-	+	3	29
-	+	4	0
-	+	3	5
-	+	4	25
-	+	5	0
-	+	5	0
-	+	14	44
-	+	15	2
-	+	14	37
-	+	15	59
-	+	17	50
-	+	19	32
-	+	19	50
-	+	16	10
-	+	11	16
-	+	13	9
-	+	5	65
-	+	19	0
-	+	20	1
-	+	21	1
-	+	20	31
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
-	"	9	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/Downloads/twitter-bootstrap-7426ced/js/bootstrap-affix.js
-	"	21	14
-
-> ~/Downloads/twitter-bootstrap-7426ced/js/.jshintrc
-	"	1	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_2
-	"	24	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/Downloads/twitter-bootstrap-7426ced/js/tests/index.html
-	"	56	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_3
-	"	6	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/Downloads/twitter-bootstrap-7426ced/js/tests/unit/bootstrap-affix.js
-	"	1	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_4
-	"	8	0
-	.	1	0
-	+	1	0
-
-> ~/Downloads/twitter-bootstrap-7426ced/js/tests/phantom.js
-	"	63	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_5
-	"	23	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/Downloads/twitter-bootstrap-7426ced/js/tests/server.js
-	"	11	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_6
-	"	6	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_7
-	"	7	0
-	.	1	0
-	+	1	0
-
-> ~/.bash_profile
-	"	31	48
-	^	31	49
-	.	31	48
-	+	16	21
-	+	24	21
-	+	16	6
-	+	34	22
-	+	34	0
-	+	29	65
-	+	32	37
-	+	34	33
-	+	33	0
-	+	30	0
-	+	34	0
-	+	31	0
-	+	32	0
-	+	33	86
-	+	31	48
-
-> ~/.bashrc
-	"	19	3
-
-> ~/.gitignore
-	"	8	10
-	^	8	11
-	.	8	10
-	+	8	10
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/.gitignore
-	"	10	1
-	^	10	2
-	.	1	0
-	+	11	0
-	+	1	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/index.php
-	"	1	0
-
-> ~/.vim/indent/php.vim
-	"	40	8
-	^	40	9
-	.	40	8
-	+	40	88
-	+	2	2
-	+	3	0
-	+	4	3
-	+	5	0
-	+	6	0
-	+	7	0
-	+	7	67
-	+	8	1
-	+	9	0
-	+	10	3
-	+	11	0
-	+	12	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	19	3
-	+	20	4
-	+	21	3
-	+	22	4
-	+	23	3
-	+	24	3
-	+	25	3
-	+	26	3
-	+	27	4
-	+	28	3
-	+	29	3
-	+	30	4
-	+	30	35
-	+	31	5
-	+	31	32
-	+	32	5
-	+	31	6
-	+	33	4
-	+	34	4
-	+	35	4
-	+	36	3
-	+	37	0
-	+	38	0
-	+	39	0
-	+	39	8
-	+	40	0
-	+	40	8
-
-> ~/.vim/indent/coffee.vim
-	"	338	0
-
-> ~/.tmux.conf
-	"	6	63
-	^	6	64
-	.	6	63
-	+	1	20
-	+	7	0
-	+	1	9
-	+	2	22
-	+	7	0
-	+	6	63
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/style.css
-	"	7	29
-	^	3	33
-	.	3	33
-	+	7	29
-	+	6	9
-	+	4	31
-	+	2	22
-	+	3	33
-
-> ~/Dropbox/Projects/Siru/bootstrap.php
-	"	72	0
-	^	79	19
-	.	26	44
-	+	20	28
-	+	28	0
-	+	33	21
-	+	33	14
-	+	49	18
-	+	50	19
-	+	53	24
-	+	54	22
-	+	55	23
-	+	56	23
-	+	57	24
-	+	58	25
-	+	59	23
-	+	60	26
-	+	58	45
-	+	50	49
-	+	79	18
-	+	80	31
-	+	84	29
-	+	84	16
-	+	80	21
-	+	84	21
-	+	80	22
-	+	84	15
-	+	2	3
-	+	4	44
-	+	5	3
-	+	3	1
-	+	5	41
-	+	8	16
-	+	22	0
-	+	21	30
-	+	27	0
-	+	60	62
-	+	59	56
-	+	58	60
-	+	57	58
-	+	56	56
-	+	55	56
-	+	54	54
-	+	53	58
-	+	52	56
-	+	50	50
-	+	49	49
-	+	55	57
-	+	60	28
-	+	59	25
-	+	58	27
-	+	52	25
-	+	53	26
-	+	54	24
-	+	55	25
-	+	56	25
-	+	57	26
-	+	58	27
-	+	50	21
-	+	49	20
-	+	80	41
-	+	81	29
-	+	82	25
-	+	84	0
-	+	39	16
-	+	40	19
-	+	44	0
-	+	39	12
-	+	41	20
-	+	42	20
-	+	43	19
-	+	28	0
-	+	33	0
-	+	28	0
-	+	39	39
-	+	66	15
-	+	67	13
-	+	74	15
-	+	75	13
-	+	28	22
-	+	15	1
-	+	16	0
-	+	15	1
-	+	39	40
-	+	27	38
-	+	26	44
-
-> ~/Dropbox/myteksi/web/index.bak.php
-	"	1	0
-	^	418	1
-
-> ~/Dropbox/myteksi/web/templates/box_landing.ejs
-	"	1	1
-	^	7	111
-	.	7	110
-	+	1	1
-	+	2	1
-	+	2	4
-	+	2	5
-	+	2	2
-	+	2	2
-	+	3	3
-	+	4	3
-	+	5	3
-	+	6	3
-	+	7	6
-	+	8	4
-	+	9	3
-	+	10	3
-	+	11	6
-	+	12	4
-	+	13	4
-	+	14	4
-	+	15	3
-	+	16	2
-	+	16	1
-	+	2	0
-	+	1	21
-	+	16	26
-	+	2	0
-	+	16	0
-	+	2	1
-	+	3	2
-	+	4	2
-	+	5	2
-	+	6	2
-	+	7	3
-	+	8	3
-	+	9	2
-	+	10	2
-	+	11	3
-	+	12	3
-	+	13	3
-	+	14	3
-	+	15	2
-	+	2	29
-	+	7	96
-	+	3	32
-	+	11	125
-	+	12	129
-	+	13	74
-	+	14	59
-	+	3	33
-	+	7	110
-
-> ~/Dropbox/myteksi/web/js/layout.js
-	"	648	13
-	^	553	2
-	.	33	29
-	+	66	0
-	+	441	81
-	+	442	45
-	+	444	17
-	+	445	14
-	+	447	41
-	+	446	30
-	+	449	22
-	+	449	6
-	+	449	5
-	+	63	1
-	+	64	1
-	+	65	1
-	+	62	41
-	+	63	0
-	+	64	0
-	+	65	0
-	+	441	27
-	+	422	6
-	+	441	4
-	+	444	34
-	+	422	102
-	+	423	44
-	+	424	35
-	+	427	41
-	+	449	0
-	+	188	0
-	+	118	0
-	+	122	0
-	+	145	33
-	+	156	62
-	+	156	63
-	+	156	28
-	+	156	23
-	+	449	20
-	+	146	26
-	+	147	34
-	+	148	34
-	+	126	1
-	+	133	1
-	+	126	2
-	+	135	46
-	+	136	33
-	+	139	38
-	+	138	26
-	+	135	19
-	+	134	2
-	+	141	2
-	+	133	1
-	+	126	1
-	+	156	36
-	+	126	3
-	+	134	1
-	+	141	1
-	+	126	2
-	+	133	2
-	+	134	19
-	+	135	14
-	+	134	31
-	+	156	37
-	+	97	9
-	+	449	0
-	+	442	4
-	+	442	0
-	+	157	32
-	+	157	28
-	+	157	32
-	+	157	4
-	+	157	29
-	+	149	33
-	+	149	1
-	+	157	0
-	+	149	2
-	+	150	4
-	+	151	3
-	+	152	3
-	+	153	3
-	+	154	24
-	+	156	0
-	+	157	0
-	+	156	0
-	+	157	0
-	+	156	3
-	+	156	37
-	+	155	30
-	+	156	32
-	+	155	30
-	+	149	0
-	+	156	0
-	+	149	1
-	+	150	1
-	+	151	1
-	+	152	2
-	+	153	1
-	+	154	1
-	+	155	1
-	+	131	0
-	+	526	51
-	+	527	0
-	+	33	29
-
-> ~/Dropbox/myteksi/web/less/style.less
-	"	281	0
-	^	278	23
-	.	278	22
-	+	241	25
-	+	246	12
-	+	253	12
-	+	257	12
-	+	261	20
-	+	262	21
-	+	194	13
-	+	192	0
-	+	180	30
-	+	337	17
-	+	224	16
-	+	80	45
-	+	93	45
-	+	82	39
-	+	94	0
-	+	77	0
-	+	77	0
-	+	77	0
-	+	77	28
-	+	77	6
-	+	77	6
-	+	77	6
-	+	77	6
-	+	82	33
-	+	95	34
-	+	77	0
-	+	268	22
-	+	269	18
-	+	270	19
-	+	268	1
-	+	269	14
-	+	15	0
-	+	82	31
-	+	95	31
-	+	344	16
-	+	345	13
-	+	347	22
-	+	345	11
-	+	351	11
-	+	358	10
-	+	355	16
-	+	192	29
-	+	193	38
-	+	192	25
-	+	271	6
-	+	272	21
-	+	273	21
-	+	272	17
-	+	273	18
-	+	271	2
-	+	142	16
-	+	143	19
-	+	232	9
-	+	174	0
-	+	146	35
-	+	147	0
-	+	152	33
-	+	162	30
-	+	143	0
-	+	162	11
-	+	152	28
-	+	162	32
-	+	170	0
-	+	152	28
-	+	162	27
-	+	170	14
-	+	171	16
-	+	153	2
-	+	163	2
-	+	161	0
-	+	169	0
-	+	154	16
-	+	164	16
-	+	155	13
-	+	165	13
-	+	170	5
-	+	160	18
-	+	168	19
-	+	170	7
-	+	171	18
-	+	168	15
-	+	171	19
-	+	172	19
-	+	144	43
-	+	113	12
-	+	114	5
-	+	115	5
-	+	116	5
-	+	117	5
-	+	118	5
-	+	119	5
-	+	120	22
-	+	121	0
-	+	113	5
-	+	402	0
-	+	271	6
-	+	275	11
-	+	276	20
-	+	277	21
-	+	278	22
-
-> ~/Dropbox/myteksi/web/templates/box_booking.ejs
-	"	2	36
-	^	62	39
-	.	62	38
-	+	106	29
-	+	57	18
-	+	64	19
-	+	71	19
-	+	78	19
-	+	85	19
-	+	92	19
-	+	64	32
-	+	71	32
-	+	78	32
-	+	85	32
-	+	92	32
-	+	99	32
-	+	99	0
-	+	63	54
-	+	69	97
-	+	77	54
-	+	84	53
-	+	91	53
-	+	98	54
-	+	63	51
-	+	69	94
-	+	77	51
-	+	84	51
-	+	91	51
-	+	98	51
-	+	64	32
-	+	71	32
-	+	78	32
-	+	85	32
-	+	92	32
-	+	131	18
-	+	133	23
-	+	134	23
-	+	135	0
-	+	133	27
-	+	134	27
-	+	132	41
-	+	131	20
-	+	100	22
-	+	101	22
-	+	102	22
-	+	103	22
-	+	104	22
-	+	105	22
-	+	106	22
-	+	47	47
-	+	112	10
-	+	113	21
-	+	118	7
-	+	114	7
-	+	113	8
-	+	115	8
-	+	114	20
-	+	115	14
-	+	114	24
-	+	115	17
-	+	117	8
-	+	115	8
-	+	116	20
-	+	119	37
-	+	132	45
-	+	51	0
-	+	50	8
-	+	49	22
-	+	51	57
-	+	53	35
-	+	53	35
-	+	51	8
-	+	54	0
-	+	55	46
-	+	54	55
-	+	55	32
-	+	54	0
-	+	56	38
-	+	63	34
-	+	54	11
-	+	61	25
-	+	55	40
-	+	62	38
-	+	66	0
-	+	57	8
-	+	64	8
-	+	69	43
-	+	70	34
-	+	71	8
-	+	73	0
-	+	78	8
-	+	80	0
-	+	85	8
-	+	77	34
-	+	84	34
-	+	87	0
-	+	94	0
-	+	92	8
-	+	91	34
-	+	98	34
-	+	62	36
-	+	61	26
-	+	62	38
-
-> ~/Dropbox/myteksi/web/templates/box_signup.ejs
-	"	22	10
-	^	30	7
-	.	30	6
-	+	2	36
-	+	3	56
-	+	6	52
-	+	7	42
-	+	8	28
-	+	9	35
-	+	10	41
-	+	4	41
-	+	5	72
-	+	11	34
-	+	12	0
-	+	13	0
-	+	12	52
-	+	30	0
-	+	15	48
-	+	16	12
-	+	24	18
-	+	19	33
-	+	21	89
-	+	25	3
-	+	30	0
-	+	27	75
-	+	6	5
-	+	30	6
-
-> ~/Dropbox/myteksi/web/js/app2.js
-	"	478	25
-	^	366	16
-	.	268	16
-	+	522	31
-	+	523	20
-	+	525	26
-	+	526	33
-	+	530	22
-	+	431	12
-	+	440	0
-	+	477	0
-	+	517	0
-	+	508	0
-	+	507	24
-	+	501	46
-	+	509	82
-	+	516	20
-	+	509	82
-	+	256	35
-	+	264	20
-	+	256	57
-	+	257	17
-	+	57	18
-	+	267	6
-	+	264	3
-	+	267	21
-	+	269	18
-	+	267	21
-	+	271	9
-	+	272	28
-	+	273	0
-	+	271	23
-	+	272	17
-	+	272	37
-	+	273	20
-	+	272	30
-	+	58	34
-	+	264	4
-	+	264	4
-	+	272	0
-	+	273	0
-	+	257	0
-	+	509	14
-	+	57	2
-	+	58	2
-	+	509	17
-	+	57	1
-	+	58	1
-	+	528	34
-	+	530	0
-	+	527	30
-	+	528	34
-	+	529	35
-	+	409	24
-	+	411	22
-	+	412	22
-	+	413	22
-	+	400	16
-	+	403	36
-	+	401	71
-	+	416	3
-	+	416	3
-	+	362	4
-	+	369	6
-	+	364	30
-	+	384	34
-	+	417	2
-	+	387	25
-	+	384	33
-	+	417	1
-	+	391	86
-	+	408	77
-	+	416	0
-	+	402	25
-	+	404	25
-	+	409	38
-	+	406	80
-	+	407	28
-	+	406	88
-	+	391	99
-	+	408	95
-	+	392	0
-	+	387	35
-	+	389	29
-	+	390	15
-	+	390	102
-	+	385	0
-	+	400	0
-	+	515	35
-	+	509	17
-	+	57	1
-	+	58	1
-	+	264	0
-	+	264	0
-	+	264	0
-	+	264	0
-	+	264	0
-	+	264	0
-	+	264	0
-	+	264	34
-	+	265	18
-	+	264	38
-	+	268	16
-
-> ~/Dropbox/myteksi/web/templates/box_tac.ejs
-	"	1	0
-	^	5	26
-	.	5	25
-	+	2	33
-	+	3	53
-	+	4	38
-	+	5	50
-	+	15	53
-	+	15	31
-	+	16	3
-	+	18	31
-	+	19	102
-	+	23	3
-	+	25	78
-	+	18	0
-	+	25	81
-	+	5	26
-	+	6	5
-	+	28	6
-	+	6	28
-	+	7	27
-	+	9	34
-	+	11	11
-	+	9	53
-	+	8	27
-	+	14	4
-	+	9	32
-	+	12	10
-	+	13	4
-	+	12	5
-	+	11	5
-	+	10	5
-	+	11	6
-	+	8	30
-	+	10	35
-	+	11	39
-	+	5	25
-
-> ~/Dropbox/myteksi/web/templates/box_booking_status.ejs
-	"	8	38
-	^	7	8
-	.	7	7
-	+	2	34
-	+	3	51
-	+	4	18
-	+	4	20
-	+	4	36
-	+	5	51
-	+	5	53
-	+	4	0
-	+	5	23
-	+	7	0
-	+	5	27
-	+	6	0
-	+	8	1
-	+	7	7
-
-> ~/Dropbox/myteksi/web/templates/table_drivers.ejs
-	"	2	17
-	^	2	18
-	.	2	17
-	+	2	29
-	+	3	21
-	+	2	17
-
-> ~/Dropbox/myteksi/web/templates/booking_status_drivers.ejs
-	"	1	0
-	^	30	26
-	.	30	25
-	+	26	22
-	+	33	42
-	+	41	5
-	+	34	13
-	+	41	0
-	+	37	17
-	+	40	3
-	+	37	33
-	+	33	31
-	+	37	59
-	+	40	0
-	+	37	4
-	+	38	0
-	+	40	0
-	+	38	46
-	+	33	20
-	+	37	28
-	+	38	26
-	+	33	0
-	+	26	21
-	+	38	0
-	+	37	7
-	+	38	8
-	+	37	6
-	+	38	7
-	+	37	4
-	+	35	30
-	+	39	6
-	+	40	2
-	+	35	12
-	+	38	32
-	+	39	0
-	+	36	0
-	+	42	32
-	+	27	4
-	+	29	27
-	+	30	4
-	+	28	14
-	+	30	15
-	+	31	5
-	+	31	5
-	+	32	0
-	+	28	15
-	+	28	15
-	+	29	0
-	+	28	30
-	+	33	26
-	+	24	27
-	+	1	1
-	+	3	1
-	+	24	1
-	+	4	53
-	+	6	19
-	+	7	8
-	+	17	38
-	+	18	30
-	+	19	28
-	+	28	21
-	+	29	10
-	+	36	40
-	+	37	32
-	+	38	30
-	+	42	4
-	+	23	4
-	+	2	25
-	+	9	0
-	+	8	4
-	+	9	35
-	+	31	0
-	+	30	4
-	+	10	12
-	+	11	4
-	+	10	3
-	+	12	3
-	+	11	41
-	+	29	32
-	+	30	25
-
-> ~/Dropbox/myteksi/web/templates/booking_tracking.ejs
-	"	28	30
-	^	25	9
-	.	24	87
-	+	2	32
-	+	3	47
-	+	4	1
-	+	12	4
-	+	4	6
-	+	5	33
-	+	11	0
-	+	10	4
-	+	7	0
-	+	10	0
-	+	7	29
-	+	9	46
-	+	7	35
-	+	8	28
-	+	9	26
-	+	29	0
-	+	13	1
-	+	14	47
-	+	15	6
-	+	16	34
-	+	17	41
-	+	18	41
-	+	6	0
-	+	5	3
-	+	6	39
-	+	17	31
-	+	18	35
-	+	6	42
-	+	23	4
-	+	23	6
-	+	25	0
-	+	23	36
-	+	24	22
-	+	24	30
-	+	24	18
-	+	24	23
-	+	24	19
-	+	25	7
-	+	25	123
-	+	24	19
-	+	22	0
-	+	27	0
-	+	25	109
-	+	25	353
-	+	25	203
-	+	24	88
-	+	25	169
-	+	23	17
-	+	25	295
-	+	26	1
-	+	27	1
-	+	28	0
-	+	27	101
-	+	24	36
-	+	25	135
-	+	26	62
-	+	27	49
-	+	25	194
-	+	24	87
-
-> ~/Dropbox/myteksi/web/NERD_tree_2
-	"	11	10
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/Dropbox/myteksi/web/templates/box_share_ride.ejs
-	"	1	1
-	^	16	0
-	.	4	28
-	+	1	1
-	+	3	30
-	+	4	15
-	+	5	0
-	+	4	28
-
-> ~/Dropbox/myteksi/web/app.js
-	"	15	10
-	^	5	21
-	.	6	0
-	+	5	21
-	+	4	0
-	+	4	0
-	+	6	16
-	+	7	10
-	+	11	10
-	+	12	14
-	+	15	10
-	+	17	7
-	+	11	5
-	+	17	11
-	+	18	14
-	+	21	10
-	+	26	13
-	+	27	14
-	+	30	29
-	+	38	14
-	+	39	10
-	+	40	65
-	+	42	2
-	+	39	3
-	+	42	33
-	+	44	8
-	+	45	14
-	+	48	17
-	+	51	15
-	+	52	7
-	+	53	66
-	+	55	25
-	+	57	8
-	+	57	10
-	+	57	8
-	+	58	14
-	+	61	17
-	+	70	30
-	+	71	3
-	+	37	74
-	+	71	30
-	+	4	0
-	+	6	0
