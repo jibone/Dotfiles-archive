@@ -13,7 +13,7 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
-set foldcolumn=4
+set foldcolumn=0
 
 set nohls
 set incsearch
@@ -38,6 +38,8 @@ call pathogen#infect()
 
 " remove tool bar from GUI
 if has("gui_running")
-	set guioptions=-t
-	set clipboard=unnamed
+    set guioptions=-t
+    set clipboard=unnamed
+    set transparency=40
+    colorscheme koehler
 endif
