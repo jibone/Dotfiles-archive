@@ -29,7 +29,7 @@ filetype indent on
 filetype plugin on
 
 set background=dark
-colorscheme solarized
+colorscheme koehler
 
 au BufNewFile,BufRead *.ejs set filetype=html
 
@@ -40,6 +40,6 @@ call pathogen#infect()
 if has("gui_running")
     set guioptions=-t
     set clipboard=unnamed
-    set transparency=40
-    colorscheme koehler
+    set transparency=10
+    colorscheme desert
 endif
