@@ -27,7 +27,9 @@ PATH=${PATH}:/opt/bin
 export PATH=${PATH}:/usr/local/mysql/bin:
 
 # Aliases -------------------------------------------------------
-alias f='open -a Finder '
+alias f="open -a Finder "
 alias preview="open -a '/Applications/Preview.app'"
 alias chrome="open -a google\ chrome"
 alias photoshop="open -a '/Applications/Adobe Photoshop CS5.1/Adobe Photoshop CS5.1.app'"
+alias td="/Users/Jibone/Dropbox/todotxt/app/todo.sh"
+alias todo="/Users/Jibone/Dropbox/todotxt/app/todo.sh"
