@@ -111,3 +111,5 @@ if [ $IS_INTERACTIVE = 'true' ] ; then # Interactive shell only
 fi
 
 source /Users/Jibone/Dropbox/todotxt/app/todo_completion
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

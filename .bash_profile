@@ -33,3 +33,5 @@ alias chrome="open -a google\ chrome"
 alias photoshop="open -a '/Applications/Adobe Photoshop CS5.1/Adobe Photoshop CS5.1.app'"
 alias td="/Users/Jibone/Dropbox/todotxt/app/todo.sh"
 alias todo="/Users/Jibone/Dropbox/todotxt/app/todo.sh"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
