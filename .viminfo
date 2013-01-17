@@ -8,38 +8,45 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/tab
+~Msle0~/\<indata\>
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:q
+:wq
 :w
+:q
+:Q
+:e app/models/user.rb
+:e app/controllers/workout_controller.rb
+:'<,'>split
+:e app/views/workout/new.html.erb
+:e app/controllers/account_controller.rb
 :split
 :NERDTree
-:'<,'>q
-:2
-:W
-:e sidebar.php
-:e content-loop.php
-:e content-single.php
-:e copyright.php
-:e index.php
-:e single.php
 :tabnew
-:e footer.php
-:tabp
+:'<,'>tabnew
+:e tabnew
+:vsplit
+:e ex20.rb
+:W
+:e ~/Dropbox/EzyPzy/drawpost/web/less/drawpost.less
+:vpslit
 :e less/jshamsul.less
-:e css/jshamsul-icons-codes.css
-:e content-error.php
-:e header.php
 
 # Search String History (newest to oldest):
+? \<indata\>
+?/post-body
+? \Vphp\%#
+?/detect_unicode
+?/.dll
+??menu-con
+?/men
+?/menu-con
 ?/tab
 ?/tabi
 ? \V\/*\%#
-? \Vphp\%#
 ? \Vscript\%#
 ? \Vlink\%#
 ?/img
@@ -49,13 +56,6 @@ $
 ? \<sql\>
 ?/booking_form_input
 ?/typeahead
-? \Vbody\%#
-? \Vhead\%#
-? \Vhtml\%#
-? \Vdoctype\%#
-? \Vlabel\%#
-? \Vform\%#
-? \Vdiv\%#
 
 # Expression History (newest to oldest):
 
@@ -65,3286 +65,1945 @@ $
 
 # Registers:
 "0	LINE	0
-			<div class="socialItem youtube">
-				<img src="<?php bloginfo('stylesheet_directory') ?>/images/youtube.png" />
-				<div class="text">
-					<span class="bold"><?php _e('Youtube', 'wp-imranajmain'); ?></span>
-					<span class="normal"><a href="http://youtube.com/user/OfficialImranAjmain" target="_blank"><?php _e('Watch', 'wp-imranajmain'); ?></a></span>
-				</div>
-	    </div>
-	
-	    <div class="socialItem soundcloud">
-				<img src="<?php bloginfo('stylesheet_directory') ?>/images/soundcloud.png" />
-				<div class="text">
-					<span class="bold"><?php _e('Soundcloud', 'wp-imranajmain'); ?></span>
-					<span class="normal"><a href="http://soundcloud.com/imranajmain" target="_blank"><?php _e('Listen', 'wp-imranajmain'); ?></a></span>
-				</div>
-			</div>
-""1	LINE	0
-	
+	  <p>Email:<br> <%= text_field_tag :email %></p>
+"1	CHAR	0
+	workout_set 
 "2	LINE	0
-	      
+	  def index
 "3	LINE	0
-	  </body>
+	  end
 "4	LINE	0
-	  <body>
+	
 "5	LINE	0
-	        <!-- footer container start -->
+	<% end %>
 "6	LINE	0
-	        </div><!-- footer container ends -->
+	
 "7	LINE	0
-	        <div class="footer-container item-container">
+	
 "8	LINE	0
-	          <p>&copy; Copyright 2009 - <?php echo date('Y') ?>. All rights reserved unless stated otherwise.</p>
+	<%= form_for :user, url: { action: :verify } do |f|  %>
 "9	LINE	0
-	      <?php get_sidebar(); ?>
-"-	CHAR	0
-	t
+	  </p>
+""-	CHAR	0
+	workout_set 
 
 # File marks:
-'0  30  10  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
-'1  66  11  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
-'2  56  34  ~/.vimrc
-'3  9  1  /Applications/MAMP/htdocs/datetest.php
-'4  33  16  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_1
-'5  90  9  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
-'6  13  11  ~/Dropbox/Projects/slimdocs/NERD_tree_2
-'7  44  10  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_1
-'8  18  5  ~/Dropbox/Projects/slimdocs/NERD_tree_1
-'9  35  9  ~/.bash_profile
+'0  95  153  ~/.bashrc
+'1  40  0  ~/.bash_profile
+'2  88  24  ~/.bashrc
+'3  40  44  ~/Dropbox/EzyPzy/ezyworkout/app/models/user.rb
+'4  27  5  ~/Dropbox/todotxt/app/todo.txt
+'5  47  13  ~/Dropbox/EzyPzy/ezyworkout/NERD_tree_1
+'6  8  1  ~/Dropbox/EzyPzy/ezyworkout/Gemfile
+'7  9  6  ~/Dropbox/EzyPzy/ezyworkout/Gemfile
+'8  30  9  ~/Dropbox/EzyPzy/wod/wod/NERD_tree_1
+'9  5  11  ~/Git/fork/learning-git/NERD_tree_1
 
 # Jumplist (newest first):
--'  30  10  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
--'  38  2  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
--'  1  8  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
--'  1  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/js/jshamsul.js
--'  66  11  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
--'  68  2  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
--'  1  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/navigation.php
--'  56  34  ~/.vimrc
--'  57  3  ~/.vimrc
--'  1  0  ~/.vimrc
--'  9  1  /Applications/MAMP/htdocs/datetest.php
--'  1  0  /Applications/MAMP/htdocs/datetest.php
--'  33  16  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_1
--'  35  2  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_1
--'  1  0  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_1
--'  1  0  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/header.php
--'  90  9  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
--'  97  2  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
--'  1  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/index.php
--'  13  11  ~/Dropbox/Projects/slimdocs/NERD_tree_2
--'  16  2  ~/Dropbox/Projects/slimdocs/NERD_tree_2
--'  1  7  ~/Dropbox/Projects/slimdocs/NERD_tree_2
--'  1  0  ~/Dropbox/Projects/slimdocs/index.php
--'  44  10  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_1
--'  73  2  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_1
--'  1  0  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/sass/global.scss
--'  18  5  ~/Dropbox/Projects/slimdocs/NERD_tree_1
--'  31  2  ~/Dropbox/Projects/slimdocs/NERD_tree_1
--'  1  5  ~/Dropbox/Projects/slimdocs/NERD_tree_1
--'  35  9  ~/.bash_profile
--'  1  0  ~/.bash_profile
--'  81  15  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_1
--'  111  2  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_1
--'  1  0  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/css/fontello.css
--'  20  89  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/header.php
--'  1  0  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/fontello-embedded.css
--'  1  0  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/fontello-codes.css
--'  8  48  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/social-icons.php
--'  3  12  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/fontello.css
--'  22  15  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/header.php
--'  7  9  ~/Dropbox/todotxt/app/NERD_tree_1
--'  11  2  ~/Dropbox/todotxt/app/NERD_tree_1
--'  1  0  ~/Dropbox/todotxt/app/NERD_tree_1
--'  1  0  ~/Dropbox/todotxt/app/todo.cfg
--'  17  0  ~/Dropbox/todotxt/app/NERD_tree_1
--'  21  2  ~/Dropbox/todotxt/app/NERD_tree_1
--'  34  43  ~/.bash_profile
--'  70  0  ~/.bashrc
--'  113  6  ~/.bashrc
+-'  95  153  ~/.bashrc
 -'  1  0  ~/.bashrc
--'  1  0  ~/.bachrc
--'  25  9  ~/Dropbox/todotxt/app/NERD_tree_1
--'  27  2  ~/Dropbox/todotxt/app/NERD_tree_1
--'  52  0  ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/functions.php
--'  1  0  ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/functions.php
--'  24  0  ~/Dropbox/Projects/slimdocs/NERD_tree_2
--'  28  2  ~/Dropbox/Projects/slimdocs/NERD_tree_2
--'  10  10  ~/Dropbox/Projects/slimdocs/.htaccess
--'  158  0  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_1
--'  160  2  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_1
--'  1  0  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/Cakefile
--'  19  29  ~/Dropbox/Projects/freelance/imran/wp-config.php
--'  26  0  ~/Dropbox/Projects/freelance/imran/wp-config.php
--'  1  0  ~/Dropbox/Projects/freelance/imran/wp-config.php
--'  6  6  /Applications/MAMP/htdocs/toggle/toggle.html
--'  5  10  /Applications/MAMP/htdocs/toggle/toggle.html
--'  4  9  /Applications/MAMP/htdocs/toggle/toggle.html
--'  1  0  /Applications/MAMP/htdocs/toggle/toggle.html
--'  8  35  ~/Downloads/ratchet/template.html
--'  1  0  ~/Downloads/ratchet/template.html
--'  101  6  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
--'  104  2  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
--'  10  7  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_2
--'  17  2  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_2
--'  1  6  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_2
--'  121  15  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/jshamsul.less
--'  1  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/jshamsul.less
--'  16  12  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/index.php
--'  1  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/js/upload-script.js
--'  88  9  ~/Dropbox/EzyPzy/nissan/less/nissan.less
--'  1  0  ~/Dropbox/EzyPzy/nissan/less/nissan.less
--'  170  20  ~/Dropbox/EzyPzy/nissan/js/nissan.js
--'  1  0  ~/Dropbox/EzyPzy/nissan/js/nissan.js
--'  32  50  ~/Dropbox/EzyPzy/nissan/index.html
--'  1  0  ~/Dropbox/EzyPzy/nissan/index.html
--'  152  15  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
--'  162  2  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
--'  1  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/Cakefile
--'  24  10  ~/Dropbox/EzyPzy/nissan/NERD_tree_1
--'  28  2  ~/Dropbox/EzyPzy/nissan/NERD_tree_1
--'  1  6  ~/Dropbox/EzyPzy/nissan/NERD_tree_1
--'  1  0  ~/Downloads/nc2searching.php
+-'  40  0  ~/.bash_profile
+-'  1  0  ~/.bash_profile
+-'  88  24  ~/.bashrc
+-'  90  40  ~/.bashrc
+-'  40  44  ~/Dropbox/EzyPzy/ezyworkout/app/models/user.rb
+-'  1  0  ~/Dropbox/EzyPzy/ezyworkout/app/models/user.rb
+-'  27  5  ~/Dropbox/todotxt/app/todo.txt
+-'  1  0  ~/Dropbox/todotxt/app/todo.txt
+-'  47  13  ~/Dropbox/EzyPzy/ezyworkout/NERD_tree_1
+-'  71  2  ~/Dropbox/EzyPzy/ezyworkout/NERD_tree_1
+-'  1  8  ~/Dropbox/EzyPzy/ezyworkout/NERD_tree_1
+-'  1  0  ~/Dropbox/EzyPzy/ezyworkout/config/routes.rb
+-'  8  1  ~/Dropbox/EzyPzy/ezyworkout/Gemfile
+-'  1  0  ~/Dropbox/EzyPzy/ezyworkout/Gemfile
+-'  9  6  ~/Dropbox/EzyPzy/ezyworkout/Gemfile
+-'  30  9  ~/Dropbox/EzyPzy/wod/wod/NERD_tree_1
+-'  50  2  ~/Dropbox/EzyPzy/wod/wod/NERD_tree_1
+-'  1  7  ~/Dropbox/EzyPzy/wod/wod/NERD_tree_1
+-'  1  0  ~/Dropbox/EzyPzy/wod/wod/app/assets/stylesheets/application.css
+-'  5  11  ~/Git/fork/learning-git/NERD_tree_1
+-'  7  2  ~/Git/fork/learning-git/NERD_tree_1
+-'  1  12  ~/Git/fork/learning-git/NERD_tree_1
+-'  1  0  ~/Git/fork/learning-git/text.txt
+-'  5  0  ~/Git/learning-git/text.txt
+-'  1  0  ~/Git/learning-git/text.txt
+-'  11  39  ~/test.html
+-'  1  0  ~/test.html
+-'  30  0  ~/.ssh/id_rsa
+-'  1  0  ~/.ssh/id_rsa
+-'  1  0  ~/Dropbox/EzyPzy/wod/wod/.git/config
+-'  2  20  ~/Git/learning-git/text.txt
+-'  7  13  ~/Git/learning-git/text.txt
+-'  3  22  ~/Git/learning-git/textfile.txt
+-'  1  0  ~/Git/learning-git/textfile.txt
+-'  9  0  ~/Dropbox/lrthw/ex20.rb
+-'  21  69  ~/Dropbox/lrthw/ex19.rb
+-'  1  0  ~/Dropbox/lrthw/ex19.rb
+-'  25  17  ~/Dropbox/lrthw/ex18.rb
+-'  1  0  ~/Dropbox/lrthw/ex18.rb
+-'  1  0  ~/Dropbox/lrthw/ex17.rb
+-'  3  15  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  4  2  ~/Dropbox/lrthw/ex18.rb
+-'  24  0  ~/Dropbox/lrthw/ex17.rb
+-'  7  0  ~/Dropbox/lrthw/ex17.rb
+-'  23  12  ~/Dropbox/lrthw/ex17.rb
+-'  16  28  ~/Dropbox/lrthw/ex14.rb
+-'  1  0  ~/Dropbox/lrthw/ex14.rb
+-'  9  9  ~/Dropbox/Projects/PHPconsolelog/NERD_tree_1
+-'  1  8  ~/Dropbox/Projects/PHPconsolelog/NERD_tree_1
+-'  1  0  ~/Dropbox/Projects/PHPconsolelog/PHPconsoled.php
+-'  18  12  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
+-'  32  2  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
+-'  1  0  ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
+-'  35  14  ~/Dropbox/EzyPzy/drawpost/web/NERD_tree_1
+-'  37  2  ~/Dropbox/EzyPzy/drawpost/web/NERD_tree_1
+-'  1  7  ~/Dropbox/EzyPzy/drawpost/web/NERD_tree_1
+-'  1  0  ~/Dropbox/EzyPzy/drawpost/web/bootstrap.php
+-'  42  9  ~/Dropbox/EzyPzy/drawpost/web/NERD_tree_1
+-'  82  2  ~/Dropbox/EzyPzy/drawpost/web/NERD_tree_1
+-'  1  0  ~/Dropbox/EzyPzy/drawpost/web/views/mobile/layout.html
+-'  16  8  ~/Dropbox/Projects/slimdocs/NERD_tree_1
+-'  17  2  ~/Dropbox/Projects/slimdocs/NERD_tree_1
+-'  1  9  ~/Dropbox/Projects/slimdocs/NERD_tree_1
+-'  1  0  ~/Dropbox/Projects/slimdocs/config.php
+-'  4  15  /Applications/MAMP/htdocs/ajax/NERD_tree_1
+-'  10  2  /Applications/MAMP/htdocs/ajax/NERD_tree_1
+-'  1  15  /Applications/MAMP/htdocs/ajax/NERD_tree_1
+-'  1  0  /Applications/MAMP/htdocs/ajax/index.html
+-'  41  0  ~/Dropbox/Projects/wekode/.gitignore
+-'  1  0  ~/Dropbox/Projects/wekode/.gitignore
+-'  29  13  ~/Dropbox/Projects/slimdocs/NERD_tree_1
+-'  32  2  ~/Dropbox/Projects/slimdocs/NERD_tree_1
+-'  1  0  ~/Dropbox/Projects/slimdocs/views/navigation.php
+-'  15  15  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_2
+-'  35  2  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_2
+-'  1  0  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_2
+-'  1  0  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/content.php
+-'  55  52  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/functions.php
+-'  1  0  ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/functions.php
+-'  17  43  ~/Dropbox/Projects/slimdocs/test/UserTest.php
+-'  1  0  ~/Dropbox/Projects/slimdocs/test/UserTest.php
+-'  1914  19  /private/etc/php.ini
+-'  1  0  /private/etc/php.ini
+-'  1916  19  /private/etc/php.ini
+-'  8  34  ~/phpunit/composer.json
+-'  1  0  ~/phpunit/composer.json
+-'  1086  0  /private/etc/php.ini
+-'  954  18  /private/etc/php.ini
+-'  949  43  /private/etc/php.ini
+-'  933  18  /private/etc/php.ini
+-'  30  9  ~/Dropbox/EzyPzy/wod/wod/NERD_tree_1
+-'  8  1  ~/Dropbox/EzyPzy/ezyworkout/Gemfile
+-'  1  0  ~/Dropbox/EzyPzy/ezyworkout/Gemfile
+-'  9  6  ~/Dropbox/EzyPzy/ezyworkout/Gemfile
 
 # History of marks within files (newest to oldest):
 
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/js/jshamsul.js
-	"	24	10
-	^	23	5
-	.	24	0
-	+	3	3
-	+	4	13
-	+	5	41
-	+	6	39
-	+	7	16
-	+	9	1
-	+	10	3
-	+	11	3
-	+	12	3
-	+	14	3
-	+	15	5
-	+	16	3
-	+	17	5
-	+	18	3
-	+	19	1
-	+	20	1
-	+	21	0
-	+	22	3
-	+	23	0
-	+	24	0
+> ~/.bashrc
+	"	95	153
+	^	95	156
+	.	95	153
+	+	88	116
+	+	88	0
+	+	95	142
+	+	95	49
+	+	95	153
 
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
-	"	30	10
-	^	37	8
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
+> ~/bashrc
+	"	1	0
 
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/navigation.php
-	"	15	47
-	^	12	34
-	.	12	4
-	+	2	37
-	+	3	36
-	+	21	0
-	+	4	25
-	+	11	0
-	+	5	34
-	+	7	0
-	+	6	17
-	+	8	30
-	+	10	0
-	+	9	63
-	+	22	42
-	+	23	30
-	+	35	0
-	+	24	21
-	+	34	0
-	+	31	35
-	+	32	38
-	+	33	27
-	+	9	51
-	+	8	0
-	+	13	45
-	+	20	0
-	+	20	28
-	+	20	0
-	+	20	26
-	+	20	31
-	+	20	49
-	+	20	39
-	+	20	31
-	+	14	30
-	+	19	0
-	+	15	38
-	+	16	24
-	+	17	28
-	+	16	24
-	+	18	66
-	+	15	45
-	+	20	9
-	+	20	8
-	+	20	0
-	+	30	0
-	+	24	28
-	+	29	0
-	+	25	46
-	+	26	25
-	+	25	23
-	+	26	34
-	+	27	33
-	+	28	58
-	+	13	54
-	+	12	4
+> ~/.bash_profile
+	"	40	0
+	^	38	41
+	.	38	40
+	+	34	10
+	+	30	24
+	+	34	43
+	+	35	9
+	+	36	48
+	+	37	42
+	+	38	40
+	+	38	37
+	+	37	24
+	+	38	22
+	+	37	46
+	+	36	51
+	+	38	42
+	+	36	49
+	+	37	44
+	+	38	40
 
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/jshamsul.less
-	"	132	36
-	^	59	1
-	.	55	0
-	+	285	0
-	+	284	29
-	+	284	29
-	+	284	0
-	+	283	15
-	+	283	15
-	+	283	0
-	+	282	27
-	+	282	27
-	+	282	0
-	+	281	29
-	+	281	29
-	+	281	0
-	+	280	12
-	+	280	12
-	+	280	0
-	+	279	15
-	+	279	15
-	+	279	0
-	+	277	21
-	+	271	31
-	+	276	20
-	+	277	18
-	+	274	5
-	+	275	5
-	+	277	18
-	+	303	25
-	+	306	15
-	+	307	14
-	+	361	0
-	+	311	17
-	+	312	17
-	+	312	40
-	+	302	18
-	+	357	1
-	+	334	3
-	+	313	5
-	+	312	41
-	+	312	28
-	+	312	7
-	+	311	5
-	+	307	5
-	+	306	5
-	+	303	26
-	+	335	24
-	+	336	17
-	+	337	18
-	+	304	13
-	+	338	31
-	+	301	26
-	+	339	23
-	+	340	22
-	+	341	14
-	+	342	24
-	+	352	20
-	+	352	8
-	+	352	17
-	+	352	0
-	+	353	6
-	+	354	8
-	+	355	6
-	+	347	20
-	+	348	22
-	+	349	26
-	+	342	28
-	+	343	30
-	+	344	30
-	+	312	19
-	+	312	34
-	+	314	28
-	+	315	22
-	+	114	24
-	+	115	17
-	+	316	22
-	+	317	27
-	+	319	14
-	+	320	15
-	+	322	31
-	+	323	43
-	+	324	28
-	+	321	28
-	+	318	21
-	+	327	23
-	+	328	37
-	+	325	31
-	+	326	33
-	+	308	23
-	+	309	22
-	+	336	14
-	+	306	14
-	+	309	23
-	+	323	38
-	+	309	23
-	+	323	23
-	+	309	22
-	+	323	39
-	+	358	22
-	+	359	17
-	+	336	14
-	+	55	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/footer.php
-	"	15	6
-	^	6	26
-	.	6	25
-	+	1	4
-	+	8	3
-	+	1	5
-	+	2	2
-	+	4	2
-	+	3	12
-	+	5	37
-	+	5	39
-	+	5	5
-	+	5	39
-	+	5	5
-	+	5	8
-	+	5	9
-	+	5	17
-	+	5	51
-	+	5	102
-	+	7	4
-	+	5	8
-	+	7	170
-	+	8	0
-	+	5	5
-	+	7	0
-	+	15	7
-	+	6	25
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/page-about.php
-	"	11	29
-	^	11	24
-	.	11	24
-	+	1	5
-	+	2	13
-	+	2	16
-	+	36	18
-	+	4	31
-	+	5	41
-	+	34	0
-	+	6	4
-	+	7	0
+> ~/Dropbox/EzyPzy/ezyworkout/app/models/user.rb
+	"	40	44
+	^	40	45
+	.	40	44
 	+	6	23
-	+	9	44
-	+	7	33
-	+	8	0
-	+	10	4
-	+	10	3
-	+	10	30
-	+	12	18
-	+	33	0
-	+	13	4
-	+	11	0
-	+	12	25
-	+	13	25
-	+	15	12
-	+	17	24
-	+	32	0
-	+	18	9
-	+	32	6
-	+	18	8
-	+	17	8
-	+	32	9
-	+	18	13
-	+	16	24
-	+	18	15
-	+	17	25
-	+	18	67
-	+	19	58
-	+	20	67
-	+	21	22
-	+	22	69
-	+	23	42
-	+	24	14
+	+	6	19
+	+	6	31
+	+	9	31
+	+	12	19
+	+	12	19
+	+	42	0
+	+	9	10
+	+	6	11
+	+	11	11
+	+	15	17
+	+	8	7
+	+	18	0
+	+	6	20
+	+	17	19
+	+	6	15
+	+	6	17
+	+	6	13
+	+	6	61
+	+	16	73
+	+	15	4
+	+	17	17
+	+	12	15
+	+	9	4
+	+	8	15
+	+	12	21
+	+	11	13
+	+	19	31
+	+	28	0
+	+	21	24
+	+	22	46
+	+	22	72
+	+	27	22
+	+	6	0
+	+	2	76
+	+	20	16
 	+	22	14
-	+	20	13
-	+	25	53
-	+	23	51
-	+	25	45
-	+	23	52
-	+	25	90
-	+	26	34
-	+	27	55
-	+	28	63
-	+	29	0
-	+	28	15
-	+	29	33
-	+	30	49
-	+	31	14
-	+	5	20
-	+	8	6
-	+	11	24
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/single.php
-	"	19	21
-	^	13	14
-	.	13	14
-	+	1	22
-	+	2	0
-	+	3	8
-	+	18	0
-	+	3	33
-	+	4	32
-	+	16	0
-	+	5	6
-	+	19	22
-	+	15	0
-	+	6	40
-	+	5	5
-	+	15	5
-	+	19	22
-	+	11	44
-	+	8	1
-	+	7	5
-	+	8	38
-	+	9	37
-	+	10	5
-	+	11	7
-	+	10	7
-	+	15	38
-	+	12	38
-	+	16	6
-	+	16	0
-	+	17	0
-	+	16	5
-	+	16	15
-	+	11	42
-	+	19	22
-	+	16	0
-	+	12	39
-	+	12	7
-	+	14	8
+	+	42	3
+	+	20	0
+	+	19	0
+	+	19	11
+	+	3	24
+	+	19	0
+	+	4	0
+	+	6	0
+	+	19	0
+	+	11	0
 	+	14	0
-	+	13	15
-	+	3	0
-	+	18	0
-	+	2	1
+	+	19	2
+	+	19	21
+	+	22	6
+	+	22	76
+	+	22	55
+	+	5	2
+	+	23	0
+	+	22	10
+	+	5	2
+	+	4	2
+	+	5	2
 	+	3	2
 	+	4	2
-	+	5	4
-	+	6	4
-	+	7	5
-	+	6	5
-	+	5	5
-	+	4	3
-	+	3	3
-	+	2	0
-	+	16	0
-	+	13	14
-
-> ~/Dropbox/EzyPzy/drawpost/web/views/mobile/layout.html
-	"	37	9
-	^	37	10
-	.	33	0
-	+	18	1
-	+	19	18
-	+	46	12
-	+	19	12
-	+	46	12
-	+	19	18
-	+	46	18
-	+	19	32
-	+	46	25
-	+	46	39
-	+	19	20
-	+	46	26
-	+	20	18
-	+	36	65
-	+	20	19
-	+	19	19
-	+	20	34
-	+	20	4
-	+	41	0
-	+	36	5
-	+	36	13
-	+	36	54
-	+	37	0
-	+	36	35
-	+	34	37
-	+	36	60
-	+	34	52
-	+	36	6
-	+	36	49
-	+	36	62
-	+	18	7
-	+	44	1
-	+	43	3
-	+	42	3
-	+	41	3
-	+	37	5
-	+	36	7
-	+	34	7
-	+	20	5
-	+	20	5
-	+	20	5
-	+	19	3
-	+	20	7
-	+	35	24
-	+	37	13
-	+	36	9
-	+	20	24
-	+	20	38
-	+	34	67
-	+	34	65
-	+	20	0
-	+	20	11
-	+	20	40
-	+	20	39
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	21	40
-	+	31	27
-	+	22	39
-	+	23	40
-	+	24	0
-	+	25	0
-	+	26	0
-	+	27	0
-	+	28	0
-	+	29	0
-	+	20	0
-	+	31	45
-	+	39	43
-	+	32	21
-	+	38	7
-	+	32	46
-	+	34	9
-	+	34	9
-	+	35	9
-	+	36	11
-	+	37	9
-	+	34	0
-	+	38	0
-	+	33	0
-
-> ~/Dropbox/EzyPzy/drawpost/web/NERD_tree_1
-	"	41	12
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/Dropbox/EzyPzy/drawpost/web/public/js/drawpost-stream.js
-	"	27	6
-	^	30	29
-	.	30	28
-	+	123	44
-	+	121	50
-	+	123	50
-	+	125	0
-	+	142	0
-	+	130	34
-	+	131	4
-	+	132	5
-	+	131	62
-	+	133	29
-	+	134	29
-	+	134	23
-	+	139	27
-	+	139	54
-	+	139	50
-	+	140	30
-	+	140	60
-	+	140	53
-	+	125	28
-	+	141	8
-	+	125	22
-	+	123	29
-	+	122	24
-	+	125	25
-	+	125	0
-	+	142	0
-	+	120	0
-	+	121	0
-	+	134	31
-	+	135	57
-	+	136	45
-	+	95	42
-	+	95	31
-	+	83	27
-	+	65	0
-	+	56	27
-	+	84	0
-	+	57	0
-	+	92	0
-	+	95	0
-	+	105	0
-	+	104	0
-	+	113	27
-	+	113	27
-	+	114	30
-	+	115	0
-	+	125	0
-	+	134	0
-	+	139	27
-	+	140	0
-	+	140	30
-	+	141	0
-	+	23	4
-	+	24	51
-	+	25	26
-	+	145	35
-	+	146	34
-	+	147	14
-	+	146	13
-	+	147	26
-	+	151	10
-	+	152	40
-	+	153	17
-	+	155	18
-	+	148	19
-	+	149	2
-	+	150	3
-	+	149	30
-	+	150	28
-	+	149	10
-	+	150	0
-	+	156	14
-	+	165	0
-	+	156	34
-	+	157	4
-	+	159	29
-	+	160	4
-	+	162	27
-	+	162	31
-	+	163	30
-	+	163	34
-	+	157	64
-	+	160	29
-	+	160	21
-	+	162	54
-	+	162	50
-	+	163	60
-	+	163	53
-	+	160	20
-	+	160	0
-	+	162	27
-	+	163	30
-	+	164	0
-	+	163	0
-	+	29	43
-	+	31	4
-	+	32	6
-	+	31	18
-	+	28	3
-	+	30	28
-
-> ~/Dropbox/EzyPzy/drawpost/web/views/mobile/stream.html
-	"	1	4
-	^	2	40
-	.	2	39
-	+	1	0
-	+	58	0
-	+	2	39
-
-> ~/Dropbox/EzyPzy/drawpost/web/less/drawpost.less
-	"	41	2
-
-> ~/Dropbox/EzyPzy/drawpost/web/less/mobile.less
-	"	56	14
-	^	65	22
-	.	65	21
-	+	79	1
-	+	71	3
-	+	71	5
-	+	56	3
-	+	48	3
-	+	48	5
-	+	48	5
-	+	44	22
-	+	59	14
-	+	45	12
-	+	44	21
-	+	47	14
-	+	71	0
-	+	61	18
-	+	57	0
-	+	66	11
-	+	67	28
-	+	59	15
-	+	59	11
-	+	59	13
-	+	45	9
-	+	70	0
-	+	64	16
-	+	68	20
-	+	69	20
-	+	72	11
-	+	73	4
-	+	72	6
-	+	73	17
-	+	73	11
-	+	73	18
-	+	74	0
-	+	59	12
-	+	74	21
-	+	39	20
-	+	44	21
-	+	59	23
-	+	73	23
-	+	48	33
-	+	78	3
-	+	77	5
-	+	74	7
-	+	73	7
-	+	73	7
-	+	73	7
-	+	72	5
-	+	71	5
-	+	70	7
-	+	69	9
-	+	68	9
-	+	67	9
-	+	66	7
-	+	64	7
-	+	61	7
-	+	60	7
-	+	59	7
-	+	59	7
-	+	59	7
-	+	58	7
-	+	57	7
-	+	56	5
-	+	49	15
-	+	59	9
-	+	59	9
-	+	59	9
-	+	73	9
-	+	73	9
-	+	73	22
-	+	73	19
-	+	59	18
-	+	73	19
-	+	56	15
-	+	56	0
-	+	61	21
-	+	64	0
-	+	62	25
-	+	75	25
-	+	59	0
-	+	73	0
-	+	56	18
-	+	56	19
-	+	66	19
-	+	77	19
-	+	56	0
-	+	66	0
-	+	77	0
-	+	50	5
-	+	51	7
-	+	52	7
-	+	55	5
-	+	48	0
-	+	55	27
-	+	55	16
-	+	55	0
-	+	54	19
-	+	62	27
-	+	63	25
-	+	75	27
-	+	76	26
-	+	65	21
-
-> ~/Dropbox/ruby/test/myapp.rb
-	"	6	3
-	^	6	3
-	.	6	0
-	+	2	17
-	+	4	10
-	+	5	18
-	+	6	0
-
-> ~/Documents/sep11.rtf
-	"	1	0
-
-> ~/Documents/NERD_tree_1
-	"	6	8
-	.	1	0
-	+	1	0
-
-> ~/Documents/sep11.rtfd/TXT.rtf
-	"	1	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/sidebar.php
-	"	1	2
-	^	40	36
-	.	1	0
-	+	1	34
-	+	2	0
-	+	1	1
-	+	2	33
-	+	45	31
-	+	3	44
-	+	44	0
-	+	4	25
-	+	8	0
-	+	5	8
-	+	4	27
-	+	5	37
-	+	6	43
-	+	7	35
-	+	6	34
-	+	7	50
-	+	9	33
-	+	13	0
-	+	10	33
-	+	11	21
-	+	6	23
-	+	11	41
-	+	12	43
-	+	14	33
-	+	18	0
-	+	15	36
-	+	17	20
-	+	16	33
-	+	17	69
-	+	19	34
-	+	23	0
-	+	20	37
-	+	21	21
-	+	21	24
-	+	22	24
-	+	21	34
-	+	22	71
-	+	24	31
-	+	24	36
-	+	28	0
-	+	25	25
-	+	25	34
-	+	26	21
-	+	26	24
-	+	27	24
-	+	26	33
-	+	27	54
-	+	27	0
-	+	27	27
-	+	27	70
-	+	28	12
-	+	29	27
-	+	29	32
-	+	33	0
-	+	30	26
-	+	30	35
-	+	31	22
-	+	33	0
-	+	31	24
-	+	32	24
-	+	31	32
-	+	32	67
-	+	33	0
-	+	32	71
-	+	34	27
-	+	34	32
-	+	38	0
-	+	35	35
-	+	36	21
-	+	36	32
-	+	37	67
-	+	39	29
-	+	40	28
-	+	41	27
-	+	42	65
-	+	10	31
-	+	15	34
-	+	20	35
-	+	25	32
-	+	30	33
-	+	35	33
-	+	40	33
-	+	5	20
-	+	10	20
-	+	15	20
-	+	20	20
-	+	5	32
-	+	10	33
-	+	15	36
-	+	20	37
-	+	25	20
-	+	30	35
-	+	35	20
-	+	40	35
-	+	1	0
-
-> ~/Dropbox/Projects/PHPconsolelog/index.php
-	"	4	17
-	^	4	18
-	.	4	18
-	+	5	28
-	+	3	46
-	+	5	24
-	+	5	28
-	+	5	0
-	+	5	30
-	+	5	31
-	+	5	33
-	+	5	17
-	+	4	16
-	+	4	23
-	+	5	0
-	+	4	18
-
-> ~/Dropbox/Projects/PHPconsolelog/NERD_tree_1
-	"	13	16
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/Dropbox/Projects/PHPconsolelog/PHPconsole.php
-	"	9	3
-	^	9	4
-	.	9	4
-	+	4	23
-	+	7	27
-	+	9	42
-	+	11	15
-	+	7	21
-	+	5	0
-	+	4	15
-	+	7	21
-	+	11	4
-	+	8	42
-	+	9	25
-	+	8	39
-	+	7	30
-	+	14	0
-	+	12	2
-	+	13	1
-	+	14	34
-	+	18	0
-	+	15	33
-	+	16	20
-	+	17	14
-	+	20	39
-	+	20	0
-	+	20	24
-	+	20	36
-	+	20	36
-	+	20	23
-	+	20	12
-	+	20	25
-	+	5	32
-	+	5	40
-	+	5	24
-	+	20	0
-	+	20	58
-	+	20	4
-	+	20	50
-	+	20	4
-	+	5	30
-	+	5	37
-	+	20	4
-	+	20	5
-	+	20	3
-	+	20	5
-	+	20	3
-	+	20	4
-	+	20	5
-	+	20	3
-	+	20	5
-	+	20	3
-	+	7	32
-	+	7	30
-	+	5	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	19	1
-	+	5	0
-	+	7	4
-	+	2	21
-	+	5	1
-	+	7	0
-	+	20	0
-	+	20	2
-	+	20	32
-	+	2	0
-	+	2	34
-	+	2	31
-	+	20	8
-	+	20	39
-	+	20	0
-	+	20	12
-	+	20	5
-	+	20	5
-	+	2	0
-	+	20	0
-	+	7	29
-	+	9	4
-	+	20	0
-	+	16	4
-	+	10	22
-	+	9	8
-	+	10	5
-	+	9	33
-	+	9	22
-	+	9	4
-	+	9	6
-	+	9	8
-	+	9	4
-	+	9	25
-	+	9	20
-	+	9	16
-	+	9	4
-	+	9	9
-	+	9	9
-	+	9	10
-	+	9	35
-	+	9	12
-	+	10	0
-	+	9	4
-
-> ~/Dropbox/Projects/PHPconsolelog/PHPconsoled.php
-	"	18	11
-	^	3	0
-	.	1	0
-	+	31	0
-	+	31	0
-	+	31	4
-	+	31	23
-	+	5	24
-	+	31	0
-	+	5	31
-	+	5	44
-	+	9	28
-	+	10	23
-	+	28	0
-	+	5	31
-	+	8	0
-	+	27	17
-	+	5	44
-	+	27	18
-	+	8	0
-	+	8	17
-	+	8	2
-	+	8	8
-	+	8	1
-	+	31	0
-	+	8	6
-	+	8	0
-	+	8	12
-	+	8	0
-	+	31	0
-	+	30	13
-	+	5	47
-	+	5	31
-	+	8	0
-	+	5	49
-	+	27	0
-	+	8	0
-	+	1	5
-	+	5	0
-	+	5	0
-	+	5	0
-	+	5	18
-	+	5	31
-	+	6	21
-	+	5	1
-	+	5	1
-	+	5	1
-	+	30	3
-	+	27	0
-	+	7	13
-	+	8	0
-	+	9	0
-	+	11	37
-	+	13	3
-	+	14	5
-	+	15	5
-	+	17	3
-	+	30	0
-	+	16	16
-	+	12	22
-	+	18	12
-	+	26	0
-	+	17	5
-	+	16	7
-	+	15	7
-	+	14	7
-	+	13	5
-	+	20	28
-	+	21	28
-	+	22	11
-	+	20	10
-	+	25	0
-	+	22	30
-	+	24	18
-	+	20	28
-	+	21	17
-	+	20	28
-	+	29	11
-	+	14	37
-	+	20	12
-	+	14	14
-	+	20	0
-	+	20	0
+	+	5	2
 	+	22	0
-	+	22	39
-	+	22	39
-	+	22	0
-	+	21	0
-	+	20	0
-	+	19	16
-	+	20	26
-	+	14	22
-	+	22	14
-	+	22	26
-	+	14	12
-	+	22	13
-	+	5	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	4	0
+	+	19	0
 	+	3	0
-	+	1	0
-
-> ~/Dropbox/Projects/PHPconsolelog/vendor/Packer/Packer.php
-	"	4	2
-
-> ~/Dropbox/Projects/PHPconsolelog/config.pack
-	"	1	0
-
-> ~/Dropbox/EzyPzy/drawpost/web/views/web/layout.html
-	"	24	6
-	^	24	7
-	.	1	0
-	+	1	0
-
-> ~/Dropbox/EzyPzy/drawpost/web/views/layout.html
-	"	14	15
-	^	24	7
-
-> ~/Dropbox/EzyPzy/drawpost/web/views/web/comingsoon.html
-	"	11	19
-	^	1	2
-	.	1	1
-	+	1	1
-
-> ~/Dropbox/EzyPzy/drawpost/web/app/routes/web/drawings_routes.php
-	"	22	37
-	^	15	25
-	.	15	24
-	+	24	26
-	+	26	19
-	+	15	24
-
-> ~/Dropbox/EzyPzy/drawpost/web/app/models/drawings_model.php
-	"	24	16
-	^	116	19
-	.	116	18
-	+	66	7
-	+	67	7
-	+	68	7
-	+	69	7
-	+	70	7
-	+	71	40
-	+	72	8
-	+	71	6
-	+	72	18
-	+	68	36
-	+	73	19
-	+	11	1
-	+	197	6
-	+	198	6
-	+	199	6
-	+	200	6
-	+	201	6
-	+	202	6
-	+	203	13
-	+	207	21
-	+	209	40
-	+	213	0
-	+	209	44
-	+	210	42
-	+	211	34
-	+	212	15
-	+	209	30
-	+	216	22
-	+	218	40
-	+	230	3
-	+	234	0
-	+	233	2
-	+	235	37
-	+	238	0
-	+	236	3
-	+	219	45
-	+	220	14
-	+	218	44
-	+	220	34
-	+	220	35
-	+	220	19
-	+	220	10
-	+	220	16
-	+	220	15
-	+	220	20
-	+	220	17
-	+	219	10
-	+	220	18
-	+	220	6
-	+	229	4
-	+	220	19
-	+	227	17
-	+	228	7
-	+	221	8
-	+	223	37
-	+	222	29
-	+	221	45
-	+	222	7
-	+	223	7
-	+	224	7
-	+	225	7
-	+	226	7
-	+	228	19
-	+	227	0
-	+	134	10
-	+	70	44
-	+	233	10
-	+	235	43
-	+	236	69
-	+	237	21
-	+	131	31
-	+	120	36
-	+	122	36
-	+	128	3
-	+	129	1
-	+	125	34
-	+	126	29
-	+	122	41
-	+	124	7
-	+	126	28
-	+	128	0
-	+	106	25
-	+	104	1
-	+	118	0
-	+	108	1
-	+	118	1
-	+	108	44
-	+	117	0
-	+	110	49
-	+	111	40
-	+	112	33
-	+	114	17
-	+	115	19
-	+	113	31
-	+	77	23
-	+	79	49
-	+	82	0
-	+	80	40
-	+	81	18
-	+	116	18
-
-> ~/Dropbox/EzyPzy/drawpost/web/app/helpers/config_helper.php
-	"	17	0
-
-> /Applications/MAMP/htdocs/datetest.php
-	"	4	1
-	^	4	2
-	.	4	2
-	+	1	0
-	+	2	38
-	+	2	33
-	+	2	24
-	+	2	20
-	+	2	5
-	+	2	0
-	+	2	3
-	+	2	4
-	+	2	5
-	+	2	5
-	+	2	12
-	+	5	49
-	+	2	3
-	+	6	0
-	+	11	6
-	+	13	8
-	+	24	0
-	+	15	8
-	+	15	0
-	+	16	32
-	+	19	4
-	+	22	3
-	+	19	24
-	+	22	23
-	+	19	33
-	+	22	32
-	+	3	1
-	+	4	2
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/index.php
-	"	34	3
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_1
-	"	16	8
-	^	266	8
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/content.php
-	"	23	1
-	^	29	152
-	.	29	151
-	+	19	0
-	+	16	5
-	+	20	9
-	+	20	0
-	+	20	7
-	+	20	9
-	+	19	24
-	+	16	7
-	+	18	17
-	+	17	20
-	+	25	4
-	+	32	0
-	+	25	17
-	+	19	20
-	+	20	0
-	+	20	0
-	+	16	6
-	+	25	6
-	+	26	7
-	+	27	6
-	+	28	6
-	+	29	8
-	+	30	8
-	+	31	5
-	+	29	134
-	+	29	0
-	+	29	151
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/content-single.php
-	"	25	150
-	^	25	151
-	.	25	150
-	+	20	4
-	+	19	3
-	+	29	3
-	+	25	134
-	+	25	0
-	+	25	150
-
-> ~/.vimrc
-	"	56	34
-	^	68	49
-	.	57	4
-	+	55	27
-	+	56	35
-	+	57	4
-
-> ~/Dropbox/EzyPzy/nissan/index-bak.html
-	"	14	3
-	p	1	2
-	w	1	2
-
-> ~/Dropbox/EzyPzy/nissan/Makefile
-	"	2	0
-	.	2	0
-	+	2	0
-	p	1	0
-
-> ~/Dropbox/EzyPzy/drawpost/web/views/web/faq.html
-	"	1	0
-
-> ~/Dropbox/EzyPzy/drawpost/web/bootstrap.php
-	"	87	2
-	^	87	3
-	.	87	0
-	+	80	1
-	+	87	0
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/header.php
-	"	64	92
-	^	64	93
-	.	64	92
-	+	29	100
-	+	19	82
-	+	20	84
-	+	21	0
-	+	21	90
-	+	22	16
-	+	24	0
-	+	23	91
-	+	20	89
-	+	64	92
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/sidebar.php
-	"	1	1
-	^	11	50
-	.	12	0
 	+	10	0
-	+	5	38
-	+	9	37
-	+	10	0
-	+	13	38
-	+	14	6
-	+	17	0
-	+	14	48
-	+	16	0
-	+	15	36
-	+	6	42
-	+	7	33
-	+	12	0
-	+	10	0
-	+	11	5
-	+	12	0
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/social-icons.php
-	"	34	66
-	^	74	66
-	.	74	34
-	+	10	34
-	+	9	58
-	+	10	102
-	+	7	0
-	+	8	48
-	+	31	70
-	+	34	42
-	+	18	94
-	+	26	97
-	+	34	42
-	+	33	59
-	+	25	58
-	+	17	57
-	+	18	63
-	+	26	62
-	+	34	78
-	+	41	56
-	+	42	98
-	+	47	64
-	+	47	68
-	+	30	33
-	+	46	31
-	+	49	57
-	+	50	75
-	+	34	59
-	+	50	93
-	+	77	0
-	+	77	0
-	+	77	0
-	+	8	0
-	+	7	76
-	+	18	63
-	+	34	66
-	+	50	76
-	+	54	36
-	+	55	71
-	+	58	66
-	+	57	42
-	+	5	5
 	+	13	0
-	+	58	79
-	+	26	40
-	+	18	79
-	+	26	82
-	+	34	82
-	+	42	78
-	+	50	92
-	+	58	82
-	+	61	4
-	+	62	0
-	+	63	67
-	+	65	38
-	+	66	34
-	+	66	34
-	+	74	34
-	+	62	32
-	+	70	35
-	+	71	70
-	+	73	41
-	+	74	34
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/index.php
-	"	38	7
-	^	37	42
-	.	37	41
-	+	34	11
-	+	34	11
-	+	34	11
-	+	34	11
-	+	34	29
-	+	34	0
-	+	34	0
-	+	34	0
-	+	34	0
-	+	34	0
-	+	34	10
-	+	34	10
-	+	34	0
-	+	34	40
-	+	34	0
-	+	34	39
-	+	34	0
-	+	34	39
-	+	34	37
-	+	34	0
-	+	34	93
-	+	34	32
-	+	34	37
-	+	34	11
-	+	34	13
-	+	34	13
-	+	34	13
-	+	34	15
-	+	34	15
-	+	34	15
-	+	34	13
-	+	34	13
-	+	34	13
-	+	34	13
-	+	34	15
-	+	34	15
-	+	34	13
-	+	34	36
-	+	34	41
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	11	0
-	+	1	5
-	+	2	2
-	+	8	2
-	+	10	0
-	+	9	0
-	+	44	0
-	+	43	18
-	+	14	47
-	+	15	0
-	+	13	5
-	+	15	5
-	+	16	0
-	+	16	0
-	+	16	0
-	+	6	4
-	+	7	17
-	+	6	34
-	+	34	0
-	+	34	0
-	+	34	0
-	+	34	0
-	+	34	0
-	+	34	0
-	+	34	6
-	+	39	0
+	+	39	41
+	+	40	51
+	+	38	0
+	+	30	65
+	+	32	50
 	+	36	0
-	+	35	47
-	+	41	0
-	+	41	0
-	+	41	5
-	+	40	5
-	+	41	5
-	+	41	25
-	+	36	5
-	+	34	7
-	+	42	3
-	+	11	0
-	+	10	3
-	+	35	42
-	+	27	0
-	+	26	14
-	+	27	29
-	+	30	0
-	+	41	0
-	+	37	0
-	+	36	30
-	+	39	8
-	+	39	8
-	+	39	9
-	+	39	7
-	+	39	8
-	+	39	0
-	+	37	7
-	+	38	7
-	+	37	41
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/style.css
-	"	1	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/Cakefile
-	"	16	25
-	^	52	26
-	.	52	25
-	+	27	30
-	+	27	9
-	+	27	8
-	+	27	20
-	+	27	23
-	+	27	21
-	+	27	6
-	+	27	6
-	+	27	31
-	+	27	33
-	+	27	37
-	+	27	29
-	+	27	29
-	+	27	33
-	+	27	13
-	+	27	14
-	+	27	41
-	+	27	41
-	+	27	33
-	+	27	16
-	+	27	18
-	+	27	6
-	+	27	6
-	+	27	44
-	+	27	45
-	+	60	0
-	+	27	23
-	+	27	25
-	+	27	7
-	+	27	10
-	+	27	34
-	+	27	33
-	+	27	22
-	+	27	11
-	+	27	30
-	+	60	23
-	+	60	68
-	+	60	37
-	+	60	37
-	+	60	12
-	+	60	19
-	+	60	17
-	+	60	18
-	+	60	29
-	+	8	14
-	+	27	0
-	+	11	30
-	+	12	29
-	+	12	6
-	+	12	23
-	+	17	23
-	+	60	0
-	+	28	23
-	+	28	60
-	+	28	34
-	+	28	25
-	+	30	39
-	+	35	37
-	+	37	27
-	+	39	24
-	+	41	34
-	+	44	46
-	+	18	25
-	+	19	52
-	+	21	31
-	+	45	34
-	+	46	30
-	+	57	0
-	+	37	19
-	+	12	12
-	+	57	3
-	+	43	22
-	+	56	22
-	+	57	55
-	+	59	29
-	+	58	30
-	+	32	53
-	+	33	35
-	+	28	0
-	+	12	0
-	+	17	0
-	+	7	21
-	+	7	21
-	+	7	0
-	+	10	16
-	+	15	29
-	+	16	23
-	+	23	23
-	+	24	60
-	+	25	35
-	+	26	31
-	+	31	33
-	+	49	47
-	+	50	30
-	+	51	0
-	+	48	23
-	+	53	47
-	+	54	33
-	+	60	0
-	+	52	25
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/reset.less
-	"	122	3
-	^	51	4
-	.	51	3
-	+	51	3
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/mixins.less
-	"	14	10
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/print.less
-	"	1	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/variables.less
-	"	49	37
-	^	48	36
-	.	48	35
-	+	48	35
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/Cake-bak
-	"	32	38
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/build_less
-	"	4	15
-	^	4	16
-	.	4	15
-	+	1	1
-	+	5	0
-	+	2	21
-	+	3	19
-	+	4	15
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/header.php
-	"	10	3
-	^	11	105
-	.	11	35
-	+	1	0
-	+	38	7
-	+	1	42
-	+	11	35
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/content-loop.php
-	"	21	13
-	^	20	94
-	.	20	93
-	+	2	31
-	+	3	30
-	+	36	0
-	+	35	0
-	+	5	65
-	+	6	19
-	+	34	73
-	+	34	0
-	+	6	6
-	+	24	5
-	+	7	0
-	+	6	5
-	+	7	35
-	+	8	29
-	+	24	37
-	+	23	0
-	+	8	34
-	+	22	0
-	+	9	6
-	+	23	5
-	+	9	33
-	+	12	0
-	+	10	66
-	+	11	68
-	+	13	31
-	+	21	0
-	+	20	0
-	+	15	14
-	+	20	7
-	+	19	0
-	+	16	108
-	+	18	5
-	+	16	9
-	+	17	9
-	+	18	9
-	+	15	8
-	+	19	7
-	+	34	33
+	+	32	26
+	+	30	34
+	+	32	32
+	+	31	42
+	+	31	42
+	+	32	18
+	+	40	4
+	+	32	0
+	+	30	55
+	+	32	0
+	+	32	0
+	+	32	5
+	+	33	4
 	+	34	4
-	+	34	58
-	+	34	36
-	+	34	61
-	+	34	29
-	+	34	58
-	+	34	36
-	+	34	92
-	+	34	58
-	+	34	91
-	+	34	58
-	+	34	91
-	+	34	89
-	+	34	58
-	+	34	129
-	+	35	1
-	+	34	83
-	+	34	58
-	+	34	58
-	+	34	17
-	+	34	56
-	+	3	36
-	+	26	0
-	+	25	5
-	+	26	34
-	+	32	0
-	+	27	29
-	+	27	0
-	+	26	31
-	+	33	5
-	+	28	31
-	+	29	49
-	+	30	17
-	+	31	8
-	+	17	49
-	+	16	82
-	+	17	44
-	+	20	9
-	+	20	93
+	+	35	4
+	+	36	4
+	+	32	13
+	+	32	9
+	+	31	30
+	+	32	4
+	+	33	4
+	+	34	4
+	+	35	4
+	+	36	4
+	+	40	44
 
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/content-single.php
-	"	45	35
-	^	39	72
-	.	39	71
-	+	2	31
-	+	3	30
-	+	45	0
-	+	44	0
-	+	4	1
-	+	44	1
-	+	5	0
-	+	4	1
-	+	5	43
-	+	43	19
-	+	43	81
-	+	42	0
-	+	7	3
-	+	42	3
-	+	7	33
-	+	8	32
-	+	18	0
-	+	9	31
-	+	12	0
-	+	10	64
-	+	11	66
-	+	13	29
-	+	16	0
-	+	15	28
-	+	14	7
-	+	17	0
-	+	16	7
-	+	43	61
-	+	44	0
-	+	3	39
-	+	34	0
-	+	19	3
-	+	34	42
-	+	35	41
-	+	39	0
-	+	37	36
-	+	38	20
-	+	38	0
-	+	37	29
-	+	38	25
-	+	38	0
-	+	35	56
-	+	36	8
-	+	41	0
-	+	39	9
-	+	35	16
-	+	33	0
-	+	20	34
-	+	27	28
-	+	33	3
-	+	21	33
-	+	26	0
-	+	23	9
-	+	23	37
-	+	24	44
-	+	23	10
-	+	24	10
-	+	23	41
-	+	24	54
-	+	22	8
-	+	25	9
-	+	40	0
-	+	39	36
-	+	17	12
-	+	37	70
-	+	38	58
-	+	24	110
-	+	24	110
-	+	24	201
-	+	24	185
-	+	25	0
-	+	25	0
-	+	24	29
-	+	24	104
-	+	23	63
-	+	24	12
-	+	24	141
-	+	24	12
-	+	24	152
-	+	24	505
-	+	29	41
-	+	30	33
-	+	32	0
-	+	31	99
-	+	31	104
-	+	31	100
-	+	31	212
-	+	28	3
-	+	39	71
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/content-error.php
-	"	9	36
-	^	1	2
-	.	2	0
-	+	1	34
-	+	2	16
-	+	9	0
-	+	2	43
-	+	3	29
-	+	5	0
-	+	4	29
-	+	6	27
-	+	8	0
-	+	7	67
-	+	1	1
-	+	2	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/css/jshamsul-icons-codes.css
-	"	30	0
-	^	68	4
-	.	68	3
-	+	4	3
-	+	5	3
-	+	6	3
-	+	7	3
-	+	8	3
-	+	9	3
-	+	10	3
-	+	11	3
-	+	12	3
-	+	13	3
-	+	14	3
-	+	15	3
-	+	16	3
-	+	17	3
-	+	18	3
-	+	19	3
-	+	20	3
-	+	21	3
-	+	22	3
-	+	23	3
-	+	24	3
-	+	25	3
-	+	26	3
-	+	27	3
-	+	28	3
-	+	29	3
-	+	30	3
-	+	31	3
-	+	32	3
-	+	33	3
-	+	34	3
-	+	35	3
-	+	36	3
-	+	37	3
-	+	38	3
-	+	39	3
-	+	40	3
-	+	41	3
-	+	42	3
-	+	43	3
-	+	44	3
-	+	45	3
-	+	46	3
-	+	47	3
-	+	48	3
-	+	49	3
-	+	50	3
-	+	51	3
-	+	52	3
-	+	53	3
-	+	54	3
-	+	55	3
-	+	56	3
-	+	57	3
-	+	58	3
-	+	59	3
-	+	60	3
-	+	61	3
-	+	62	3
-	+	63	3
-	+	64	3
-	+	65	3
-	+	66	3
-	+	67	3
-	+	68	3
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/css/bootstrap.min.css
-	"	9	28
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_2
-	"	15	25
+> ~/Dropbox/EzyPzy/ezyworkout/NERD_tree_1
+	"	15	7
 	.	1	0
 	+	1	0
 	+	1	0
 	+	1	0
 	+	1	0
 	+	1	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/css/fontello-codes.css
-	"	14	56
-	^	39	4
-	.	39	3
-	+	4	3
-	+	5	3
-	+	6	3
-	+	7	3
-	+	8	3
-	+	9	3
-	+	10	3
-	+	11	3
-	+	12	3
-	+	13	3
-	+	14	3
-	+	15	3
-	+	16	3
-	+	17	3
-	+	18	3
-	+	19	3
-	+	20	3
-	+	21	3
-	+	22	3
-	+	23	3
-	+	24	3
-	+	25	3
-	+	26	3
-	+	27	3
-	+	28	3
-	+	29	3
-	+	30	3
-	+	31	3
-	+	32	3
-	+	33	3
-	+	34	3
-	+	35	3
-	+	36	3
-	+	37	3
-	+	38	3
-	+	53	3
-	+	52	3
-	+	51	3
-	+	50	3
-	+	49	3
-	+	48	3
-	+	47	3
-	+	46	3
-	+	45	3
-	+	44	3
-	+	43	3
-	+	42	3
-	+	41	3
-	+	40	3
-	+	39	3
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/css/jshamsul-icons-embedded.css
-	"	54	12
-	^	15	13
-	.	15	12
-	+	37	3
-	+	38	3
-	+	39	3
-	+	40	3
-	+	41	3
-	+	42	3
-	+	43	3
-	+	44	3
-	+	45	3
-	+	46	3
-	+	47	3
-	+	48	3
-	+	49	3
-	+	50	3
-	+	51	3
-	+	52	3
-	+	53	3
-	+	54	3
-	+	55	4
-	+	56	3
-	+	57	3
-	+	58	3
-	+	59	3
-	+	60	3
-	+	61	3
-	+	62	3
-	+	63	3
-	+	64	3
-	+	65	3
-	+	66	3
-	+	67	3
-	+	68	3
-	+	69	3
-	+	70	3
-	+	71	3
-	+	72	3
-	+	73	3
-	+	74	3
-	+	75	3
-	+	76	3
-	+	77	3
-	+	78	3
-	+	79	3
-	+	80	3
-	+	81	3
-	+	82	3
-	+	83	3
-	+	84	3
-	+	85	3
-	+	86	3
-	+	87	3
-	+	88	3
-	+	89	3
-	+	90	3
-	+	91	3
-	+	92	3
-	+	93	3
-	+	94	3
-	+	95	3
-	+	96	3
-	+	97	3
-	+	98	3
-	+	99	3
-	+	100	3
-	+	101	3
-	+	14	11
-	+	15	12
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/css/jshamsul-icons.css
-	"	1	0
-	^	11	13
-	.	11	12
-	+	33	3
-	+	34	3
-	+	35	3
-	+	36	3
-	+	37	3
-	+	38	3
-	+	39	3
-	+	40	3
-	+	41	3
-	+	42	3
-	+	43	3
-	+	44	3
-	+	45	3
-	+	46	3
-	+	47	3
-	+	48	3
-	+	49	3
-	+	50	3
-	+	51	3
-	+	52	3
-	+	53	3
-	+	54	3
-	+	55	3
-	+	56	3
-	+	57	3
-	+	56	3
-	+	57	3
-	+	58	3
-	+	59	3
-	+	60	3
-	+	61	3
-	+	62	3
-	+	63	3
-	+	64	3
-	+	65	3
-	+	66	3
-	+	67	3
-	+	68	3
-	+	69	3
-	+	70	3
-	+	71	3
-	+	72	3
-	+	73	3
-	+	74	3
-	+	75	3
-	+	76	3
-	+	77	3
-	+	78	3
-	+	79	3
-	+	80	3
-	+	81	3
-	+	82	3
-	+	83	3
-	+	84	3
-	+	85	3
-	+	86	3
-	+	87	3
-	+	88	3
-	+	89	3
-	+	90	3
-	+	91	3
-	+	92	3
-	+	93	3
-	+	94	3
-	+	95	3
-	+	96	3
-	+	97	3
-	+	10	11
-	+	11	12
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/css/jshamsul-icons-ie7-codes.css
-	"	66	3
-	^	66	4
-	.	66	3
-	+	2	3
-	+	3	3
-	+	4	3
-	+	5	3
-	+	6	3
-	+	7	3
-	+	8	3
-	+	9	3
-	+	10	3
-	+	11	3
-	+	12	3
-	+	13	3
-	+	14	3
-	+	15	3
-	+	16	3
-	+	17	3
-	+	18	3
-	+	19	3
-	+	20	3
-	+	21	3
-	+	22	3
-	+	23	3
-	+	24	3
-	+	25	3
-	+	26	3
-	+	27	3
-	+	28	3
-	+	29	3
-	+	30	3
-	+	31	3
-	+	32	3
-	+	33	3
-	+	34	3
-	+	35	3
-	+	36	3
-	+	37	3
-	+	38	3
-	+	39	3
-	+	40	3
-	+	41	3
-	+	42	3
-	+	43	3
-	+	44	3
-	+	45	3
-	+	46	3
-	+	47	3
-	+	48	3
-	+	49	3
-	+	50	3
-	+	51	3
-	+	52	3
-	+	53	3
-	+	54	3
-	+	55	3
-	+	56	3
-	+	57	3
-	+	58	3
-	+	59	3
-	+	60	3
-	+	61	3
-	+	62	3
-	+	63	3
-	+	64	3
-	+	65	3
-	+	66	3
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/css/jshamsul-icons-ie7.css
-	"	54	2
-	^	76	3
-	.	76	3
-	+	1	11
-	+	2	12
-	+	12	3
-	+	13	0
-	+	13	3
-	+	14	3
-	+	15	3
-	+	16	3
-	+	17	3
-	+	18	3
-	+	19	3
-	+	20	3
-	+	21	3
-	+	22	3
-	+	23	3
-	+	24	3
-	+	25	3
-	+	26	3
-	+	27	3
-	+	28	3
-	+	29	3
-	+	30	3
-	+	31	3
-	+	32	3
-	+	33	3
-	+	34	3
-	+	35	3
-	+	36	3
-	+	37	3
-	+	38	3
-	+	39	3
-	+	40	3
-	+	41	3
-	+	42	3
-	+	43	3
-	+	44	3
-	+	45	3
-	+	46	3
-	+	47	3
-	+	48	3
-	+	49	3
-	+	50	3
-	+	51	3
-	+	52	3
-	+	53	3
-	+	54	3
-	+	55	3
-	+	56	3
-	+	57	3
-	+	58	3
-	+	59	3
-	+	60	3
-	+	61	3
-	+	62	3
-	+	63	3
-	+	64	3
-	+	65	3
-	+	66	3
-	+	67	3
-	+	68	3
-	+	69	3
-	+	70	3
-	+	71	3
-	+	72	3
-	+	73	3
-	+	74	3
-	+	75	3
-	+	76	3
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_3
-	"	11	0
-	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 	+	1	0
 	+	1	0
 
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/functions.php
-	"	26	42
-	.	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-	+	58	0
-
-> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/copyright.php
-	"	6	10
-	^	4	101
-	.	4	100
-	+	2	33
-	+	3	42
-	+	3	47
-	+	5	0
-	+	4	4
-	+	4	100
-
-> ~/Dropbox/Projects/slimdocs/index.php
-	"	64	4
-	^	50	3
-	.	63	18
-	+	44	34
-	+	44	8
-	+	69	0
-	+	44	3
-	+	44	0
-	+	44	2
-	+	44	35
-	+	46	41
-	+	44	85
-	+	46	40
-	+	58	0
-	+	58	18
-	+	58	0
-	+	44	86
-	+	44	41
-	+	58	21
-	+	58	42
-	+	58	0
-	+	58	19
-	+	58	16
-	+	58	11
-	+	58	0
-	+	58	38
-	+	58	10
-	+	58	12
-	+	58	15
-	+	58	5
-	+	58	5
-	+	44	0
-	+	45	0
-	+	47	0
-	+	58	0
-	+	58	3
-	+	58	2
-	+	64	14
-	+	44	7
-	+	64	15
-	+	62	25
-	+	58	0
-	+	58	2
-	+	60	0
-	+	50	14
-	+	44	6
-	+	50	38
-	+	57	0
-	+	51	3
-	+	50	31
-	+	51	30
+> ~/Dropbox/EzyPzy/ezyworkout/app/controllers/account_controller.rb
+	"	8	19
+	^	10	2
+	.	51	33
+	+	49	0
+	+	23	2
+	+	46	2
+	+	8	2
+	+	29	2
+	+	49	2
+	+	8	2
 	+	64	0
-	+	49	14
-	+	58	15
-	+	51	47
-	+	52	37
-	+	54	0
-	+	53	23
-	+	54	12
-	+	56	0
-	+	55	18
-	+	52	0
-	+	53	23
-	+	55	13
-	+	53	13
-	+	63	18
-	+	48	3
-	+	58	18
-	+	48	2
-	+	58	18
-	+	42	3
-	+	58	16
-	+	38	21
-	+	39	44
-	+	40	45
-	+	40	43
-	+	42	0
-	+	41	0
-	+	63	18
-	+	16	26
-	+	17	0
-	+	16	25
-	+	17	37
-	+	27	14
-	+	18	27
+	+	64	0
+	+	20	0
+	+	56	2
+	+	54	21
+	+	47	30
+	+	27	39
+	+	11	21
+	+	1	49
+	+	5	27
+	+	63	0
+	+	45	0
+	+	31	1
+	+	13	1
+	+	10	1
+	+	53	1
+	+	63	1
+	+	13	28
+	+	8	19
+	+	13	39
+	+	14	35
+	+	18	21
+	+	19	0
+	+	15	11
+	+	16	33
+	+	22	25
+	+	21	1
+	+	16	50
 	+	26	0
-	+	19	24
-	+	23	0
-	+	20	18
-	+	22	16
-	+	21	29
-	+	23	12
 	+	25	0
-	+	24	35
-	+	63	22
-	+	19	32
-	+	18	27
-	+	19	18
-	+	37	3
-	+	41	3
-	+	42	2
-	+	59	0
-	+	63	18
+	+	25	35
+	+	16	52
+	+	25	0
+	+	26	1
+	+	2	0
+	+	2	0
+	+	62	0
+	+	59	18
+	+	58	1
+	+	61	0
+	+	2	2
+	+	5	2
+	+	3	57
+	+	4	14
+	+	3	65
+	+	4	69
+	+	29	18
+	+	34	58
+	+	24	38
+	+	49	18
+	+	56	25
+	+	61	20
+	+	3	54
+	+	34	4
+	+	35	4
+	+	44	0
+	+	37	44
+	+	38	32
+	+	41	0
+	+	38	62
+	+	41	44
+	+	38	58
+	+	42	31
+	+	43	19
+	+	50	27
+	+	51	32
+	+	35	59
+	+	37	0
+	+	36	0
+	+	45	0
+	+	35	58
+	+	36	0
+	+	45	0
+	+	39	37
+	+	51	33
 
-> ~/Dropbox/Projects/slimdocs/NERD_tree_1
+> ~/Dropbox/EzyPzy/ezyworkout/app/views/account/signin.html.erb
+	"	10	7
+	^	19	31
+	.	19	30
+	+	1	0
+	+	24	0
+	+	1	23
+	+	23	30
+	+	23	8
+	+	23	0
+	+	23	0
+	+	23	24
+	+	23	29
+	+	23	24
+	+	23	19
+	+	23	30
+	+	23	12
+	+	23	55
+	+	23	27
+	+	23	32
+	+	23	1
+	+	23	0
+	+	23	0
+	+	23	30
+	+	23	27
+	+	23	42
+	+	17	38
+	+	21	8
+	+	18	43
+	+	19	52
+	+	18	46
+	+	20	24
+	+	23	0
+	+	23	0
+	+	23	0
+	+	23	0
+	+	23	0
+	+	3	33
+	+	7	41
+	+	11	0
+	+	7	0
+	+	11	10
+	+	15	6
+	+	4	28
+	+	5	27
+	+	8	30
+	+	9	27
+	+	12	22
+	+	13	23
+	+	19	30
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/views/account/profile.html.erb
+	"	6	0
+	^	3	74
+	.	3	73
+	+	1	28
+	+	5	43
+	+	2	0
+	+	3	4
+	+	5	49
+	+	3	73
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/controllers/workout_controller.rb
+	"	25	2
+	^	16	14
+	.	16	13
+	+	5	9
+	+	6	28
+	+	22	25
+	+	2	2
+	+	5	0
+	+	2	0
+	+	24	0
+	+	4	0
+	+	3	52
+	+	18	38
+	+	10	57
+	+	17	11
+	+	10	16
+	+	17	4
+	+	10	37
+	+	10	0
+	+	10	7
+	+	10	41
+	+	10	7
+	+	10	0
+	+	17	4
+	+	18	44
+	+	10	36
+	+	18	27
+	+	11	0
+	+	10	9
+	+	11	28
+	+	18	26
+	+	12	37
+	+	13	44
+	+	14	34
+	+	15	32
+	+	16	13
+
+> ~/Dropbox/EzyPzy/ezyworkout/NERD_tree_2
+	"	10	26
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Dropbox/EzyPzy/ezyworkout/config/routes.rb
+	"	21	41
+	^	21	42
+	.	21	41
+	+	6	30
+	+	8	34
+	+	9	34
+	+	10	36
+	+	16	35
+	+	17	33
+	+	15	0
+	+	12	34
+	+	13	40
+	+	14	34
+	+	22	0
+	+	19	37
+	+	20	33
+	+	19	4
+	+	20	34
+	+	21	41
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/views/workout/new.html.erb
+	"	32	9
+	^	33	30
+	.	33	29
+	+	1	34
+	+	17	2
+	+	3	0
+	+	1	34
+	+	17	37
+	+	40	8
+	+	18	5
+	+	19	35
+	+	20	1
+	+	19	3
+	+	27	5
+	+	28	20
+	+	30	8
+	+	31	0
+	+	30	2
+	+	31	5
+	+	32	17
+	+	33	30
+	+	35	0
+	+	34	2
+	+	35	5
+	+	36	8
+	+	37	0
+	+	36	4
+	+	37	3
+	+	36	4
+	+	37	27
+	+	39	29
+	+	38	2
+	+	17	2
+	+	21	5
+	+	22	29
+	+	24	10
+	+	23	2
+	+	24	5
+	+	25	28
+	+	32	9
+	+	36	3
+	+	17	56
+	+	19	26
+	+	29	9
+	+	33	20
+	+	37	9
+	+	39	0
+	+	33	27
+	+	17	0
+	+	29	34
+	+	33	29
+
+> ~/Dropbox/EzyPzy/ezyworkout/NERD_tree_3
+	"	10	21
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Dropbox/EzyPzy/ezyworkout/NERD_tree_4
 	"	4	0
 	.	1	0
 	+	1	0
 	+	1	0
 	+	1	0
 	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
 
-> ~/Dropbox/Projects/slimdocs/NERD_tree_2
-	"	13	11
+> ~/Dropbox/EzyPzy/ezyworkout/app/assets/javascripts/application.js
+	"	15	17
+
+> ~/Dropbox/EzyPzy/ezyworkout/NERD_tree_5
+	"	9	7
 	.	1	0
 	+	1	0
 	+	1	0
 	+	1	0
 	+	1	0
 	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 
-> ~/Dropbox/Projects/slimdocs/views/layout.php
-	"	11	22
-	.	19	0
-	+	2	6
-	+	3	15
-	+	16	14
-	+	4	0
-	+	19	0
-	+	7	0
-	+	19	38
-	+	19	0
-	+	19	28
-	+	19	35
-	+	19	0
-	+	19	25
-	+	4	26
-	+	5	29
-	+	7	0
-	+	17	34
-	+	5	32
-	+	19	0
-	+	17	38
-	+	18	32
-	+	19	0
-	+	6	71
-	+	15	0
-	+	7	71
-	+	8	61
-	+	9	19
-	+	10	35
-	+	10	35
-	+	15	0
-	+	10	35
-	+	11	0
-	+	10	49
-	+	11	23
-	+	12	4
-	+	19	9
-	+	19	3
-	+	19	9
-	+	19	3
-	+	19	43
-	+	19	47
-	+	19	3
-	+	19	4
-	+	19	68
-	+	19	16
-	+	19	22
-	+	19	0
-
-> ~/Dropbox/Projects/slimdocs/views/navigation.php
-	"	56	18
-	^	56	19
-	.	56	18
-	+	6	7
-	+	6	7
-	+	6	7
-	+	6	7
-	+	6	7
-	+	6	7
-	+	6	7
-	+	6	7
-	+	6	23
-	+	6	17
-	+	6	21
-	+	6	7
-	+	6	34
-	+	7	0
-	+	6	0
-	+	6	0
-	+	6	0
-	+	6	0
-	+	6	0
-	+	3	40
-	+	5	0
-	+	4	1
-	+	5	24
-	+	33	0
-	+	32	1
-	+	33	1
-	+	34	7
-	+	59	1
-	+	35	7
-	+	58	1
-	+	39	4
-	+	58	0
-	+	35	0
-	+	58	0
-	+	46	17
-	+	39	2
-	+	54	18
-	+	40	0
-	+	54	9
-	+	57	0
-	+	54	8
-	+	47	26
-	+	51	28
-	+	47	20
-	+	51	20
-	+	47	24
-	+	51	20
-	+	47	60
-	+	51	17
-	+	47	66
-	+	47	67
-	+	47	12
-	+	51	12
-	+	47	67
-	+	47	67
-	+	36	15
-	+	50	0
-	+	50	0
-	+	41	0
-	+	49	35
-	+	41	26
-	+	44	0
-	+	41	40
-	+	41	26
-	+	36	1
-	+	37	16
-	+	41	48
-	+	41	0
-	+	48	0
-	+	42	21
-	+	41	23
-	+	42	25
-	+	49	10
-	+	42	54
-	+	41	47
-	+	38	15
-	+	42	46
-	+	38	17
-	+	38	17
-	+	39	54
-	+	42	28
-	+	44	0
-	+	52	25
-	+	39	54
-	+	52	10
-	+	45	21
-	+	40	0
-	+	42	15
-	+	46	13
-	+	47	13
-	+	51	13
-	+	53	0
-	+	54	9
-	+	45	23
-	+	43	25
-	+	55	19
-	+	56	18
-	+	43	17
-	+	55	18
-	+	56	18
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/sass/global.scss
-	"	135	6
-	^	152	28
-	.	135	0
-	+	30	1
-	+	29	1
-	+	28	1
-	+	27	1
-	+	26	1
-	+	25	1
-	+	24	1
-	+	132	17
-	+	161	0
-	+	134	7
-	+	139	11
-	+	139	20
-	+	139	20
-	+	139	19
-	+	154	6
-	+	154	13
-	+	154	21
-	+	155	7
-	+	155	7
-	+	155	7
-	+	155	7
-	+	156	7
-	+	156	5
-	+	139	0
-	+	155	0
-	+	156	7
-	+	157	10
-	+	157	0
-	+	158	4
-	+	160	4
-	+	159	18
-	+	395	25
-	+	400	0
-	+	396	9
-	+	397	18
-	+	398	18
-	+	280	9
-	+	280	18
-	+	280	18
-	+	282	28
-	+	290	2
-	+	280	0
-	+	283	0
-	+	290	0
-	+	290	0
-	+	289	4
-	+	288	6
-	+	135	7
-	+	139	7
-	+	135	6
-	+	139	7
-	+	139	7
-	+	139	7
-	+	139	7
-	+	139	23
-	+	141	20
-	+	140	22
-	+	144	22
-	+	145	20
-	+	149	21
-	+	150	19
-	+	162	14
-	+	163	18
-	+	163	16
-	+	139	0
-	+	132	20
-	+	164	17
-	+	146	25
-	+	151	26
-	+	135	21
-	+	136	20
-	+	137	20
-	+	135	11
-	+	135	27
-	+	142	27
-	+	147	27
-	+	152	27
-	+	135	0
-
-> ~/Dropbox/Projects/slimdocs/.htaccess
-	"	16	0
-	^	9	26
-	.	9	25
-	+	10	10
-	+	4	43
-	+	5	41
-	+	6	43
-	+	7	42
-	+	4	27
-	+	5	27
-	+	6	27
-	+	7	27
-	+	4	43
-	+	5	43
-	+	6	43
-	+	7	47
-	+	8	39
-	+	9	32
-	+	7	25
-	+	6	25
-	+	5	24
-	+	4	39
-	+	5	37
-	+	6	39
-	+	7	41
-	+	9	25
-
-> ~/Dropbox/Projects/slimdocs/views/content.php
-	"	5	18
-	^	2	32
-	.	4	23
-	+	2	34
-	+	3	33
-	+	5	0
-	+	4	23
-
-> ~/Dropbox/Projects/slimdocs/helper/functions.php
+> ~/Dropbox/EzyPzy/ezyworkout/app/assets/stylesheets/application.css
 	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
 
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/navigation.php
-	"	18	0
-	^	7	71
-	.	7	70
-	+	7	70
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/functions.php
-	"	193	0
-	^	193	0
-	.	117	0
-	+	83	0
-	+	84	20
-	+	84	64
-	+	114	5
-	+	84	52
-	+	111	0
-	+	87	26
-	+	94	0
-	+	88	37
-	+	89	33
-	+	90	23
-	+	89	21
-	+	88	21
-	+	91	28
-	+	92	28
-	+	93	26
-	+	84	20
-	+	114	0
-	+	84	20
-	+	87	2
-	+	88	4
-	+	89	4
-	+	90	4
-	+	91	4
-	+	92	4
-	+	93	4
-	+	94	2
-	+	85	0
-	+	113	47
-	+	87	19
-	+	115	0
-	+	194	46
-	+	194	51
-	+	194	26
-	+	194	0
-	+	194	24
-	+	194	0
-	+	194	35
-	+	194	39
-	+	194	70
-	+	194	28
-	+	194	0
-	+	194	4
-	+	194	2
-	+	194	1
-	+	194	38
-	+	194	92
-	+	195	0
-	+	73	0
-	+	73	83
-	+	95	27
-	+	102	0
-	+	96	50
-	+	97	37
-	+	98	64
-	+	99	33
-	+	99	33
-	+	99	33
-	+	98	64
-	+	100	46
-	+	101	30
-	+	103	27
-	+	110	0
-	+	103	27
-	+	110	0
-	+	104	46
-	+	105	34
-	+	106	60
-	+	194	1
-	+	194	0
-	+	194	0
-	+	194	0
-	+	117	0
-
-> ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/functions.php
-	"	84	0
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/footer.php
+> ~/Dropbox/EzyPzy/ezyworkout/app/assets/stylesheets/account.css.scss
 	"	1	0
-	^	7	41
-	.	7	40
-	+	5	9
-	+	9	0
-	+	6	52
-	+	8	0
-	+	7	40
 
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/sidebar-category.php
-	"	30	1
-	^	27	35
-	.	11	46
-	+	10	4
-	+	11	47
-	+	11	47
-	+	11	45
-	+	11	47
-	+	5	4
-	+	9	4
-	+	8	4
-	+	6	4
-	+	7	6
-	+	23	4
-	+	24	4
-	+	25	6
-	+	26	4
-	+	27	4
-	+	10	4
-	+	11	47
-	+	10	4
+> ~/Dropbox/EzyPzy/ezyworkout/app/assets/stylesheets/workout.css.scss
+	"	3	53
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/views/layouts/application.html.erb
+	"	16	5
+	^	10	63
+	.	10	60
 	+	11	4
-	+	10	3
-	+	11	47
-	+	11	46
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/NERD_tree_2
-	"	7	6
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/sidebar-post.php
-	"	22	37
-	^	27	0
-	.	21	4
-	+	6	4
-	+	21	4
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/single.php
-	"	14	30
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/sidebar-page.php
-	"	14	47
-	.	19	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	5	0
-	+	19	0
-	+	5	0
-	+	19	0
+	+	12	4
+	+	11	6
+	+	12	46
+	+	13	2
+	+	4	25
 	+	5	3
-	+	6	5
-	+	7	7
-	+	8	5
-	+	9	5
-	+	11	5
-	+	12	0
-	+	13	0
-	+	11	49
-	+	11	48
-	+	12	5
-	+	10	5
-	+	13	5
-	+	14	5
-	+	15	7
-	+	16	5
-	+	17	5
-	+	19	0
+	+	15	1
+	+	6	37
+	+	7	40
+	+	8	35
+	+	10	47
+	+	11	0
+	+	10	60
 
-> ~/.bash_profile
-	"	35	9
-	^	35	10
-	.	35	9
-	+	34	10
-	+	30	24
-	+	34	43
-	+	35	9
+> ~/Dropbox/EzyPzy/ezyworkout/db/migrate/20130117073651_create_workout_sets.rb
+	"	16	2
+	^	16	3
+	.	16	3
+	+	4	5
+	+	2	7
+	+	14	26
+	+	5	24
+	+	6	25
+	+	7	22
+	+	8	18
+	+	4	12
+	+	16	3
 
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/css/fontello.css
-	"	5	21
-	^	4	215
-	.	4	171
-	+	3	14
-	+	4	171
-
-> ~/Dropbox/EzyPzy/drawpost/web/views/mobile/header.html
-	"	1	0
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/fontello.css
-	"	3	12
-	^	4	160
-	.	4	160
-	+	3	12
-	+	4	160
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/fontello-codes.css
-	"	1	0
-
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/fontello-embedded.css
-	"	1	0
-
-> ~/Downloads/fontello-cea8586d/demo.html
-	"	716	0
-
-> ~/Downloads/fontello-cea8586d/NERD_tree_1
-	"	8	0
+> ~/Dropbox/EzyPzy/ezyworkout/NERD_tree_6
+	"	29	22
 	.	1	0
 	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 
-> ~/Dropbox/todotxt/app/todo.cfg
-	"	55	19
-	^	55	20
-	.	55	19
+> ~/Dropbox/EzyPzy/ezyworkout/app/models/workout_sets.rb
+	"	3	2
+	^	2	64
+	.	3	0
+	+	2	64
+	+	2	64
+	+	2	64
+	+	3	0
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/controllers/application_controller.rb
+	"	1	0
+	^	17	54
+	.	17	53
+	+	6	28
+	+	12	0
+	+	7	64
+	+	8	17
+	+	10	49
+	+	11	16
+	+	16	24
+	+	21	0
+	+	17	64
+	+	18	17
+	+	20	16
+	+	17	53
+
+> ~/Dropbox/EzyPzy/ezyworkout/db/migrate/20130116054653_alter_users.rb
+	"	10	23
+	^	10	24
+	.	10	23
+	+	2	7
+	+	9	30
+	+	10	23
+
+> ~/Dropbox/EzyPzy/ezyworkout/db/migrate/20130116054652_create_users.rb
+	"	22	15
+	^	22	16
+	.	22	16
+	+	6	16
+	+	5	0
+	+	14	33
+	+	14	0
+	+	4	0
+	+	16	30
+	+	17	23
+	+	2	7
+	+	22	16
+
+> ~/Dropbox/Projects/Slim/tests/Foo.php
+	"	1	0
+
+> ~/Dropbox/Projects/Slim/NERD_tree_1
+	"	19	12
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Dropbox/Projects/Slim/tests/EnvironmentTest.php
+	"	118	0
+
+> ~/Dropbox/Projects/Slim/tests/LogTest.php
+	"	1	0
+
+> ~/Dropbox/Projects/Slim/tests/LogWriterTest.php
+	"	1	0
+
+> ~/Dropbox/Projects/Slim/tests/MiddlewareTest.php
+	"	1	0
+
+> ~/Dropbox/Projects/Slim/tests/bootstrap.php
+	"	1	0
+
+> ~/Dropbox/Projects/Slim/tests/SlimTest.php
+	"	138	0
+
+> ~/Dropbox/todotxt/app/todo.txt
+	"	27	5
+	^	27	6
+	.	27	5
+	+	11	0
+	+	24	4
+	+	25	5
+	+	26	5
+	+	27	5
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/views/account/signout.html.erb
+	"	1	29
+	^	1	30
+	.	1	29
+	+	1	29
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/views/account/signup.html.erb
+	"	22	4
+	^	6	11
+	.	26	0
+	+	1	35
+	+	2	0
+	+	3	20
+	+	32	53
+	+	33	51
+	+	32	58
+	+	18	5
+	+	18	0
+	+	22	0
+	+	21	2
+	+	22	5
+	+	22	29
+	+	22	29
+	+	22	4
+	+	22	2
+	+	22	2
+	+	23	24
+	+	24	29
+	+	23	17
+	+	24	22
+	+	4	28
+	+	13	10
+	+	5	23
+	+	6	96
+	+	6	0
+	+	7	0
+	+	6	5
+	+	7	10
+	+	8	54
+	+	10	13
+	+	9	23
+	+	6	10
+	+	18	0
+	+	22	0
+	+	14	0
+	+	22	0
+	+	26	0
+
+> ~/Dropbox/EzyPzy/ezyworkout/config/database.yml
+	"	30	5
+	^	28	17
+	.	28	16
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	16
 	+	27	0
-	+	28	0
-	+	29	0
+	+	30	12
+	+	31	12
 	+	30	0
 	+	31	0
-	+	32	0
-	+	33	0
-	+	34	0
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	39	0
-	+	40	0
-	+	41	0
-	+	42	0
-	+	43	0
-	+	54	0
-	+	55	0
-	+	56	0
-	+	57	0
-	+	58	0
-	+	54	16
-	+	55	19
-	+	56	18
-	+	57	28
-	+	56	27
-	+	55	28
-	+	54	27
-	+	63	0
-	+	55	19
+	+	35	26
+	+	39	14
+	+	43	14
+	+	35	21
+	+	39	26
+	+	43	26
+	+	28	16
 
-> ~/Dropbox/todotxt/app/NERD_tree_1
-	"	7	9
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/.bashrc
-	"	70	0
-	^	113	56
-	.	113	55
-	+	113	55
-
-> ~/.bachrc
+> ~/Dropbox/EzyPzy/ezyworkout/config/application.rb
 	"	1	0
 
-> ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/NERD_tree_1
-	"	15	0
+> ~/Dropbox/EzyPzy/ezyworkout/config/boot.rb
+	"	1	0
+
+> ~/Dropbox/EzyPzy/ezyworkout/Gemfile
+	"	27	38
+	^	27	39
+	.	27	0
+	+	9	6
+	+	8	1
+	+	26	1
+	+	27	0
+
+> ~/Dropbox/EzyPzy/ezyworkout/db/schema.rb
+	"	1	0
+
+> ~/Dropbox/EzyPzy/ezyworkout/db/seeds.rb
+	"	7	52
+
+> ~/Dropbox/EzyPzy/ezyworkout/db/migrate/20130116054653_create_users.rb
+	"	7	2
+	^	1	11
+	.	1	10
+	+	3	0
+	+	1	10
+
+> ~/Dropbox/EzyPzy/ezyworkout/tabnew
+	"	1	0
+
+> ~/Dropbox/EzyPzy/ezyworkout/Gemfile.lock
+	"	54	0
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/views/account/welcome.html.erb
+	"	2	25
+	^	1	48
+	.	1	47
+	+	1	37
+	+	2	40
+	+	1	47
+
+> ~/Dropbox/EzyPzy/ezyworkout/.gitignore
+	"	22	0
+	^	41	28
+	.	42	0
+	+	1	0
+	+	42	0
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/views/welcome/index.html.erb
+	"	1	0
+	^	2	15
+	.	2	14
+	+	1	21
+	+	3	0
+	+	3	0
+	+	2	14
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/controllers/posts_controller.rb
+	"	20	9
+	^	33	19
+	.	33	18
+	+	2	9
+	+	8	5
+	+	12	37
+	+	11	32
+	+	12	4
+	+	18	42
+	+	22	0
+	+	21	31
+	+	5	2
+	+	3	2
+	+	4	2
+	+	3	19
+	+	17	0
+	+	16	16
+	+	18	0
+	+	7	19
+	+	25	31
+	+	29	34
+	+	30	34
+	+	34	0
+	+	31	44
+	+	33	17
+	+	24	10
+	+	33	18
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/views/posts/new.html.erb
+	"	10	28
+	^	9	31
+	.	9	30
+	+	1	17
+	+	3	28
+	+	15	5
+	+	16	2
+	+	26	8
+	+	16	25
+	+	17	26
+	+	19	0
+	+	18	2
+	+	19	5
+	+	20	24
+	+	21	27
+	+	23	0
+	+	22	2
+	+	23	5
+	+	24	15
+	+	20	3
+	+	16	3
+	+	3	23
+	+	28	33
+	+	4	27
+	+	14	8
+	+	5	23
+	+	6	66
+	+	7	40
+	+	8	10
+	+	12	6
+	+	9	35
+	+	6	35
+	+	9	54
+	+	11	14
+	+	10	21
+	+	4	19
+	+	9	30
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/views/posts/show.html.erb
+	"	6	24
+	^	9	0
+	.	10	48
+	+	1	3
+	+	2	26
+	+	3	19
+	+	5	0
+	+	4	0
+	+	5	3
+	+	6	25
+	+	7	18
+	+	10	0
+	+	8	0
+	+	10	48
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/views/posts/index.html.erb
+	"	5	17
+	^	16	43
+	.	16	43
+	+	1	33
+	+	3	15
+	+	3	0
+	+	6	6
+	+	6	0
+	+	5	12
+	+	6	11
+	+	10	2
+	+	19	0
+	+	11	28
+	+	12	8
+	+	13	9
+	+	13	24
+	+	14	23
+	+	22	38
+	+	15	6
+	+	5	6
+	+	6	15
+	+	17	0
+	+	16	0
+	+	8	12
+	+	16	43
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/models/post.rb
+	"	6	2
+	^	5	25
+	.	5	24
+	+	3	20
+	+	5	24
+
+> ~/Dropbox/EzyPzy/ezyworkout/app/views/posts/edit.html.erb
+	"	28	8
+	^	3	73
+	.	3	72
+	+	1	1
+	+	1	37
+	+	3	83
+	+	4	27
+	+	5	29
+	+	5	23
+	+	6	6
+	+	8	5
+	+	9	5
+	+	7	7
+	+	9	7
+	+	10	7
+	+	11	7
+	+	12	5
+	+	15	4
+	+	16	5
+	+	17	5
+	+	18	3
+	+	19	3
+	+	20	3
+	+	21	5
+	+	22	5
+	+	23	3
+	+	24	3
+	+	25	3
+	+	26	5
+	+	27	3
+	+	28	0
+	+	14	0
+	+	14	0
+	+	15	2
+	+	16	4
+	+	17	4
+	+	18	2
+	+	19	2
+	+	20	2
+	+	21	4
+	+	22	4
+	+	23	2
+	+	24	2
+	+	25	2
+	+	26	4
+	+	27	2
+	+	3	72
+	+	4	19
+	+	3	72
+
+> ~/Dropbox/EzyPzy/wod/wod/app/assets/stylesheets/application.css
+	"	1	0
+
+> ~/Dropbox/EzyPzy/wod/wod/NERD_tree_1
+	"	30	9
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Dropbox/EzyPzy/wod/wod/app/views/layouts/application.html.erb
+	"	1	0
+
+> ~/Dropbox/EzyPzy/wod/wod/app/controllers/application_controller.rb
+	"	1	0
+
+> ~/Dropbox/EzyPzy/wod/wod/public/index.html
+	"	211	0
+
+> ~/Dropbox/EzyPzy/wod/wod/config/routes.rb
+	"	32	0
+
+> ~/Git/fork/learning-git/text.txt
+	"	3	3
+
+> ~/Git/fork/learning-git/NERD_tree_1
+	"	5	11
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Git/fork/learning-git/jibone.txt
+	"	3	7
+	^	3	11
+	.	3	10
+	+	3	10
+
+> ~/.ssh/id_rsa.pub
+	"	1	1
+
+> ~/Git/learning-git/text.txt
+	"	5	0
+	^	2	21
+	.	4	0
+	+	8	0
+	+	2	21
+	+	4	0
+
+> ~/Git/learning-git/NERD_tree_1
+	"	5	0
 	.	1	0
 	+	1	0
 
-> ~/Dropbox/Projects/bnyv/wp-content/themes/bnyv/footer.php
-	"	16	0
+> ~/Git/learning-git/README.md
+	"	1	0
 
-> ~/Dropbox/Projects/freelance/imran/wp-content/themes/wp-imranajmain/style.css
-	"	8	1
-	^	7	14
-	.	6	9
-	+	2	22
-	+	3	32
-	+	4	44
-	+	6	9
+> ~/test.html
+	"	11	39
+	^	11	37
+	.	11	36
+	+	2	6
+	+	3	8
+	+	4	2
+	+	6	8
+	+	13	2
+	+	9	34
+	+	10	19
+	+	8	30
+	+	11	36
+
+> ~/.ssh/id_rsa
+	"	30	0
+
+> ~/Dropbox/EzyPzy/wod/wod/.git/config
+	"	1	0
+
+> ~/Git/learning-git/textfile.txt
+	"	3	22
+	^	3	23
+	.	4	0
+	+	4	0
+	+	4	0
+
+> ~/Dropbox/lrthw/ex19.rb
+	"	21	69
+	^	21	70
+	.	21	68
+	+	1	56
+	+	2	42
+	+	3	57
+	+	4	38
+	+	5	22
+	+	9	54
+	+	10	27
+	+	12	48
+	+	15	57
+	+	17	37
+	+	22	0
+	+	18	35
+	+	20	55
+	+	21	68
+
+> ~/Dropbox/lrthw/ex20.rb
+	"	9	0
+	^	32	37
+	.	34	0
+	+	1	20
+	+	3	16
+	+	7	13
+	+	8	25
+	+	11	31
+	+	12	38
+	+	15	36
+	+	17	39
+	+	20	23
+	+	22	45
+	+	24	20
+	+	26	31
+	+	29	40
+	+	30	0
+	+	27	0
+	+	31	29
+	+	34	0
+
+> ~/Dropbox/lrthw/ex18.rb
+	"	25	17
+	^	25	18
+	.	25	17
+	+	1	19
+	+	2	21
+	+	3	39
+	+	4	0
+	+	2	1
+	+	3	2
+	+	6	30
+	+	7	37
+	+	10	18
+	+	11	22
+	+	15	22
+	+	18	26
+	+	19	28
+	+	20	18
+	+	21	11
+	+	23	27
+	+	25	17
+
+> ~/Dropbox/lrthw/ex17.rb
+	"	1	0
+	^	24	1
+	.	24	0
+	+	4	46
+	+	7	28
+	+	7	49
+	+	11	52
+	+	13	58
+	+	14	54
+	+	17	32
+	+	18	20
+	+	20	24
+	+	23	12
+	+	7	57
+	+	7	28
+	+	7	29
+	+	10	0
+	+	7	1
+	+	8	23
+	+	9	35
+	+	23	14
+	+	24	0
+
+> ~/.vimrc
+	"	3	15
+	^	3	16
+	.	3	15
+	+	1	12
+	+	2	16
+	+	3	15
+
+> ~/Dropbox/lrthw/ex14.rb
+	"	16	28
+	^	16	29
+	.	16	29
+	+	2	12
+	+	4	40
+	+	5	43
+	+	6	30
+	+	10	33
+	+	22	6
+	+	19	45
+	+	20	45
+	+	21	41
+	+	13	0
+	+	14	41
+	+	16	29
+
+> ~/Dropbox/EzyPzy/drawpost/web/README.md
+	"	3	27
+	^	3	28
+	.	3	27
+	+	3	27
+
+> ~/Dropbox/lrthw/ex16.rb
+	"	27	5
+	^	27	6
+	.	27	5
+	+	4	40
+	+	5	47
+	+	6	38
+	+	8	10
+	+	11	36
+	+	12	33
+	+	14	36
+	+	15	28
+	+	17	48
+	+	19	44
+	+	20	0
+	+	21	0
+	+	20	12
+	+	21	12
+	+	20	22
+	+	21	44
+	+	23	44
+	+	25	19
+	+	26	18
+	+	27	19
+	+	28	18
+	+	29	19
+	+	30	18
+	+	32	31
+	+	33	13
+	+	27	5
+
+> ~/Dropbox/lrthw/ex15.rb
+	"	14	20
+	^	14	21
+	.	14	21
+	+	2	12
+	+	3	25
+	+	5	36
+	+	8	42
+	+	12	32
+	+	10	31
+	+	14	21
+	+	2	4
+	+	12	1
+	+	10	31
+	+	14	21
+
+> ~/Dropbox/lrthw/ex15_sample.txt
+	"	1	0
+	^	3	38
+	.	4	0
+	+	1	21
+	+	4	0
+
+> ~/Dropbox/Projects/PHPconsolelog/PHPconsoled.php
+	"	1	0
+
+> ~/Dropbox/Projects/PHPconsolelog/NERD_tree_1
+	"	9	9
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Dropbox/Projects/PHPconsolelog/README.md
+	"	10	65
+	^	10	66
+	.	10	65
+	+	9	72
+	+	10	65
+
+> ~/Dropbox/Projects/PHPconsolelog/.gitignore
+	"	38	1
+	^	38	2
+	.	1	0
+	+	1	0
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/NERD_tree_1
+	"	18	12
+	.	1	0
+	+	1	0
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/archive.php
+	"	10	23
+	^	10	24
+	.	10	23
+	+	24	0
+	+	23	0
+	+	27	9
+	+	28	42
+	+	29	7
+	+	30	0
+	+	9	32
+	+	10	23
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/less/jshamsul.less
+	"	279	12
+	^	432	33
+	.	432	32
+	+	403	5
+	+	403	5
+	+	405	5
+	+	55	1
+	+	56	1
+	+	57	1
+	+	52	13
+	+	473	28
+	+	472	26
+	+	405	0
+	+	404	0
+	+	403	0
+	+	403	0
+	+	407	0
+	+	473	0
+	+	442	0
+	+	277	28
+	+	277	45
+	+	277	22
+	+	277	22
+	+	331	0
+	+	277	1
+	+	289	0
+	+	291	2
+	+	292	4
+	+	293	4
+	+	294	6
+	+	295	6
+	+	296	4
+	+	297	2
+	+	298	2
+	+	300	4
+	+	301	6
+	+	302	6
+	+	303	6
+	+	305	8
+	+	306	8
+	+	307	8
+	+	308	8
+	+	309	6
+	+	310	6
+	+	311	8
+	+	312	8
+	+	313	8
+	+	314	10
+	+	315	12
+	+	316	12
+	+	317	12
+	+	318	14
+	+	319	14
+	+	320	14
+	+	321	12
+	+	322	10
+	+	323	10
+	+	324	10
+	+	325	8
+	+	326	6
+	+	327	4
+	+	328	2
+	+	329	0
+	+	290	30
+	+	278	20
+	+	279	2
+	+	288	0
+	+	299	20
+	+	284	45
+	+	287	0
+	+	286	32
+	+	285	21
+	+	279	12
+	+	26	51
+	+	28	12
+	+	29	23
+	+	30	43
+	+	31	78
+	+	32	19
+	+	30	25
+	+	31	25
+	+	32	65
+	+	33	68
+	+	34	76
+	+	36	20
+	+	48	22
+	+	49	14
+	+	50	16
+	+	439	0
+	+	447	23
+	+	448	26
+	+	208	28
+	+	210	30
+	+	211	48
+	+	212	24
+	+	304	47
+	+	305	21
+	+	306	20
+	+	148	0
+	+	147	0
+	+	422	13
+	+	423	30
+	+	432	32
+	b	384	9
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/header.php
+	"	21	36
+	.	15	0
+	+	24	0
+	+	15	0
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/index.php
+	"	3	0
+
+> ~/Dropbox/Projects/jshamsul.com/wp-content/themes/wp-jshamsul.com/content-page.php
+	"	1	0
+
+> ~/Dropbox/EzyPzy/drawpost/web/less/drawpost.less
+	"	58	25
+	^	53	20
+	.	109	23
+	+	39	6
+	+	40	2
+	+	60	24
+	+	60	49
+	+	61	31
+	+	62	33
+	+	60	45
+	+	63	11
+	+	62	34
+	+	63	0
+	+	62	25
+	+	64	19
+	+	65	17
+	+	66	20
+	+	64	16
+	+	65	13
+	+	66	17
+	+	127	0
+	+	71	32
+	+	72	28
+	+	73	12
+	+	74	19
+	+	75	15
+	+	76	15
+	+	78	20
+	+	79	15
+	+	81	16
+	+	75	12
+	+	79	12
+	+	44	12
+	+	45	12
+	+	46	32
+	+	54	0
+	+	55	0
+	+	47	2
+	+	48	2
+	+	49	6
+	+	48	7
+	+	47	7
+	+	49	7
+	+	50	7
+	+	51	7
+	+	47	6
+	+	48	6
+	+	49	6
+	+	50	6
+	+	51	6
+	+	52	2
+	+	53	2
+	+	55	0
+	+	86	7
+	+	87	35
+	+	47	19
+	+	48	19
+	+	49	19
+	+	50	19
+	+	51	14
+	+	94	0
+	+	91	14
+	+	92	23
+	+	88	18
+	+	92	20
+	+	79	12
+	+	75	12
+	+	83	48
+	+	86	26
+	+	85	27
+	+	79	15
+	+	80	17
+	+	86	0
+	+	86	0
+	+	79	13
+	+	80	14
+	+	79	15
+	+	82	21
+	+	89	35
+	+	90	23
+	+	114	44
+	+	114	47
+	+	115	16
+	+	116	19
+	+	117	12
+	+	120	9
+	+	121	16
+	+	122	3
+	+	123	10
+	+	124	16
+	+	118	48
+	+	119	20
+	+	96	18
+	+	97	18
+	+	98	11
+	+	99	10
+	+	101	16
+	+	103	53
+	+	99	16
+	+	106	18
+	+	104	24
+	+	102	20
+	+	109	23
+
+> ~/Dropbox/EzyPzy/drawpost/web/bootstrap.php
+	"	44	9
+	^	44	8
+	.	44	7
+	+	87	0
+	+	82	0
+	+	82	0
+	+	82	0
+	+	52	1
+	+	42	23
+	+	43	22
+	+	44	19
+	+	44	18
+	+	45	0
+	+	43	20
+	+	41	23
+	+	52	52
+	+	14	0
+	+	52	0
+	+	44	7
+
+> ~/Dropbox/EzyPzy/drawpost/web/NERD_tree_1
+	"	35	14
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Dropbox/EzyPzy/drawpost/web/views/web/layout.php
+	"	5	32
+	^	18	67
+	.	18	64
+	+	1	15
+	+	2	16
+	+	2	0
+	+	7	0
+	+	4	71
+	+	5	47
+	+	6	62
+	+	8	8
+	+	44	2
+	+	16	34
+	+	16	38
+	+	19	0
+	+	16	63
+	+	18	24
+	+	18	17
+	+	14	30
+	+	19	40
+	+	21	36
+	+	22	35
+	+	33	0
+	+	23	6
+	+	10	29
+	+	18	0
+	+	19	0
+	+	18	30
+	+	43	37
+	+	9	28
+	+	14	5
+	+	16	5
+	+	19	5
+	+	21	5
+	+	22	5
+	+	33	5
+	+	20	5
+	+	38	37
+	+	39	36
+	+	41	0
+	+	23	38
+	+	25	37
+	+	27	43
+	+	28	37
+	+	30	36
+	+	32	0
+	+	37	5
+	+	26	36
+	+	31	35
+	+	40	35
+	+	13	36
+	+	12	35
+	+	14	7
+	+	16	7
+	+	18	9
+	+	19	7
+	+	20	7
+	+	21	7
+	+	22	7
+	+	23	9
+	+	25	9
+	+	26	11
+	+	27	9
+	+	28	9
+	+	30	9
+	+	31	11
+	+	32	9
+	+	33	45
+	+	35	40
+	+	11	0
+	+	42	6
+	+	11	5
+	+	15	0
+	+	24	0
+	+	29	0
+	+	34	0
+	+	33	9
+	+	36	0
+	+	35	0
+	+	5	32
+	+	17	44
+	+	18	64
+
+> ~/Dropbox/EzyPzy/drawpost/web/app/routes/web/page_routes.php
+	"	11	30
+	^	14	30
+	.	15	0
+	+	17	41
+	+	18	35
+	+	19	18
+	+	28	24
+	+	17	9
+	+	28	35
+	+	29	32
+	+	22	0
+	+	21	23
+	+	22	31
+	+	27	0
+	+	23	19
+	+	24	35
+	+	26	0
+	+	25	30
+	+	27	1
+	+	17	23
+	+	29	29
+	+	14	29
+	+	15	0
+
+> ~/Dropbox/EzyPzy/drawpost/web/config/app.config.php
+	"	28	33
+	^	22	35
+	.	22	34
+	+	22	34
+
+> ~/Dropbox/EzyPzy/drawpost/web/views-bak/web/layout.html
+	"	1	0
+
+> ~/Dropbox/EzyPzy/drawpost/web/less/web.less
+	"	78	0
+	^	75	21
+	.	75	20
+	+	3	0
+	+	2	1
+	+	1	1
+	+	2	0
+	+	3	2
+	+	2	27
+	+	8	31
+	+	11	35
+	+	12	31
+	+	100	0
+	+	14	2
+	+	10	6
+	+	15	30
+	+	16	30
+	+	17	31
+	+	17	31
+	+	20	14
+	+	5	40
+	+	6	22
+	+	19	27
+	+	100	0
+	+	22	39
+	+	24	12
+	+	25	32
+	+	33	0
+	+	37	12
+	+	38	14
+	+	39	14
+	+	83	43
+	+	84	0
+	+	88	5
+	+	82	41
+	+	81	47
+	+	87	47
+	+	35	47
+	+	22	47
+	+	19	47
+	+	88	39
+	+	89	43
+	+	91	1
+	+	94	38
+	+	88	35
+	+	94	47
+	+	95	44
+	+	96	0
+	+	94	8
+	+	99	34
+	+	48	20
+	+	54	25
+	+	49	17
+	+	50	2
+	+	40	1
+	+	41	26
+	+	42	7
+	+	41	7
+	+	43	16
+	+	44	42
+	+	50	26
+	+	55	22
+	+	56	12
+	+	57	44
+	+	58	21
+	+	61	21
+	+	62	50
+	+	62	17
+	+	62	18
+	+	64	13
+	+	65	12
+	+	66	17
+	+	68	14
+	+	66	14
+	+	68	15
+	+	69	15
+	+	50	23
+	+	74	22
+	+	75	20
