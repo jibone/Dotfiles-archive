@@ -5,7 +5,7 @@
 
 mkdir backup
 cp ~/.bashrc backup/bashrc
-rm ~/.bachrc
+rm ~/.bashrc
 ln -s files/bashrc ~/.bashrc
 cp ~/.bash_profile backup/bash_profile
 rm ~/.bash_profile
