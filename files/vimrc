@@ -29,7 +29,7 @@ filetype indent on
 filetype plugin on
 
 set background=dark
-colorscheme koehler
+colorscheme Tomorrow-Night
 
 au BufNewFile,BufRead *.ejs set filetype=html
 
