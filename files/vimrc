@@ -29,9 +29,15 @@ filetype indent on
 filetype plugin on
 
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme "Tomorrow Night"
 
 au BufNewFile,BufRead *.ejs set filetype=html
+
+autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd Filetype markdown setlocal spell textwidth=72
+autocmd Filetype md setlocal spell textwidth=72
+autocmd Filetype text setlocal spell textwidth=72
+autocmd Filetype txt setlocal spell textwidth=72
 
 " pathogen stuff
 call pathogen#infect()
@@ -41,7 +47,7 @@ if has("gui_running")
     set guioptions=-t
     set clipboard=unnamed
     set transparency=10
-    colorscheme murphy
+    colorscheme Tomorrow-Night
     " set guifont=M+\ 1m\ light:h11
     set guifont=Monaco:h11
 endif
