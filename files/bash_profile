@@ -72,6 +72,7 @@ alias pomo="pomojs"
 alias goto_htdocs="cd /Applications/MAMP/htdocs && ls"
 alias goto_projects="cd ~/Dropbox/Projects && ls"
 alias goto_ezypzy="cd ~/Dropbox/Ezypzy && ls"
+alias spotify="osascript ~/Dotfiles/tools/SpotifyControl/SpotifyControl.scpt"
 
 # Added by the Heroku Toolbelt ---------------------------------
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -80,6 +81,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="~/.gem/ruby/2.0.0/bin:$PATH"
 
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
+export PATH="/opt/rubies/ruby-2.0.0-p353/bin:$PATH"
 
 # RVM ----------------------------------------------------------
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
