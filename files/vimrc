@@ -31,6 +31,8 @@ filetype plugin on
 set background=dark
 colorscheme "Tomorrow Night"
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 au BufNewFile,BufRead *.ejs set filetype=html
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
