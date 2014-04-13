@@ -19,9 +19,11 @@ set nohls
 set incsearch
 set showcmd
 set nowrap
-set number
 set autoindent
 set smartindent
+
+set number
+set relativenumber
 
 syntax on
 filetype on
@@ -73,6 +75,16 @@ if has("gui_running")
     " set guifont=M+\ 1m\ light:h11
     set guifont=Monaco:h11
 endif
+
+function! LineNumToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-m> :call LineNumToggle()<cr>
 
 " switching buffers
 function! MarkWindowSwap()
