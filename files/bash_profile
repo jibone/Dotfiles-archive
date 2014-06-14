@@ -12,6 +12,10 @@ export PLATFORM="$MACHINE-$OS-$OSVERSION"
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
 
+# Load chruby -----------------------------------------------------
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
 # Hello Messsage --------------------------------------------------
 #echo -e "Kernel Information: " `uname -smr`
 #echo -e "`bash --version`"

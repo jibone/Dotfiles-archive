@@ -30,8 +30,16 @@ filetype on
 filetype indent on
 filetype plugin on
 
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+
 set background=dark
 colorscheme Tomorrow-Night
+
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
@@ -52,16 +60,8 @@ if version >= 700
   au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
 endif
 
-" highlight trailing spaces in annoying red
-highlight ExtraWhitespace ctermbg=1 guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-
 if exists('+colorcolumn')
-  set colorcolumn=80
+  set colorcolumn=120
 else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
@@ -70,7 +70,7 @@ endif
 if has("gui_running")
     set guioptions=-t
     set clipboard=unnamed
-    set transparency=10
+    " set transparency=10
     colorscheme Tomorrow-Night
     " set guifont=M+\ 1m\ light:h11
     set guifont=Monaco:h11
@@ -108,3 +108,9 @@ endfunction
 
 nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
 nmap <silent> <leader>pw :call DoWindowSwap()<CR>
+
+" provide hjkl movements in Insert mode via the <Alt> modifier key
+inoremap <A-h> <C-o>h
+inoremap <A-j> <C-o>j
+inoremap <A-k> <C-o>k
+inoremap <A-l> <C-o>l

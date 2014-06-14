@@ -1,0 +1,9 @@
+#
+# Jibone's Butt settings
+#
+
+reset all
+unhook *
+
+unset allow_8bit
+set allow_ansi
