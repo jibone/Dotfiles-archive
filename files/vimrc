@@ -51,6 +51,8 @@ autocmd Filetype md setlocal spell textwidth=72
 autocmd Filetype text setlocal spell textwidth=72
 autocmd Filetype txt setlocal spell textwidth=72
 
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
 " pathogen stuff
 call pathogen#infect()
 

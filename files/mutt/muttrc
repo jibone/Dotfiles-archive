@@ -1,5 +1,5 @@
 #
-# Jibone's Butt settings
+# Jibone's mutt settings
 #
 
 reset all
@@ -7,3 +7,26 @@ unhook *
 
 unset allow_8bit
 set allow_ansi
+
+# Setup Mailbox
+set mbox_type = Maildir
+set folder = ~/Maildir
+set spoolfile = +/
+
+# Setup SMTP
+set my_pass = 'giant88Robot**'
+set my_user = 'j@jiboneus.com'
+
+set realname = 'J.Shamsul Bahri'
+set from = 'j@jiboneus.com'
+set use_from = yes
+
+set smtp_url = smtps://$my_user:$my_pass@smtp.domain.tld
+set ssl_force_tls = yes
+
+# Editor
+set editor = "vim"
+
+# Colours
+color index red black ~N
+color index red black ~O
