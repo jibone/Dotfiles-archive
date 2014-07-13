@@ -6,4 +6,5 @@
 #   git config --global core.excludesfile ~/.gitignore_global
 #
 
+*.log
 backup/
