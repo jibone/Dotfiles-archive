@@ -1,3 +1,64 @@
+" vimrc files from @jibone
+" http://jshamsul.com
+
+" Use Vim settings, and not Vi settings. Must be as early as posible,
+" It has side effects.
+set nocompatible
+
+" map the leader key
+let mapleader = " "
+
+" basic settings
+set backspace=2     " Make backspace work like most other programs
+
+set nobackup
+set nowritebackup
+set noswapfile      " Remove the need for a swap file, (.swp)
+
+set history=50
+set ruler           " Show the cursor positon all the time
+set showcmd         " Show incomplete commands
+set incsearch       " Do incremental searching
+set laststatus=2    " Always display the status line
+set autowrite       " Automatically :write before running commands
+set nohls
+set nowrap
+set autoindent
+set smartindent
+
+set number
+set numberwidth=5
+set relativenumber
+
+" Switch syntax highlighting on.
+" Also switch on highlightinh the last used search pattern.
+if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
+  syntax on
+endif
+
+" Turn on file type detection
+filetype on
+filetype indent on
+filetype plugin on
+
+augroup vimrcEx
+  autocmd!
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it for commit messages, when the position is invalid, or when
+  " inside an event handler (happens when dropping a file on gvim).
+  autocmd BufReadPost *
+    \ if &ft != 'gitcommit' && line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
+
+  " Syntax kighlighting for specific file types
+  autocmd BufRead, BufNewFile *.md set filetype=markdown
+  autocmd BufNewFile, BufRead *.ejs set filetype=html
+
+augroup END
+
+" Softtabs, 2 spaces
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -15,25 +76,26 @@ set nofoldenable
 set foldlevel=1
 set foldcolumn=0
 
-set nohls
-set incsearch
-set showcmd
-set nowrap
-set autoindent
-set smartindent
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
 
-set number
-set relativenumber
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
-syntax on
-filetype on
-filetype indent on
-filetype plugin on
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
 
+" Highlight extra white space with annoying red
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 
+" Set the colorscheme
 set background=dark
 colorscheme Tomorrow-Night
+highlight NonText guibg=#060606
+highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
@@ -41,43 +103,18 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" I sometime work on a project with 120 is the colum width,
+" and most of the time I prefer the 80 column width.
+" This function toggles the columwidth highlighting.
+function! ColumnWidthToggle()
+  if(&colorcolumn == 120)
+    set colorcolumn=80
+  else
+    set colorcolumn=120
+  endif
+endfunc
 
-au BufNewFile,BufRead *.ejs set filetype=html
-
-autocmd Filetype gitcommit setlocal spell textwidth=72
-autocmd Filetype markdown setlocal spell textwidth=72
-autocmd Filetype md setlocal spell textwidth=72
-autocmd Filetype text setlocal spell textwidth=72
-autocmd Filetype txt setlocal spell textwidth=72
-
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-
-" pathogen stuff
-call pathogen#infect()
-
-" highlight the status bar when in insert mode
-if version >= 700
-  au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
-  au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
-endif
-
-if exists('+colorcolumn')
-  set colorcolumn=120
-else
-  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
-endif
-
-" remove tool bar from GUI
-if has("gui_running")
-    set guioptions=-t
-    set clipboard=unnamed
-    " set transparency=10
-    colorscheme Tomorrow-Night
-    " set guifont=M+\ 1m\ light:h11
-    set guifont=Monaco:h11
-endif
-
+" Toggle between relative line numbering and normal line numbering
 function! LineNumToggle()
   if(&relativenumber == 1)
     set norelativenumber
@@ -86,33 +123,41 @@ function! LineNumToggle()
   endif
 endfunc
 
-nnoremap <C-m> :call LineNumToggle()<cr>
+nnoremap <C-L> :call ColumnWithToggle()<cr>
 
-" switching buffers
-function! MarkWindowSwap()
-    let g:markedWinNum = winnr()
-endfunction
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
 
-function! DoWindowSwap()
-    " mark destination
-    let curNum = winnr()
-    let curBuf = bufnr("%")
-    exe g:markedWinNum . "wincmd w"
-    "Switch to source and shuffle dest->source
-    let markedBuf = bufnr( "%" )
-    "Hide and open so that we aren't prompted and keep history
-    exe 'hide buf' curBuf
-    "Switch to dest and shuffle source->dest
-    exe curNum . "wincmd w"
-    "Hide and open so that we aren't prompted and keep history
-    exe 'hide buf' markedBuf
-endfunction
-
-nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
-nmap <silent> <leader>pw :call DoWindowSwap()<CR>
+" Turn of arrow keys. force use h,j,k,l
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
 
 " provide hjkl movements in Insert mode via the <Alt> modifier key
 inoremap <A-h> <C-o>h
 inoremap <A-j> <C-o>j
 inoremap <A-k> <C-o>k
 inoremap <A-l> <C-o>l
+
+" Treat <li> and <p> tags like the block tags they are
+let g:html_indent_tags = 'li\|p'
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" Settings for gui vim, in my case, MacVim
+if has("gui_running")
+  " Remove tool bar from GUI
+  set guioptions=-t
+  set clipboard=unnamed
+  colorscheme Tomorrow-Night
+  set guifont=Monaco:h11
+endif
