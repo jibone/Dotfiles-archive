@@ -6,7 +6,7 @@
 set nocompatible
 
 " map the leader key
-let mapleader = " "
+let mapleader = ","
 
 " basic settings
 set backspace=2     " Make backspace work like most other programs
@@ -107,12 +107,16 @@ autocmd BufWinLeave * call clearmatches()
 " and most of the time I prefer the 80 column width.
 " This function toggles the columwidth highlighting.
 function! ColumnWidthToggle()
-  if(&colorcolumn == 120)
-    set colorcolumn=80
+  if(&textwidth == 120)
+    set textwidth=80
   else
-    set colorcolumn=120
+    set textwidth=120
   endif
 endfunc
+set textwidth=80
+set colorcolumn=+1
+
+nnoremap <leader>c :call ColumnWidthToggle()<cr>
 
 " Toggle between relative line numbering and normal line numbering
 function! LineNumToggle()
@@ -123,7 +127,7 @@ function! LineNumToggle()
   endif
 endfunc
 
-nnoremap <C-L> :call ColumnWithToggle()<cr>
+nnoremap <leader>l :call LineNumToggle()<cr>
 
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
