@@ -8,3 +8,9 @@ Thumbs.db
 *.swo
 *.lnk
 *~
+
+# ignore generated .pomo file
+.pomo
+
+# ignore .idea file (Rubymine seems to generate this)
+.idea
