@@ -30,8 +30,8 @@ set number
 set numberwidth=5
 set relativenumber
 
-" bundle
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" pathogen
+execute pathogen#infect()
 
 " Switch syntax highlighting on.
 " Also switch on highlightinh the last used search pattern.
