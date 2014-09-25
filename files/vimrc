@@ -30,6 +30,9 @@ set number
 set numberwidth=5
 set relativenumber
 
+" bundle
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 " Switch syntax highlighting on.
 " Also switch on highlightinh the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
@@ -75,6 +78,10 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 set foldcolumn=0
+
+" Change the default mapping and default command to invoke CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
