@@ -1,0 +1,11 @@
+# -----------------------------------------------------------------
+# .bash_profile
+
+# Hello message ---------------------------------------------------
+echo -ne "Kernal Information: "; uname -smr
+echo -ne "Uptime: "; uptime
+echo -ne "Server time is: "; date
+echo -e "Ghock and Gholl!"
+
+# Source .bashrc --------------------------------------------------
+source ~/.bashrc
