@@ -7,4 +7,17 @@
 #
 
 *.log
-backup/
+backup/*
+!backup/.gitkeep
+
+!backup/bash
+backup/bash/*
+!backup/bash/.gitkeep
+
+!backup/git
+backup/git/*
+!backup/git/.gitkeep
+
+!backup/vim
+backup/vim/*
+!backup/vim/.gitkeep
