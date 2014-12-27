@@ -5,7 +5,7 @@
 echo -ne "Kernal Information: "; uname -smr
 echo -ne "Uptime: "; uptime
 echo -ne "Server time is: "; date
-echo -ne "Ghock and Gholl!"
+echo -e "Ghock and Gholl!"
 
 # Source .bashrc --------------------------------------------------
 source ~/.bashrc

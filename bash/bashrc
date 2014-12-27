@@ -6,7 +6,7 @@ if [ -f ~/.git-completion.bash ]; then
   source ~/.git-completion.bash
 fi
 if [ -f ~/.git-prompt.sh ]; then
-  source ~/.git-propmt.sh
+  source ~/.git-prompt.sh
 fi
 
 # Source chruby ---------------------------------------------------
