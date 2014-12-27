@@ -1,32 +1,41 @@
-source '/usr/local/share/chruby/chruby.sh'
-source '/usr/local/share/chruby/auto.sh'
+# -----------------------------------------------------------------
+# .bashrc
 
+# Load Git helpers ------------------------------------------------
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
+if [ -f ~/.git-prompt.sh ]; then
+  source ~/.git-propmt.sh
+fi
+
+# Source chruby ---------------------------------------------------
+if [ -f /usr/local/share/chruby/chruby.sh ]; then
+  source /usr/local/share/chruby/chruby.sh
+fi
+if [ -f /usr/local/share/chruby/auto.sh ]; then
+  source /usr/local/share/chruby/auto.sh
+fi
+
+# Detect if interactive -------------------------------------------
 if [[ $- == *i* ]] ; then
   export IS_INTERACTIVE=true
 else
   export IS_INTERACTIVE=false
 fi
 
+# Detect if remote ------------------------------------------------
 if [[ -z $SSH_CONNECTION ]]; then
   export IS_REMOTE=false
 else
   export IS_REMOTE=true
 fi
 
-# Colors ----------------------------------------------------------
+# The shell -------------------------------------------------------
 export TERM=xterm-color
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
-export CLICOLOR=1 
+export CLICOLOR=1
 
-if [ "$OS" = "linux" ] ; then
-  alias ls='ls --color=auto' # For linux, etc
-  # ls colors, see: http://www.linux-sxs.org/housekeeping/lscolors.html
-  export LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rb=90'  #LS_COLORS is not supported by the default ls command in OS-X
-else
-  alias ls='ls -G'  # OS-X SPECIFIC - the -G command in OS-X is for colors, in Linux it's no groups
-fi
-
-# Setup some colors to use later in interactive shell or scripts
 export COLOR_NC='\033[0m' # No Color
 export COLOR_WHITE='\033[1;37m'
 export COLOR_BLACK='\033[0;30m'
@@ -46,113 +55,82 @@ export COLOR_GRAY='\033[1;30m'
 export COLOR_LIGHT_GRAY='\033[0;37m'
 alias colorslist="set | egrep 'COLOR_\w*'"  # lists all the colors
 
-# History ----------------------------------------------------------
+# History ---------------------------------------------------------
 export HISTCONTROL=ignoredups
-#export HISTCONTROL=erasedups
 export HISTFILESIZE=3000
 export HISTIGNORE="ls:cd:[bf]g:exit:..:...:ll:lla"
 alias h=history
-hf(){ 
+hf() {
   grep "$@" ~/.bash_history
 }
 
-if [ $IS_INTERACTIVE = 'true' ] ; then # Interactive shell only
+# For interactive shell -------------------------------------------
+if [ $IS_INTERACTIVE = 'true' ]; then
+  # Note: bind is used instead of sticking there in .inputrc
+  bind "set completion-ignore-case on"
 
-  # Input stuff -------------------------------------------------------
-  bind "set completion-ignore-case on" # note: bind used instead of sticking these in .inputrc
-  bind "set show-all-if-ambiguous On" # show list automatically, without double tab
-  bind "set bell-style none" # no bell
+  # Show list automaticaly, without double tab
+  bind "set show-all-if-ambiguous on"
 
-  # Use vi command mode
-  #bind "set editing-mode vi"
-  #set -o vi
-  #bind -m vi-command -r 'v'
+  # No bell please
+  bind "set bell-style none"
 
-  shopt -s checkwinsize # After each command, checks the windows size and changes lines and columns
+  # After each command, check the window size and changes lines and columns
+  shopt -s checkwinsize
 
-
-  # Prompts ----------------------------------------------------------
-  git_dirty_flag() {
-    git status 2> /dev/null | grep -c : | awk '{if ($1 > 0) print "⚡"}'
-  }
-
-  prompt_func() {
-      previous_return_value=$?;
-      if [ $IS_REMOTE = 'true' ] ; then
-        prompt="\n\[\033]0;${USER} ${PWD}\007\]\[${COLOR_PURPLE}\]\w \[${COLOR_GRAY}\]${USER}@${HOSTNAME%%.*}$(__git_ps1)\[${COLOR_NC}\]\n"
-      else
-        prompt="\n\[\033]0;${USER} ${PWD}\007\]\[${COLOR_GREEN}\]\w \[${COLOR_GRAY}\]${USER}@${HOSTNAME%%.*}$(__git_ps1)\[${COLOR_NC}\]\n"
-      fi
-      #prompt="\033]0;${PWD}\007\[${COLOR_GREEN}\]\w\[${COLOR_GRAY}\]$(__git_ps1)\[${COLOR_NC}\] "
-      #prompt="\[${COLOR_GREEN}\]\w\[${COLOR_GRAY}\]$(__git_ps1)\[${COLOR_YELLOW}\]$(git_dirty_flag)\[${COLOR_NC}\] "
-
-      if test $previous_return_value -eq 0
-      then
-          PS1="${prompt}> "
-      else
-          PS1="${prompt}\[${COLOR_RED}\]> \[${COLOR_NC}\]"
-      fi
-  }
-  PROMPT_COMMAND=prompt_func
-
-  parse_git_branch() {
-    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \[\1\]/'
-  }
-
-  git_prompt ()
-  {
-    if ! git rev-parse --git-dir > /dev/null 2>&1; then
-      return 0
-    fi
-
-    git_branch=$(git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')
-
-    #if git diff --quiet 2>/dev/null >&2; then
-    #  git_color="${c_git_clean}"
-    #else
-    #  git_color=${c_git_cleanit_dirty}
-    #fi
-
-    #echo " [$git_color$git_branch${c_reset}]"
-    echo "bla"
-  }
-
-  test() {
-    #if ! git rev-parse --git-dir > /dev/null 2>&1; then
-    #  return 0
-    #fi
-    git_branch=$(git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')
-    echo $(git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')
-  }
-
-  export PS1="\[${COLOR_GREEN}\]\W\[${COLOR_NC}\] \[${COLOR_YELLOW}\]$(test)\e[0:33m\e[0:35m⌘ \e[m "  # Primary prompt with only a path
-  # export PS1="\[${COLOR_RED}\]\w > \[${COLOR_NC}\]"  # Primary prompt with only a path, for root, need condition to use this for root
-  # export PS1="\[${COLOR_GRAY}\]\u@\h \[${COLOR_GREEN}\]\w > \[${COLOR_NC}\]"  # Primary prompt with user, host, and path 
-  # This runs before the prompt and sets the title of the xterm* window.  If you set the title in the prompt
-  # weird wrapping errors occur on some systems, so this method is superior
-  export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/} ${USER}@${HOSTNAME%%.*}"; echo -ne "\007"'  # user@host path
-
-  #export PS2='> '    # Secondary prompt
-  #export PS3='#? '   # Prompt 3
-  #export PS4='+'     # Prompt 4
-
-  function xtitle {  # change the title of your xterm* window
+  # Change the title of xterm* window
+  function xtitle {
     unset PROMPT_COMMAND
-    echo -ne "\033]0;$1\007" 
+    echo -ne "\033]0;$1\007"
   }
-
 fi
 
+# The prompt ------------------------------------------------------
+MAGENTA="\[\033[0;35m\]"
+YELLOW="\[\033[0;33m\]"
+BLUE="\[\033[34m\]"
+LIGHT_GRAY="\[\033[0;37m\]"
+CYAN="\[\033[0;36m\]"
+GREEN="\[\033[0;32m\]"
+GIT_PS1_SHOWDIRTYSTATE=true
+export LS_OPTIONS='--color=auto'
+export CLICOLOR='Yes'
+export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
-#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PS1=$GREEN"\W"'$(
+  if [[ $(__git_ps1) =~ \*\)$ ]]
+  # a file has been modified but not added
+  then echo "'$YELLOW'"$(__git_ps1 " (%s)")
+  elif [[ $(__git_ps1) =~ \+\)$ ]]
+  # a file has been added, but not commited
+  then echo "'$MAGENTA'"$(__git_ps1 " (%s)")
+  # the state is clean, changes are commited
+  else echo "'$CYAN'"$(__git_ps1 " (%s)")
+  fi)'" \e[0:35m⌘\e[m  "
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# General path ----------------------------------------------------
+PATH=${PATH}:~/bin
+PATH=${PATH}:/opt/bin:/opt/local/bin:/opt/local/sbin
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-chruby ruby-2.0.0-p353
+# MySQL path ------------------------------------------------------
+if hash mysql 2>/dev/null; then
+  export PATH="$PATH:/usr/local/mysql/bin"
+fi
 
-### Go stuff
-export GOROOT=$HOME/go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+# OS specific settings --------------------------------------------
+if [[ "$OS" == 'darwin' ]]; then
+  alias finder="open -a Finder"
+  aliad preview="open -a '/Applications/Preview.app'"
+
+  # Setup Spotify script ------------------------------------------
+  if [ -f ~/Dotfiles/utils/Spotify/SpotifyControl.scpt ]; then
+    alias spotify="osascript ~/Dotfiles/utils/Spotify/SpotifyControl.scpt"
+  fi
+fi
+
+if [ "$OS" = "linux" ]; then
+  alias ls='ls --color=auto' # For linux, etc
+  # ls colors, see: http://www.linux-sxs.org/housekeeping/lscolors.html
+  export LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rb=90'
+fi
