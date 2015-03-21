@@ -119,19 +119,20 @@ if hash mysql 2>/dev/null; then
   export PATH="$PATH:/usr/local/mysql/bin"
 fi
 
-# OS specific settings --------------------------------------------
-if [[ "$OS" == 'darwin' ]]; then
-  alias finder="open -a Finder"
-  aliad preview="open -a '/Applications/Preview.app'"
+# Identifi system OS ----------------------------------------------
+unamestr=`uname`
 
-  # Setup Spotify script ------------------------------------------
-  if [ -f ~/Dotfiles/utils/Spotify/SpotifyControl.scpt ]; then
-    alias spotify="osascript ~/Dotfiles/utils/Spotify/SpotifyControl.scpt"
-  fi
+# OS specific settings --------------------------------------------
+if [[ "$unamestr" == 'Darwin' ]]; then
+  alias finder="open -a Finder"
+  alias preview="open -a '/Applications/Preview.app'"
 fi
 
-if [ "$OS" = "linux" ]; then
+if [ "$unamestr" = "Linux" ]; then
   alias ls='ls --color=auto' # For linux, etc
   # ls colors, see: http://www.linux-sxs.org/housekeeping/lscolors.html
   export LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rb=90'
 fi
+
+# Spotify terminal support ----------------------------------------
+
