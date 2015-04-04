@@ -173,4 +173,6 @@ if has("gui_running")
   set guifont=Monaco:h11
 endif
 
+colorscheme koehler
+
 nmap <F8> :TagbarToggle<CR>
