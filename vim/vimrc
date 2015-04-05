@@ -136,6 +136,9 @@ endfunc
 
 nnoremap <leader>l :call LineNumToggle()<cr>
 
+" Quick key binding for NERDTree
+nnoremap <leader>n :NERDTree<CR>
+
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
@@ -171,8 +174,8 @@ if has("gui_running")
   set clipboard=unnamed
   colorscheme Tomorrow-Night
   set guifont=Monaco:h11
+else
+  colorscheme koehler
 endif
-
-colorscheme koehler
 
 nmap <F8> :TagbarToggle<CR>
