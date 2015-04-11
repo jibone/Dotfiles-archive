@@ -71,3 +71,14 @@ if hash vim 2>/dev/null; then
 else
   echo "Vim is not installed."
 fi
+
+# Setup tmux settings ---------------------------------------------
+if hash tmux 2>/dev/null; then
+  if [ -f ~/.tmux.conf ] || [ -L ~/.tmux.conf ]; then
+    echo "Backup tmux.conf"
+    mv ~/.tmux.conf ~/Dotfiles/backup/tmux/tmux.conf
+  fi
+
+  echo "Link tmux.conf file"
+  ln -s ~/Dotfiles/tmux/tmux.conf ~/.tmux.conf
+fi

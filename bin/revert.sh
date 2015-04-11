@@ -37,3 +37,9 @@ if [ -f ../backup/vim/vimrc ]; then
   echo "Revert vimrc from backup..."
   mv ~/Dotfiles/backup/vim/vimrc ~/.vimrc
 fi
+
+# Revert tmux settings ------------------------------------------
+if [ -f ../backup/tmux/tmux.conf ]; then
+  echo "Revert tmux.conf from backup"
+  mv ~/Dotfiles/backup/tmux/tmux.conf ~/.tmux.conf
+fi
