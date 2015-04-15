@@ -44,7 +44,7 @@ filetype on
 filetype indent on
 filetype plugin on
 
-nnoremap P :Ag! "\b<C-R><C-W>\b"<CR>:cw<CR>
+nnoremap W :Ag! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 augroup vimrcEx
   autocmd!
@@ -176,8 +176,6 @@ if has("gui_running")
   set clipboard=unnamed
   colorscheme Tomorrow-Night
   set guifont=Monaco:h11
-else
-  colorscheme koehler
 endif
 
 nmap <F8> :TagbarToggle<CR>
