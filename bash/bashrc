@@ -126,6 +126,7 @@ unamestr=`uname`
 if [[ "$unamestr" == 'Darwin' ]]; then
   alias finder="open -a Finder"
   alias preview="open -a '/Applications/Preview.app'"
+  alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 fi
 
 if [ "$unamestr" = "Linux" ]; then
@@ -133,6 +134,3 @@ if [ "$unamestr" = "Linux" ]; then
   # ls colors, see: http://www.linux-sxs.org/housekeeping/lscolors.html
   export LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rb=90'
 fi
-
-# Spotify terminal support ----------------------------------------
-
