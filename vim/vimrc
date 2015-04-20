@@ -178,4 +178,17 @@ if has("gui_running")
   set guifont=Monaco:h11
 endif
 
+" Toggle tagbar
 nmap <F8> :TagbarToggle<CR>
+
+" Toggle buffer via CtrlP
+nnoremap <leader>b :CtrlPBuffer<cr>
+
+" Highlight cursorline
+:hi CursorLine term=underline ctermbg=16 guibg=#282a2e
+:hi CursorColumn term=reverse ctermbg=16 guibg=#282a2e
+:nnoremap <leader>v :set cursorline! cursorcolumn!<CR>
+
+" Set spell checker to .txt and .md files
+autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
+autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us
