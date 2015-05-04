@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-# ---------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # Dotfiles by @jibone
 # This file setups your machine with all the nessasary dotfiles
-# ---------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
-# Install bash_profile and bashrc -------------------------------
+# Install bash_profile and bashrc ----------------------------------------------
 if [ -f ~/.bash_profile ] || [ -L ~/.bash_profile ]; then
   echo "Back up bash_profile file..."
   mv ~/.bash_profile ~/Dotfiles/backup/bash/bash_profile
@@ -22,7 +22,17 @@ fi
 echo "Link new bashrc "
 ln -s ~/Dotfiles/bash/bashrc ~/.bashrc
 
-# Install git prompt and completion script -------------------------
+# Install inputrc --------------------------------------------------------------
+# Not sure about this yet, but would like to keep it around.
+#if [ -f ~/.inputrc ] || [ -L ~/.inputrc ]; then
+#  echo "Backup inputrc file"
+#  mv ~/.inputrc ~/Dotfiles/backup/bash/inputrc
+#fi
+#
+#echo "Link new inputrc file"
+#ln -s ~/Dotfiles/bash/inputrc ~/.inputrc
+
+# Install git prompt and completion script -------------------------------------
 if hash git 2>/dev/null; then
   if [ -f ~/.git-completion.bash ] || [ -L ~/.git-completion.bash ]; then
     echo "Backup git-completion.bash..."
@@ -51,7 +61,7 @@ else
   echo "Git is not installed."
 fi
 
-# Install vimrc and vim plugins -----------------------------------
+# Install vimrc and vim plugins ------------------------------------------------
 if hash vim 2>/dev/null; then
   if [ -d ~/.vim ] || [ -L ~/.vim ]; then
     echo "Backup vim folder..."
@@ -72,7 +82,7 @@ else
   echo "Vim is not installed."
 fi
 
-# Setup tmux settings ---------------------------------------------
+# Setup tmux settings ----------------------------------------------------------
 if hash tmux 2>/dev/null; then
   if [ -f ~/.tmux.conf ] || [ -L ~/.tmux.conf ]; then
     echo "Backup tmux.conf"
