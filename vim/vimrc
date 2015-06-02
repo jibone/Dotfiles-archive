@@ -1,4 +1,4 @@
-" vimrc files from @jibone
+"https://github.com/zhchang/quick_file.git vimrc files from @jibone
 " http://jshamsul.com
 
 " Use Vim settings, and not Vi settings. Must be as early as posible,
@@ -29,6 +29,9 @@ set smartindent
 set number
 set numberwidth=5
 set relativenumber
+
+set cursorline
+set cursorcolumn
 
 " pathogen
 execute pathogen#infect()
@@ -62,10 +65,8 @@ augroup vimrcEx
   autocmd BufNewFile, BufRead *.ejs set filetype=html
 augroup END
 
-
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
-
 
 " Softtabs, 2 spaces
 set tabstop=2
@@ -180,8 +181,15 @@ if has("gui_running")
   set guioptions=-t
   set clipboard=unnamed
   colorscheme Tomorrow-Night
-  set guifont=Monaco:h11
+  set guifont=Fira\ Mono\ for\ Powerline:h11
 endif
+
+" Set airline to use powerline font
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
 
 " Toggle tagbar
 nmap <F8> :TagbarToggle<CR>
@@ -197,3 +205,5 @@ nnoremap <leader>b :CtrlPBuffer<cr>
 " Set spell checker to .txt and .md files
 autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us
+
+nnoremap <leader>p :QF 
