@@ -57,9 +57,10 @@ augroup vimrcEx
     \   exe "normal g`\"" |
     \ endif
 
-  " Syntax kighlighting for specific file types
+  " Syntax highlighting for specific file types
   autocmd BufRead, BufNewFile *.md set filetype=markdown
   autocmd BufNewFile, BufRead *.ejs set filetype=html
+  autocmd BufNewFile, bufRead *.jsx set filetype=javascript
 augroup END
 
 " add jbuilder syntax highlighting
