@@ -218,4 +218,8 @@ nnoremap <leader>b :CtrlPBuffer<cr>
 autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us
 
-nnoremap <leader>p :QF 
+nnoremap <leader>p :QF
+
+" Special markdown syntax
+let g:vim_markdown_math=1
+let g:vim_markdown_frontmatter=1
