@@ -1,5 +1,4 @@
-# OS generated files #
-######################
+# Ignore these OS genereated filed
 .DS_Store*
 ehthumbs.db
 Icon?
@@ -9,8 +8,11 @@ Thumbs.db
 *.lnk
 *~
 
-# ignore generated .pomo file
+# Ignore generated .pomo file
 .pomo
 
-# ignore .idea file (Rubymine seems to generate this)
+# Ignore .idea file (Rubymine seems to generate this)
 .idea
+
+# Ignore .aginore file. This file are different between projects.
+.agignore
