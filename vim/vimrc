@@ -194,14 +194,15 @@ if has("gui_running")
   set clipboard=unnamed
   colorscheme Tomorrow-Night
   set guifont=Fira\ Mono\ for\ Powerline:h11
-endif
 
-" Set airline to use powerline font
-let g:airline_powerline_fonts = 1
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
+  " Set airline to use powerline font
+  let g:airline_powerline_fonts = 1
+  if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+  endif
+
+  let g:airline_symbols.space = "\ua0"
 endif
-let g:airline_symbols.space = "\ua0"
 
 " Toggle tagbar
 nmap <F8> :TagbarToggle<CR>
