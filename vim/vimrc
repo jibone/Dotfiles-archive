@@ -162,17 +162,23 @@ nnoremap <leader>n :NERDTree<CR>
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
+" Tab shortcuts
+nnoremap <leader>tt :tabnew<CR>
+nnoremap <leader>tf :tabfirst<CR>
+nnoremap <leader>tn :tabnext<CR>
+nnoremap <leader>tp :tabprev<CR>
+nnoremap <tab> :tabnext<CR>
+nnoremap <S-tab> :tabprev<CR>
+
+" Split shortcuts
+nnoremap <leader>vs :vsplit<CR>
+nnoremap <leader>ss :split<CR>
+
 " Turn of arrow keys. force use h,j,k,l
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
-
-" provide hjkl movements in Insert mode via the <Alt> modifier key
-inoremap <A-h> <C-o>h
-inoremap <A-j> <C-o>j
-inoremap <A-k> <C-o>k
-inoremap <A-l> <C-o>l
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
