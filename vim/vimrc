@@ -30,6 +30,10 @@ set number
 set numberwidth=5
 set relativenumber
 
+let g:netrw_dirhistmax = 0
+
+set mouse=a
+
 " pathogen
 execute pathogen#infect()
 
@@ -237,3 +241,12 @@ nnoremap <leader>p :QF
 " Special markdown syntax
 let g:vim_markdown_math=1
 let g:vim_markdown_frontmatter=1
+
+" Test runner related
+let g:rspec_command = "call VtrSendCommand('rspec {spec}')"
+
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+map <leader>f :VtrFocusRunner<CR>
