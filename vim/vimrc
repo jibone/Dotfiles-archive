@@ -6,7 +6,7 @@
 set nocompatible
 
 " map the leader key
-let mapleader = ","
+let mapleader = "\<Space>"
 
 " basic settings
 set backspace=2     " Make backspace work like most other programs
