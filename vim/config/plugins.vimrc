@@ -110,7 +110,7 @@ Plugin 'tpope/vim-fugitive'
 " =============================================================================
 " vim-gitgutter
 " Get gitgutter.
-"Plugin 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 
 " =============================================================================
 " ag.vim
