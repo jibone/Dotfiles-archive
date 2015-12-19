@@ -1,5 +1,8 @@
 " Plugins makes vim fun
 
+" Enable matchit
+runtime macros/matchit.vim
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -50,6 +53,14 @@ Plugin 'christoomey/vim-tmux-runner'
 " vim-ruby
 " Better programmer happiness.
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-rake'
+
+" =============================================================================
+" vim-textobj-rubyblock
+" Make vim aware of ruby blocks
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
 
 " =============================================================================
 " vim-rails.vim

@@ -1,6 +1,5 @@
 " Custom functions
 
-
 " I sometime work on a project with 120 is the colum width,
 " and most of the time I prefer the 80 column width.
 " This function toggles the columwidth highlighting.
@@ -15,6 +14,9 @@ set textwidth=80
 set colorcolumn=+1
 
 nnoremap <leader>ce :call ColumnWidthToggle()<cr>
+
+:hi CursorLine   cterm=NONE ctermbg=black ctermfg=white guibg=black guifg=white
+:hi CursorColumn cterm=NONE ctermbg=black ctermfg=white guibg=black guifg=white
 
 " Toggle cursorline
 function! CursorLineToggle()
