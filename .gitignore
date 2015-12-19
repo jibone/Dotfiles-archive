@@ -22,5 +22,9 @@ backup/git/*
 backup/vim/*
 !backup/vim/.gitkeep
 
+!vim/vim/bundle
+vim/vim/bundle/*
+vim/vim/bundle/.gitkeep
+
 # Ignore todo file
 .todo
