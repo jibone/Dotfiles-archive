@@ -57,6 +57,14 @@ if hash git 2>/dev/null; then
 
   echo "Link gitignore_global file"
   ln -s ~/Dotfiles/git/gitignore_global ~/.gitignore_global
+
+  if [ -f ~/.git_template ] || [ -L ~/.git_template ]; then
+    echo "Backup git_template file"
+    mv ~/.git_template ~/Dotfiles/backup/git/git_template
+  fi
+
+  echo "Link git_template files"
+  ln -s ~/Dotfiles/git/git_template ~/.git_template
 else
   echo "Git is not installed."
 fi
