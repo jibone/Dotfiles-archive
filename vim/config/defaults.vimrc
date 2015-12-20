@@ -85,3 +85,39 @@ autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us
 autocmd BufRead, BufNewFile *.md set filetype=markdown
 autocmd BufNewFile, BufRead *.ejs set filetype=html
 autocmd BufNewFile, bufRead *.jsx set filetype=javascript
+
+" Auto-pair
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+autocmd Syntax html,vim inoremap < <lt>><Left>
+
+function! ClosePair(char)
+  if getline('.')[col('.') - 1] == a:char
+    return "\<Right>"
+  else
+    return a:char
+  endif
+endf
+
+inoremap ) <c-r>=ClosePair(')')<CR>
+inoremap ] <c-r>=ClosePair(']')<CR>
+inoremap } <c-r>=ClosePair('}')<CR>
+
+function! QuoteDelim(char)
+  let line = getline('.')
+  let col = col('.')
+  if line[col - 2] == "\\"
+    " Inserting a quoted quotation mark into the string
+    return a:char
+  elseif line[col - 1] == a:char
+    " Escaping out of the string
+    return "\<Right>"
+  else
+    "Starting a string
+    return a:char.a:char."\<Left>"
+  endif
+endf
+
+inoremap " <c-r>=QuoteDelim('"')<CR>
+inoremap ' <c-r>=QuoteDelim("'")<CR>
