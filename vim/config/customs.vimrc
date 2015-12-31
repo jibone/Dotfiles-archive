@@ -41,4 +41,4 @@ function! LineNumToggle()
   endif
 endfunc
 
-nnoremap <leader>l :call LineNumToggle()<cr>
+nnoremap <leader>rl :call LineNumToggle()<cr>

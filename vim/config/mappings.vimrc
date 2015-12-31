@@ -1,8 +1,8 @@
 " Key Mappings
 
 " Save when exit vim insert mode
-imap jk <esc>:w<cr>
-imap kj <esc>:w<cr>
+imap jk <esc>:w<cr>$
+imap kj <esc>:w<cr>$
 imap <C-s> <esc>:w<cr>
 
 " Move up and down by visible lines if current line is wrapped
@@ -32,3 +32,6 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
+
+" Make 0 to move to the first word in the begining of the line
+nmap 0 0w
