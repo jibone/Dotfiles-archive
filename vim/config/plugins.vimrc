@@ -142,6 +142,11 @@ Plugin 'scrooloose/nerdtree'
 nnoremap <leader>n :NERDTree<CR>
 
 " =============================================================================
+" vim-endwise.vim
+" Wisely end stuff
+Plugin 'tpope/vim-endwise'
+
+" =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
 call vundle#end()
