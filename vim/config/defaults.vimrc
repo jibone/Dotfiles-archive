@@ -51,6 +51,9 @@ set foldcolumn=0
 set listchars=tab:▸\ ,eol:¬
 set list
 
+" make sure editing like is always in the middle
+set scrolloff=999
+
 " Set the colorscheme
 set background=dark
 colorscheme Tomorrow-Night

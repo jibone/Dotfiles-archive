@@ -15,10 +15,11 @@ set colorcolumn=+1
 
 nnoremap <leader>ce :call ColumnWidthToggle()<cr>
 
-:hi CursorLine   cterm=NONE ctermbg=black ctermfg=white guibg=black guifg=white
-:hi CursorColumn cterm=NONE ctermbg=black ctermfg=white guibg=black guifg=white
+:hi CursorLine   cterm=NONE ctermbg=black guibg=black guifg=white
+:hi CursorColumn cterm=NONE ctermbg=black guibg=black guifg=white
 
 " Toggle cursorline
+set cursorline!
 function! CursorLineToggle()
   set cursorline!
 endfunc
