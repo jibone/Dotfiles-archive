@@ -147,6 +147,12 @@ nnoremap <leader>n :NERDTree<CR>
 Plugin 'tpope/vim-endwise'
 
 " =============================================================================
+" vim-better-whitespace
+" Better highlight trailing whitespaces
+Plugin 'ntpeters/vim-better-whitespace'
+highlight ExtraWhitespace ctermbg=blue
+
+" =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
 call vundle#end()
