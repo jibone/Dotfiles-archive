@@ -24,7 +24,9 @@ backup/vim/*
 
 !vim/vim/bundle
 vim/vim/bundle/*
-vim/vim/bundle/.gitkeep
+!vim/vim/bundle/.gitkeep
+
+vim/vim/.netrwhist
 
 # Ignore todo file
 .todo

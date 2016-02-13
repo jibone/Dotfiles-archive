@@ -10,10 +10,12 @@ nmap j gj
 nmap k gk
 
 " Tab shortcuts
+nmap <leader>tx :tabnew<cr>:Ex<cr>
 nmap <leader>tt :tabnew<cr>
 nmap <leader>tf :tabfirst<cr>
 nmap <leader>tn :tabnext<cr>
 nmap <leader>tp :tabprev<cr>
+nmap <leader>tc :q<cr>
 nmap <tab> :tabnext<cr>
 nmap <S-tab> :tabprev<cr>
 
@@ -35,3 +37,7 @@ nmap <C-l> <C-w>l
 
 " Make 0 to move to the first word in the begining of the line
 nmap 0 0w
+
+" Buffers shortcut
+nmap <leader>bn :bn<cr>
+nmap <leader>bp :bp<cr>
