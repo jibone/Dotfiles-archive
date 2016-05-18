@@ -12,7 +12,7 @@ fi
 # Source chruby from homebrew install  ----------------------------
 if [ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]; then
   source /usr/local/opt/chruby/share/chruby/chruby.sh
-  chruby ruby-2.2.4
+  chruby ruby-2.3.1
 fi
 if [ -f /usr/local/opt/chruby/share/chruby/auto.sh ]; then
   source /usr/local/opt/chruby/share/chruby/auto.sh
