@@ -121,3 +121,7 @@ endf
 
 inoremap " <c-r>=QuoteDelim('"')<CR>
 inoremap ' <c-r>=QuoteDelim("'")<CR>
+
+" Turn on limelight when in Goyo mode
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!

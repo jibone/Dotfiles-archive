@@ -134,6 +134,11 @@ Plugin 'rking/ag.vim'
 Plugin 'junegunn/goyo.vim'
 
 " =============================================================================
+" limelight.vim
+" Hyperfocus writing in vim
+Plugin 'junegunn/limelight.vim'
+
+" =============================================================================
 " nerdtree.vim
 " When I need a directory tree view
 Plugin 'scrooloose/nerdtree'
