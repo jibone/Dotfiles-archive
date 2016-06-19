@@ -4,18 +4,33 @@
 # Load Git helpers ------------------------------------------------
 if [ -f ~/.git-completion.bash ]; then
   source ~/.git-completion.bash
+else
+  echo -ne "git-completion.bash is not installed."
 fi
 if [ -f ~/.git-prompt.sh ]; then
   source ~/.git-prompt.sh
+else
+  echo -ne "git-prompt.sh is not installed."
 fi
 
 # Source chruby from homebrew install  ----------------------------
 if [ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]; then
   source /usr/local/opt/chruby/share/chruby/chruby.sh
   chruby ruby-2.3.1
+else
+  echo -ne "chruby.sh is not installed."
 fi
 if [ -f /usr/local/opt/chruby/share/chruby/auto.sh ]; then
   source /usr/local/opt/chruby/share/chruby/auto.sh
+else
+  echo -ne "auto.sh is not installed."
+fi
+
+# Source bashmarks ------------------------------------------------
+if [ -f ~/.local/bin/bashmarks.sh ]; then
+  source ~/.local/bin/bashmarks.sh
+else
+  echo -ne "bashmarks.sh is not installed."
 fi
 
 # Detect if interactive -------------------------------------------
