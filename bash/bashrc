@@ -102,18 +102,22 @@ if [ $IS_INTERACTIVE = 'true' ]; then
 fi
 
 # The prompt ------------------------------------------------------
-MAGENTA="\[\033[0;35m\]"
+MAGENTA="\[\033[1;35m\]"
 YELLOW="\[\033[0;33m\]"
 BLUE="\[\033[34m\]"
 LIGHT_GRAY="\[\033[0;37m\]"
 CYAN="\[\033[0;36m\]"
 GREEN="\[\033[0;32m\]"
-GIT_PS1_SHOWDIRTYSTATE=true
+RESET="\[\033[m\]"
+export GIT_PS1_SHOWDIRTYSTATE=true
 export LS_OPTIONS='--color=auto'
 export CLICOLOR='Yes'
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
-export PS1=$GREEN"\W"'$(
+lighting="⚡ "
+arrow="→"
+
+export PS1="\n$MAGENTA$arrow $GREEN\w"'$(
   if [[ $(__git_ps1) =~ \*\)$ ]]
   # a file has been modified but not added
   then echo "'$YELLOW'"$(__git_ps1 " (%s)")
@@ -122,7 +126,7 @@ export PS1=$GREEN"\W"'$(
   then echo "'$MAGENTA'"$(__git_ps1 " (%s)")
   # the state is clean, changes are commited
   else echo "'$CYAN'"$(__git_ps1 " (%s)")
-  fi)'" \e[0:35m⌘\e[m  "
+  fi)'" $RESET$GREEN\n\e[0:35m$lighting\e[m$RESET"
 
 # General path ----------------------------------------------------
 PATH=${PATH}:~/bin
@@ -137,6 +141,16 @@ if hash mysql 2>/dev/null; then
   export PATH="$PATH:/usr/local/mysql/bin"
 fi
 
+# Quicker navigation ----------------------------------------------
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../../"
+
+# Colorize cat
+# Must install Pygments - "sudo easy_install pygments"
+alias c='pygmentize -O style=monokai -f console256 -g'
+
 # Identifi system OS ----------------------------------------------
 unamestr=`uname`
 
@@ -147,6 +161,7 @@ if [[ "$unamestr" == 'Darwin' ]]; then
   alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 fi
 
+# Linux specific settings
 if [ "$unamestr" = "Linux" ]; then
   alias ls='ls --color=auto' # For linux, etc
   # ls colors, see: http://www.linux-sxs.org/housekeeping/lscolors.html
