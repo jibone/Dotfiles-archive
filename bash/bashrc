@@ -147,6 +147,9 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../../"
 
+# Clear and ls ----------------------------------------------------
+alias clearls="clear; ls"
+
 # Colorize cat
 # Must install Pygments - "sudo easy_install pygments"
 alias c='pygmentize -O style=monokai -f console256 -g'
