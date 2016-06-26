@@ -117,7 +117,7 @@ export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 lighting="⚡ "
 arrow="→"
 
-export PS1="\n$MAGENTA$arrow $GREEN\w"'$(
+export PS1="$MAGENTA$arrow $GREEN\w"'$(
   if [[ $(__git_ps1) =~ \*\)$ ]]
   # a file has been modified but not added
   then echo "'$YELLOW'"$(__git_ps1 " (%s)")
