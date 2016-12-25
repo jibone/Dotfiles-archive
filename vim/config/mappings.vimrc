@@ -41,3 +41,11 @@ nmap 0 0w
 " Buffers shortcut
 nmap <leader>bn :bn<cr>
 nmap <leader>bp :bp<cr>
+
+" Moving lines and code up and down
+" In normal mode, Shift-j and Shift-k will move line up and down.
+" In visual mode, Select block, Shift-j and Shift-k will move block up and down.
+nnoremap <S-j> :m .+1<CR>==
+nnoremap <S-k> :m .-2<CR>==
+vnoremap <S-j> :m '>+1<CR>gv=gv
+vnoremap <S-k> :m '<-2<CR>gv=gv
