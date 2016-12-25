@@ -170,3 +170,6 @@ if [ "$unamestr" = "Linux" ]; then
   # ls colors, see: http://www.linux-sxs.org/housekeeping/lscolors.html
   export LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rb=90'
 fi
+
+export NVM_DIR="/Users/jibone/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
