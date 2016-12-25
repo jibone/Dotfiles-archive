@@ -157,6 +157,13 @@ Plugin 'tpope/vim-endwise'
 Plugin 'ntpeters/vim-better-whitespace'
 highlight ExtraWhitespace ctermbg=blue
 
+
+" =============================================================================
+" vim-newcomplete.vim
+" Code completion framework
+Plugin 'shougo/neocomplete.vim'
+let g:neocomplete#enable_at_startup = 1
+
 " =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>

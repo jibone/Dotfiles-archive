@@ -1,8 +1,8 @@
 " Key Mappings
 
 " Save when exit vim insert mode
-imap jk <esc>:w<cr>$
-imap kj <esc>:w<cr>$
+imap jk <esc>:w<cr>
+imap kj <esc>:w<cr>
 imap <C-s> <esc>:w<cr>
 
 " Move up and down by visible lines if current line is wrapped
