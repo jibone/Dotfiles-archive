@@ -1,8 +1,8 @@
 " Key Mappings
 
 " Save when exit vim insert mode
-imap jk <esc>:w<cr>
-imap kj <esc>:w<cr>
+imap jk <esc>:w<cr>l
+imap kj <esc>:w<cr>l
 imap <C-s> <esc>:w<cr>
 
 " Move up and down by visible lines if current line is wrapped
@@ -24,10 +24,12 @@ nmap <leader>vs :vsplit<cr>
 nmap <leader>ss :split<cr>
 
 " Turn of arrow keys. force use h,j,k,l
-nmap <Left> :echoe "Use h"<CR>
-nmap <Right> :echoe "Use l"<CR>
-nmap <Up> :echoe "Use k"<CR>
-nmap <Down> :echoe "Use j"<CR>
+"nmap <Left> :echoe "Use h"<CR>
+"nmap <Right> :echoe "Use l"<CR>
+"nmap <Up> :echoe "Use k"<CR>
+"nmap <Down> :echoe "Use j"<CR>
+" I don't need this any more. I've already got use to not using arrow keys when
+" not needed too. I'm leaving it here just for reference.
 
 " Quicker window movement
 nmap <C-h> <C-w>h
@@ -43,10 +45,7 @@ nmap <leader>bn :bn<cr>
 nmap <leader>bp :bp<cr>
 
 " Moving lines and code up and down
-" In normal mode, Shift-j and Shift-k will move line up and down.
 " In visual mode, Select block, Shift-j and Shift-k will move block up and down.
-nnoremap <S-j> :m .+1<CR>==
-nnoremap <S-k> :m .-2<CR>==
 vnoremap <S-j> :m '>+1<CR>gv=gv
 vnoremap <S-k> :m '<-2<CR>gv=gv
 
