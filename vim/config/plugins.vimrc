@@ -165,6 +165,15 @@ Plugin 'shougo/neocomplete.vim'
 let g:neocomplete#enable_at_startup = 1
 
 " =============================================================================
+" vim-wheel
+" Screen-anchored cursor movementg for vim
+Plugin 'reedes/vim-wheel'
+" Configure scroll up and down
+let g:wheel#map#up = '<D-k>'
+let g:wheel#map#down = '<D-j>'
+
+
+" =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
 call vundle#end()
