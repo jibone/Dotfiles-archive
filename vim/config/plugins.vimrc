@@ -165,6 +165,11 @@ Plugin 'shougo/neocomplete.vim'
 let g:neocomplete#enable_at_startup = 1
 
 " =============================================================================
+" vim-pencil
+" Making vim more writing friendly
+Plugin 'reedes/vim-pencil'
+
+" =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
 call vundle#end()
