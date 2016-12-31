@@ -176,6 +176,11 @@ Plugin 'reedes/vim-lexical'
 
 
 " =============================================================================
+" vim-wordy
+" Uncover usage problems in your writing
+Plugin 'reedes/vim-wordy'
+
+" =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
 call vundle#end()
