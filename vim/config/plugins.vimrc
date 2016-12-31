@@ -170,6 +170,12 @@ let g:neocomplete#enable_at_startup = 1
 Plugin 'reedes/vim-pencil'
 
 " =============================================================================
+" vim-lexical
+" building on vim's spell-check 
+Plugin 'reedes/vim-lexical'
+
+
+" =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
 call vundle#end()

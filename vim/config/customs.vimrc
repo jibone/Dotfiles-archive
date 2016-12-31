@@ -42,3 +42,19 @@ function! LineNumToggle()
 endfunc
 
 nnoremap <leader>rl :call LineNumToggle()<cr>
+
+" Initialize pencil for certin file type
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType textile      call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
+
+" Initialize lexical for certain file type
+augroup lexical
+  autocmd!
+  autocmd FileType markdown,mkd call lexical#init()
+  autocmd FileType textile      call lexical#init()
+  autocmd FileType text         call lexical#init()
+augroup END
