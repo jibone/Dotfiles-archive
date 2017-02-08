@@ -163,6 +163,9 @@ highlight ExtraWhitespace ctermbg=blue
 " Code completion framework
 Plugin 'shougo/neocomplete.vim'
 let g:neocomplete#enable_at_startup = 1
+autocmd FileType markdown,mkd NeoCompleteLock
+autocmd FileType textile      NeoCompleteLock
+autocmd FileType text         NeoCompleteLock
 
 " =============================================================================
 " vim-pencil
