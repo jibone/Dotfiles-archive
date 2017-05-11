@@ -16,7 +16,7 @@ fi
 # Source chruby from homebrew install  ----------------------------
 if [ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]; then
   source /usr/local/opt/chruby/share/chruby/chruby.sh
-  chruby ruby-2.3.1
+  chruby ruby-2.4.1
 else
   echo -ne "chruby.sh is not installed."
 fi
