@@ -28,16 +28,6 @@ nmap <leader>b :CtrlPBuffer<cr>
 Plugin 'tpope/vim-surround'
 
 " =============================================================================
-" Repeat.vim
-" You to want to repeat yourself.
-Plugin 'tpope/vim-repeat'
-
-" =============================================================================
-" Commentary.vim
-" For easy code commenting.
-Plugin 'tpope/vim-commentary'
-
-" =============================================================================
 " vim-tmux-navigator
 " Better navigation between vim and tmux.
 Plugin 'christoomey/vim-tmux-navigator'
@@ -97,11 +87,6 @@ map <leader>f :VtrFocusRunner<cr>
 " tabular.vim
 " Making alignment fun.
 Plugin 'godlygeek/tabular'
-
-" =============================================================================
-" vim-markdown
-" Make vim understands markdown better.
-Plugin 'plasticboy/vim-markdown'
 
 " =============================================================================
 " vim-css3-syntax
@@ -167,10 +152,6 @@ autocmd FileType markdown,mkd NeoCompleteLock
 autocmd FileType textile      NeoCompleteLock
 autocmd FileType text         NeoCompleteLock
 
-" =============================================================================
-" vim-pencil
-" Making vim more writing friendly
-Plugin 'reedes/vim-pencil'
 
 " =============================================================================
 " vim-lexical
