@@ -141,6 +141,9 @@ if hash mysql 2>/dev/null; then
   export PATH="$PATH:/usr/local/mysql/bin"
 fi
 
+# Brew path -------------------------------------------------------
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
 # Quicker navigation ----------------------------------------------
 alias ..="cd .."
 alias ...="cd ../.."
