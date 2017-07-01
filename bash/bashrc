@@ -110,11 +110,7 @@ CYAN="\[\033[0;36m\]"
 GREEN="\[\033[0;32m\]"
 RESET="\[\033[m\]"
 export GIT_PS1_SHOWDIRTYSTATE=true
-export LS_OPTIONS='--color=auto'
-export CLICOLOR='Yes'
-export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
-lighting="⚡ "
 arrow="→"
 
 export PS1="$MAGENTA$arrow $GREEN\w"'$(
@@ -165,6 +161,7 @@ if [[ "$unamestr" == 'Darwin' ]]; then
   alias finder="open -a Finder"
   alias preview="open -a '/Applications/Preview.app'"
   alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+  alias ls='ls --color=auto' # nicer ls :)
 fi
 
 # Linux specific settings
