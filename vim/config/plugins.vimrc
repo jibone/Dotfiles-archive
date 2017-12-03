@@ -154,8 +154,14 @@ autocmd FileType text         NeoCompleteLock
 
 
 " =============================================================================
+" vimproc.vim
+" Interactive command execution in Vim
+Plugin 'Shougo/vimproc.vim'
+
+
+" =============================================================================
 " vim-lexical
-" building on vim's spell-check 
+" building on vim's spell-check
 Plugin 'reedes/vim-lexical'
 
 
@@ -164,8 +170,15 @@ Plugin 'reedes/vim-lexical'
 " Uncover usage problems in your writing
 Plugin 'reedes/vim-wordy'
 
+
 " =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
 call vundle#end()
 filetype plugin indent on
+
+
+" =============================================================================
+" To install new plugin:
+" <leader>so // reload source file
+" <leader>pi // run PluginInstall
