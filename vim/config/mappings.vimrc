@@ -49,5 +49,11 @@ nmap <leader>bp :bp<cr>
 vnoremap <S-j> :m '>+1<CR>gv=gv
 vnoremap <S-k> :m '<-2<CR>gv=gv
 
-" Search for the word under the cursor
-nnoremap K :Ag! "\b<C-R><C-W>\b"<CR>:cw<CR>
+" Search word selected in visual mode
+vnoremap // y/<C-R>"<CR>
+
+" Search selected text in visual mode in code base
+vnoremap <leader>ag y :Ag <C-R>"<CR>
+
+" Search selected text in visual mode in code base and specify path
+vnoremap <leader>sg y :Ag <C-R>" 
