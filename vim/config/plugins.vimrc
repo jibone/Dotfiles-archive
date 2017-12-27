@@ -20,7 +20,7 @@ let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
 
 " Map CtrlP to use buffer when needend
-nmap <leader>b :CtrlPBuffer<cr>
+nmap <C-b> :CtrlPBuffer<cr>
 
 " =============================================================================
 " Surround.vim

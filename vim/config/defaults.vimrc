@@ -11,9 +11,13 @@ set history=50
 set ruler           " Show the cursor positon all the time
 set showcmd         " Show incomplete commands
 set incsearch       " Do incremental searching
+set hlsearch        " Highlight search result
+" clear the highlighted search result
+nmap <leader>h :nohlsearch<cr>
+set ignorecase      " Set search to ignore case
+set smartcase       " Overrides ignore case if pattern has case
 set laststatus=2    " Always display the status line
 set autowrite       " Automatically :write before running commands
-set nohls
 set nowrap
 set autoindent
 set smartindent

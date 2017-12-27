@@ -149,11 +149,16 @@ alias .....="cd ../../../../"
 # Clear and ls ----------------------------------------------------
 alias clearls="clear; ls"
 
+# standard options ------------------------------------------------
+alias cp="cp -iv"
+alias rm="rm -iv"
+alias mv="mv -iv"
+
 # Colorize cat
 # Must install Pygments - "sudo easy_install pygments"
 alias c='pygmentize -O style=monokai -f console256 -g'
 
-# Identifi system OS ----------------------------------------------
+# Identify system OS ----------------------------------------------
 unamestr=`uname`
 
 # OS specific settings --------------------------------------------
