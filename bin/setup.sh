@@ -22,6 +22,16 @@ fi
 echo "Link new bashrc "
 ln -s ~/Dotfiles/bash/bashrc ~/.bashrc
 
+# Install bash scripts ---------------------------------------------------------
+if [ ! -d ~/.bash_scripts ] || [ ! -L ~/.bash_scripts ]; then
+  echo 'Create bash_scripts directory'
+  mkdir ~/.bash_scripts
+fi
+
+echo "Link battery.sh"
+ln -s ~/Dotfiles/bash/scripts/battery.sh ~/.bash_scripts/battery.sh
+
+
 # Install inputrc --------------------------------------------------------------
 # Not sure about this yet, but would like to keep it around.
 #if [ -f ~/.inputrc ] || [ -L ~/.inputrc ]; then
