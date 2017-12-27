@@ -30,3 +30,6 @@ if [[ $charged_slots -lt 10 ]]; then
   echo -en "#[fg=white]"
   for i in `seq 1 $(echo "10-$charged_slots" | bc)`; do echo -n "$HEART"; done
 fi
+
+# Reset to white
+echo -en "#[fg=white]"
