@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# this bash script is based on Aaron Lasseigne' blog post:
+# https://aaronlasseigne.com/2012/10/15/battery-life-in-the-land-of-tmux/
+
 HEART='♥'
 PLUG='⚡'
 
