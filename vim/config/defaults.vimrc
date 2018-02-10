@@ -26,6 +26,13 @@ set numberwidth=5
 set relativenumber
 set mouse=a
 
+" Make the focus window large and shift the non-focus window to a smaller window
+" size.
+set winwidth=84
+set winheight=5
+set winminheight=5
+set winheight=999
+
 " Switch syntax highlighting on.
 " Also switch on highlightinh the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
