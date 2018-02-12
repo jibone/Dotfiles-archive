@@ -50,3 +50,31 @@ augroup lexical
   autocmd FileType textile      call lexical#init()
   autocmd FileType text         call lexical#init()
 augroup END
+
+" Merge Tab Horizontally
+function! MergeTab(angle)
+  " Check if we are on the first tab
+  if tabpagenr() == 1
+    return
+  endif
+
+  let bufferName = bufname("%")
+  if tabpagenr("$") == tabpagenr()
+    close!
+  else
+    close!
+    tabprev
+  endif
+
+  if a:angle == "v"
+    vsplit
+  else
+    split
+  endif
+
+  execute "buffer" bufferName
+endfunction
+
+" Map function to leader
+nnoremap <leader>mth :call MergeTab("h")<cr>
+nnoremap <leader>mtv :call MergeTab("v")<cr>
