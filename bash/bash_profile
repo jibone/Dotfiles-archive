@@ -9,3 +9,6 @@ echo -e "Ghock and Gholl!"
 
 # Source .bashrc --------------------------------------------------
 source ~/.bashrc
+
+# Source .tokens --------------------------------------------------
+source ~/.tokens
