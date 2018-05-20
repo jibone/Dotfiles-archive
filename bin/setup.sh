@@ -31,17 +31,6 @@ fi
 echo "Link battery.sh"
 ln -s ~/Dotfiles/bash/scripts/battery.sh ~/.bash_scripts/battery.sh
 
-
-# Install inputrc --------------------------------------------------------------
-# Not sure about this yet, but would like to keep it around.
-#if [ -f ~/.inputrc ] || [ -L ~/.inputrc ]; then
-#  echo "Backup inputrc file"
-#  mv ~/.inputrc ~/Dotfiles/backup/bash/inputrc
-#fi
-#
-#echo "Link new inputrc file"
-#ln -s ~/Dotfiles/bash/inputrc ~/.inputrc
-
 # Install git prompt and completion script -------------------------------------
 if hash git 2>/dev/null; then
   if [ -f ~/.git-completion.bash ] || [ -L ~/.git-completion.bash ]; then

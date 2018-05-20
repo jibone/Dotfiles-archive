@@ -26,13 +26,6 @@ else
   echo -ne "auto.sh is not installed."
 fi
 
-# Source bashmarks ------------------------------------------------
-if [ -f ~/.local/bin/bashmarks.sh ]; then
-  source ~/.local/bin/bashmarks.sh
-else
-  echo -ne "bashmarks.sh is not installed."
-fi
-
 # Detect if interactive -------------------------------------------
 if [[ $- == *i* ]] ; then
   export IS_INTERACTIVE=true
