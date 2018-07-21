@@ -22,3 +22,6 @@ so ~/Dotfiles/vim/config/mappings.vimrc
 
 " Source customs
 so ~/Dotfiles/vim/config/customs.vimrc
+
+" Source statusline customization
+so ~/Dotfiles/vim/config/statusline.vimrc

@@ -171,6 +171,12 @@ Plugin 'reedes/vim-lexical'
 Plugin 'reedes/vim-wordy'
 
 
+
+" =============================================================================
+" vim-syntastic
+" Syntax checking hacks for vim
+Plugin 'vim-syntastic/syntastic'
+
 " =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
