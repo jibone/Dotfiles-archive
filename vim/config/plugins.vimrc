@@ -178,6 +178,11 @@ Plugin 'reedes/vim-wordy'
 Plugin 'vim-syntastic/syntastic'
 
 " =============================================================================
+" vim-go
+" Adds Go language support
+Plugin 'fatih/vim-go'
+
+" =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
 call vundle#end()
