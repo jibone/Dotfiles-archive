@@ -12,3 +12,6 @@ source ~/.bashrc
 
 # Source .tokens --------------------------------------------------
 source ~/.tokens
+
+# Source .gopath --------------------------------------------------
+source ~/.gopath
