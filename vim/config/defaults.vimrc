@@ -92,39 +92,23 @@ autocmd BufNewFile, bufRead *.jsx set filetype=javascript
 
 " Auto-pair
 inoremap ( ()<Left>
+inoremap (<cr> (<cr>)<Esc>O
+inoremap () ()
+
 inoremap [ []<Left>
+inoremap [<cr> [<cr>]<Esc>O
+inoremap [] []
+
 inoremap { {}<Left>
+inoremap {<cr> {<cr>}<Esc>O
+inoremap {} {}
+
+inoremap "  ""<Left>
+inoremap "- "
+inoremap '  ''<Left>
+inoremap '- '
+
 autocmd Syntax html,vim inoremap < <lt>><Left>
-
-function! ClosePair(char)
-  if getline('.')[col('.') - 1] == a:char
-    return "\<Right>"
-  else
-    return a:char
-  endif
-endf
-
-inoremap ) <c-r>=ClosePair(')')<CR>
-inoremap ] <c-r>=ClosePair(']')<CR>
-inoremap } <c-r>=ClosePair('}')<CR>
-
-function! QuoteDelim(char)
-  let line = getline('.')
-  let col = col('.')
-  if line[col - 2] == "\\"
-    " Inserting a quoted quotation mark into the string
-    return a:char
-  elseif line[col - 1] == a:char
-    " Escaping out of the string
-    return "\<Right>"
-  else
-    "Starting a string
-    return a:char.a:char."\<Left>"
-  endif
-endf
-
-inoremap " <c-r>=QuoteDelim('"')<CR>
-inoremap ' <c-r>=QuoteDelim("'")<CR>
 
 " Turn on limelight when in Goyo mode
 autocmd! User GoyoEnter Limelight

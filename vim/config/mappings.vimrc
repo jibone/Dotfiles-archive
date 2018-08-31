@@ -41,8 +41,8 @@ nmap <C-l> <C-w>l
 nmap 0 0w
 
 " Buffers shortcut
-nmap <leader>bn :bn<cr>
-nmap <leader>bp :bp<cr>
+nmap <leader>] :bn<cr>
+nmap <leader>[ :bp<cr>
 
 " Moving lines and code up and down
 " In visual mode, Select block, Shift-j and Shift-k will move block up and down.
@@ -56,4 +56,7 @@ vnoremap // y/<C-R>"<CR>
 vnoremap <leader>ag y :Ag <C-R>"<CR>
 
 " Search selected text in visual mode in code base and specify path
-vnoremap <leader>sg y :Ag <C-R>" 
+vnoremap <leader>sg y :Ag <C-R>"
+
+" Map Vim-Go specifics
+nmap <leader>gt :GoTest<cr>
