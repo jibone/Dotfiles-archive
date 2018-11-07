@@ -17,6 +17,7 @@ nnoremap <leader>ce :call ColumnWidthToggle()<cr>
 
 :hi CursorLine   cterm=NONE ctermbg=black guibg=black guifg=white
 :hi CursorColumn cterm=NONE ctermbg=black guibg=black guifg=white
+:hi QuickFixLine term=underline ctermbg=0 guifg=white guibg=black
 
 " Toggle cursorline
 function! CursorLineToggle()
