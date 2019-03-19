@@ -173,6 +173,12 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'fatih/vim-go'
 
 " =============================================================================
+" vim-raml
+" Adds RAML language support
+" raml.org for more info
+Plugin 'IN3D/vim-raml'
+
+" =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
 call vundle#end()
