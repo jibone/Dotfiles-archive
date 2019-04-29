@@ -172,6 +172,11 @@ Plugin 'fatih/vim-go'
 " Adds improved Javascript language support
 Plugin 'pangloss/vim-javascript'
 
+" =============================================================================
+" vim-raml
+" Adds RAML language support
+" raml.org for more info
+Plugin 'IN3D/vim-raml'
 
 " =============================================================================
 " List all plugin before this line

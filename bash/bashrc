@@ -16,7 +16,7 @@ fi
 # Source chruby from homebrew install  ----------------------------
 if [ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]; then
   source /usr/local/opt/chruby/share/chruby/chruby.sh
-  chruby ruby-2.4.1
+  chruby ruby-2.6.1
 else
   echo -ne "chruby.sh is not installed."
 fi
@@ -160,14 +160,11 @@ unamestr=`uname`
 if [[ "$unamestr" == 'Darwin' ]]; then
   alias finder="open -a Finder"
   alias preview="open -a '/Applications/Preview.app'"
-  alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
-  alias ls='ls --color=auto' # nicer ls :)
 fi
 
 # Linux specific settings
 if [ "$unamestr" = "Linux" ]; then
   alias ls='ls --color=auto' # For linux, etc
-  # ls colors, see: http://www.linux-sxs.org/housekeeping/lscolors.html
   export LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rb=90'
 fi
 
