@@ -142,25 +142,20 @@ Plugin 'tpope/vim-endwise'
 Plugin 'ntpeters/vim-better-whitespace'
 highlight ExtraWhitespace ctermbg=blue
 
-
 " =============================================================================
 " vimproc.vim
 " Interactive command execution in Vim
 Plugin 'Shougo/vimproc.vim'
-
 
 " =============================================================================
 " vim-lexical
 " building on vim's spell-check
 Plugin 'reedes/vim-lexical'
 
-
 " =============================================================================
 " vim-wordy
 " Uncover usage problems in your writing
 Plugin 'reedes/vim-wordy'
-
-
 
 " =============================================================================
 " vim-syntastic
@@ -171,6 +166,12 @@ Plugin 'vim-syntastic/syntastic'
 " vim-go
 " Adds Go language support
 Plugin 'fatih/vim-go'
+
+" =============================================================================
+" vim-javascript
+" Adds improved Javascript language support
+Plugin 'pangloss/vim-javascript'
+
 
 " =============================================================================
 " List all plugin before this line
