@@ -1,5 +1,6 @@
 " vimrc files from @jibone
 " http://jshamsul.com
+set encoding=utf-8
 
 " Use Vim settings, and not Vi settings. Must be as early as posible,
 " It has side effects.
