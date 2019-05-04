@@ -99,3 +99,14 @@ if hash tmux 2>/dev/null; then
   echo "Link tmux.conf file"
   ln -s ~/Dotfiles/tmux/tmux.conf ~/.tmux.conf
 fi
+
+# Setup tmux settings ----------------------------------------------------------
+if hash hyper 2>/dev/null; then
+  if [ -f ~/.hyper.js ] || [ -L ~/.hyper.js ]; then
+    echo "Backup hyper.js"
+    mv ~/.hyper.js ~/Dotfiles/backup/hyper/hyper.js
+  fi
+
+  echo "Link hyper.js file"
+  ln -s ~/Dotfiles/hyper/hyper.js ~/.hyper.js
+fi
