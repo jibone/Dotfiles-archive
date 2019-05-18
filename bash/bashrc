@@ -160,7 +160,7 @@ unamestr=`uname`
 if [[ "$unamestr" == 'Darwin' ]]; then
   alias finder="open -a Finder"
   alias preview="open -a '/Applications/Preview.app'"
-  alias ls='ls --color=auto'
+  alias ls='ls -G'
 fi
 
 # Linux specific settings
