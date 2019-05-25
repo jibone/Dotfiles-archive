@@ -178,6 +178,18 @@ Plugin 'pangloss/vim-javascript'
 " raml.org for more info
 Plugin 'IN3D/vim-raml'
 
+
+" =============================================================================
+" vim-mucomplete
+" Adds auto-complete for vim
+Plugin 'lifepillar/vim-mucomplete'
+set completeopt+=menuone
+set completeopt+=noselect
+set shortmess+=c
+let g:mucomplete#enable_auto_at_startup = 1
+let g:mucomplete#completion_delay = 1
+
+
 " =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
