@@ -15,13 +15,13 @@ module.exports = {
     fontFamily: '"Source Code Pro", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
-    fontWeight: 'bold',
+    fontWeight: 'normal',
 
     // font weight for bold characters: 'normal' or 'bold'
-    fontWeightBold: 'bold',
+    fontWeightBold: 'normal',
 
     // line height as a relative unit
-    lineHeight: 1.1,
+    lineHeight: 1.0,
 
     // letter spacing as a relative unit
     letterSpacing: 0.5,
@@ -137,10 +137,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-    "hyperterm-base16-tomorrow-dark"
-
-  ],
+  plugins: ["hyperterm-base16-tomorrow-dark", "hyper-font-smoothing"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
