@@ -7,6 +7,8 @@ echo -ne "Uptime: "; uptime
 echo -ne "Server time is: "; date
 echo -e "Ghock and Gholl!"
 
+export LC_ALL=en_US.UTF-8
+
 # Source .bashrc --------------------------------------------------
 source ~/.bashrc
 
