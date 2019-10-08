@@ -191,6 +191,11 @@ let g:mucomplete#completion_delay = 1
 
 
 " =============================================================================
+" vim-mucomplete
+" Adds auto-complete for vim
+Plugin 'morhetz/gruvbox'
+
+" =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
 call vundle#end()
@@ -198,6 +203,9 @@ filetype plugin indent on
 
 
 " =============================================================================
+" =============================================================================
+" vim-mucomplete
+" Adds auto-complete for vim
 " To install new plugin:
 " <leader>so // reload source file
 " <leader>pi // run PluginInstall

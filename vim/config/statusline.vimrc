@@ -59,8 +59,8 @@ set statusline+=%4*\ %{(&fenc!=''?&fenc:&enc)}\[%{&ff}]\ " Encoding & Fileformat
 set statusline+=%2*\ %-3(%{FileSize()}%)                 " File size
 set statusline+=%2*\ %3p%%\ :\ %3c\                      " Rownumber/total (%)
 
-hi User1 cterm=NONE ctermbg=Blue ctermfg=Black   guibg=Blue guifg=Black
-hi User2 cterm=NONE ctermbg=Blue ctermfg=White   guibg=Blue guifg=White
-hi User3 cterm=NONE ctermbg=Blue ctermfg=Magenta guibg=Blue guifg=Magenta
-hi User4 cterm=NONE ctermbg=Blue ctermfg=Yellow  guibg=Blue guifg=Yellow
-hi User5 cterm=NONE ctermbg=NONE ctermfg=Yellow  guibg=Blue guifg=Yellow
+hi User1 cterm=NONE ctermbg=NONE ctermfg=Black   guibg=Black guifg=Black
+hi User2 cterm=NONE ctermbg=NONE ctermfg=White   guibg=Black guifg=White
+hi User3 cterm=NONE ctermbg=NONE ctermfg=Magenta guibg=Black guifg=Magenta
+hi User4 cterm=NONE ctermbg=NONE ctermfg=Yellow  guibg=Black guifg=Yellow
+hi User5 cterm=NONE ctermbg=NONE ctermfg=Yellow  guibg=Black guifg=Yellow

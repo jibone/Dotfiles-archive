@@ -52,17 +52,18 @@ set foldcolumn=0
 
 " Textmate like set invisibles.
 " ctrl-v u25b8 for ▸ and ctrl-v u00ac for ¬
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:·\ ,eol:¬
 set list
 
 " make sure editing like is always in the middle
 set scrolloff=999
 
 " Set the colorscheme
-set background=dark
-colorscheme Tomorrow-Night
-highlight NonText guibg=#060606
-highlight Folded  guibg=#0A0A0A guifg=#9090D0
+" set background=dark
+set termguicolors
+colorscheme base16-tomorrow-night
+" highlight NonText guibg=#060606
+" highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'

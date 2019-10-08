@@ -1,6 +1,8 @@
 # -----------------------------------------------------------------
 # .bash_profile
 
+export LC_ALL=en_US.UTF-8
+
 # Hello message ---------------------------------------------------
 echo -ne "Kernal Information: "; uname -smr
 echo -ne "Uptime: "; uptime

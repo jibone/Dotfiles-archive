@@ -100,7 +100,7 @@ if hash tmux 2>/dev/null; then
   ln -s ~/Dotfiles/tmux/tmux.conf ~/.tmux.conf
 fi
 
-# Setup tmux settings ----------------------------------------------------------
+# Setup Hyper.js settings ----------------------------------------------------------
 if hash hyper 2>/dev/null; then
   if [ -f ~/.hyper.js ] || [ -L ~/.hyper.js ]; then
     echo "Backup hyper.js"
