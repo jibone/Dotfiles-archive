@@ -19,3 +19,6 @@ source ~/.tokens
 
 # Source .gopath --------------------------------------------------
 source ~/.gopath
+
+# Source .custom_paths --------------------------------------------
+source ~/.custom_paths

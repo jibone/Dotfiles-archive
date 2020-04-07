@@ -203,9 +203,6 @@ filetype plugin indent on
 
 
 " =============================================================================
-" =============================================================================
-" vim-mucomplete
-" Adds auto-complete for vim
 " To install new plugin:
 " <leader>so // reload source file
 " <leader>pi // run PluginInstall
