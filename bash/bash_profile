@@ -11,14 +11,14 @@ echo -e "Ghock and Gholl!"
 
 export LC_ALL=en_US.UTF-8
 
-# Source .bashrc --------------------------------------------------
-source ~/.bashrc
+# Source .gopath --------------------------------------------------
+source ~/.gopath
 
 # Source .tokens --------------------------------------------------
 source ~/.tokens
 
-# Source .gopath --------------------------------------------------
-source ~/.gopath
+# Source .bashrc --------------------------------------------------
+source ~/.bashrc
 
 # Source .custom_paths --------------------------------------------
 source ~/.custom_paths

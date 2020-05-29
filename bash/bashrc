@@ -94,6 +94,11 @@ if [ $IS_INTERACTIVE = 'true' ]; then
   }
 fi
 
+# General path ----------------------------------------------------
+PATH=${PATH}:~/bin
+PATH=${PATH}:/opt/bin:/opt/local/bin:/opt/local/sbin
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
 # The prompt ------------------------------------------------------
 MAGENTA="\[\033[1;35m\]"
 YELLOW="\[\033[0;33m\]"
@@ -108,7 +113,15 @@ arrow="→"
 upbox="┌"
 downbox="└"
 
-export PS1="$MAGENTA$upbox $GREEN\w"'$(
+function ruby_version {
+  rversion=$(ruby -v)
+  regex="(ruby [0-9].[0-9])"
+  if [[ $rversion =~ $regex ]]; then
+    echo "${BASH_REMATCH[1]}"
+  fi
+}
+
+export PS1="$BLUE$upbox $GREEN\w $RESET$arrow$CYAN node $(node -v) $RESET$arrow $CYAN$(ruby_version)"'$(
   if [[ $(__git_ps1) =~ \*\)$ ]]
   # a file has been modified but not added
   then echo "'$YELLOW'"$(__git_ps1 " (%s)")
@@ -119,10 +132,6 @@ export PS1="$MAGENTA$upbox $GREEN\w"'$(
   else echo "'$CYAN'"$(__git_ps1 " (%s)")
   fi)'" $RESET$GREEN\n\e[0;35m$downbox \e[m$RESET"
 
-# General path ----------------------------------------------------
-PATH=${PATH}:~/bin
-PATH=${PATH}:/opt/bin:/opt/local/bin:/opt/local/sbin
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Arcanist path ---------------------------------------------------
 export PATH="$PATH:~/Arcanist/arcanist/bin/"
