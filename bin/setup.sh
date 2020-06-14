@@ -22,6 +22,14 @@ fi
 echo "Link new bashrc "
 ln -s ~/Dotfiles/bash/bashrc ~/.bashrc
 
+if [ -f ~/.zshrc ] || [ -L ~/.zshrc ]; then
+  echo "Backup bashrc file..."
+  mv ~/.bashrc ~/Dotfiles/backup/zsh/zshrc
+fi
+
+echo "Link new bashrc "
+ln -s ~/Dotfiles/zsh/zshrc ~/.zshrc
+
 # Install bash scripts ---------------------------------------------------------
 if [ ! -d ~/.bash_scripts ] || [ ! -L ~/.bash_scripts ]; then
   echo 'Create bash_scripts directory'
