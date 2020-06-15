@@ -64,6 +64,8 @@ set termguicolors
 colorscheme base16-tomorrow-night
 " highlight NonText guibg=#060606
 " highlight Folded  guibg=#0A0A0A guifg=#9090D0
+" set background transperent
+hi Normal guibg=NONE ctermbg=NONE
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
