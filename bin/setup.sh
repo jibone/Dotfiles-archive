@@ -23,12 +23,29 @@ echo "Link new bashrc "
 ln -s ~/Dotfiles/bash/bashrc ~/.bashrc
 
 if [ -f ~/.zshrc ] || [ -L ~/.zshrc ]; then
-  echo "Backup bashrc file..."
+  echo "Backup zshrc file..."
   mv ~/.bashrc ~/Dotfiles/backup/zsh/zshrc
 fi
 
-echo "Link new bashrc "
+echo "Link new zshrc "
 ln -s ~/Dotfiles/zsh/zshrc ~/.zshrc
+
+if [ -f ~/.yabairc ] || [ -L ~/.yabairc ]; then
+  echo "Backup yabairc file..."
+  mv ~/.bashrc ~/Dotfiles/backup/yabairc
+fi
+
+echo "Link new yabairc "
+ln -s ~/Dotfiles/mac/yabairc ~/.yabairc
+
+
+if [ -f ~/.skhdrc ] || [ -L ~/.skhdrc ]; then
+  echo "Backup skhdrc file..."
+  mv ~/.bashrc ~/Dotfiles/backup/skhdrc
+fi
+
+echo "Link new skhdrc "
+ln -s ~/Dotfiles/zsh/skhdrc ~/.skhdrc
 
 # Install bash scripts ---------------------------------------------------------
 if [ ! -d ~/.bash_scripts ] || [ ! -L ~/.bash_scripts ]; then
