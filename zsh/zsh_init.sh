@@ -227,12 +227,3 @@ precmd () {
    (( _start >= 0 )) && _elapsed+=($(( SECONDS-_start )))
    _start=-1
 }
-
-################################
-# Ctrl-k to move up a directory
-function up_widget() {
-  BUFFER="cd .."
-  zle accept-line
-}
-zle -N up_widget
-bindkey "^k" up_widget
