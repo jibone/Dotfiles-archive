@@ -103,7 +103,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 MAGENTA="\[\033[1;35m\]"
 YELLOW="\[\033[0;33m\]"
 BLUE="\[\033[34m\]"
-LIGHT_GRAY="\[\033[0;37m\]"
+#LIGHT_GRAY="\[\033[0;37m\]"
 CYAN="\[\033[0;36m\]"
 GREEN="\[\033[0;32m\]"
 RESET="\[\033[m\]"
@@ -121,7 +121,7 @@ function ruby_version {
   fi
 }
 
-export PS1="$BLUE$upbox $GREEN\w $RESET$arrow$CYAN node $(node -v) $RESET$arrow $CYAN$(ruby_version)"'$(
+export PS1="$BLUE$upbox $GREEN\w $RESET$arrow$BLUE node $(node -v) $RESET$arrow $BLUE$(ruby_version)"'$(
   if [[ $(__git_ps1) =~ \*\)$ ]]
   # a file has been modified but not added
   then echo "'$YELLOW'"$(__git_ps1 " (%s)")
@@ -130,7 +130,7 @@ export PS1="$BLUE$upbox $GREEN\w $RESET$arrow$CYAN node $(node -v) $RESET$arrow 
   then echo "'$MAGENTA'"$(__git_ps1 " (%s)")
   # the state is clean, changes are commited
   else echo "'$CYAN'"$(__git_ps1 " (%s)")
-  fi)'" $RESET$GREEN\n\e[0;35m$downbox \e[m$RESET"
+  fi)'" $RESET\n\e[0;35m$downbox \e[m$RESET"
 
 
 # Arcanist path ---------------------------------------------------
