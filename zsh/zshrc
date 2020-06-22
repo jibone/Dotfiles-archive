@@ -1,3 +1,5 @@
 neofetch
 
 source ~/Dotfiles/zsh/zsh_init.sh
+
+source ~/.custom_paths
