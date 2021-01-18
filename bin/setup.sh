@@ -24,7 +24,7 @@ ln -s ~/Dotfiles/bash/bashrc ~/.bashrc
 
 if [ -f ~/.zshrc ] || [ -L ~/.zshrc ]; then
   echo "Backup zshrc file..."
-  mv ~/.bashrc ~/Dotfiles/backup/zsh/zshrc
+  mv ~/.zshrc ~/Dotfiles/backup/zsh/zshrc
 fi
 
 echo "Link new zshrc "
