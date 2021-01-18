@@ -1,0 +1,91 @@
+# Colors (Tomorrow Night)
+colors:
+  # Default colors
+  primary:
+    background: "#1d1f21"
+    foreground: "#c5c8c6"
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: "#1d1f21"
+    cursor: "#ffffff"
+
+  # Normal colors
+  normal:
+    black: "#1d1f21"
+    red: "#cc6666"
+    green: "#b5bd68"
+    yellow: "#e6c547"
+    blue: "#81a2be"
+    magenta: "#b294bb"
+    cyan: "#70c0ba"
+    white: "#373b41"
+
+  # Bright colors
+  bright:
+    black: "#666666"
+    red: "#ff3334"
+    green: "#9ec400"
+    yellow: "#f0c674"
+    blue: "#81a2be"
+    magenta: "#b77ee0"
+    cyan: "#54ced6"
+    white: "#282a2e"
+
+background_opacity: 1.0
+
+font:
+  normal:
+    family: "Hack"
+    style: Regular
+  bold:
+    family: "Hack"
+    style: Bold
+  italic:
+    family: "Hack"
+    style: Italic
+  bold_italic:
+    family: "Hack"
+    style: Bold Italic
+
+  # Point size
+  size: 12.0
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+  use_thin_strokes: true
+
+window:
+  padding:
+    x: 2
+    y: 2
+
+  decorations: none
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 10
+
+  # If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+
+live_config_reload: true
+
+key_bindings:
+  - { key: Plus, mods: Control, action: IncreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
+  - { key: N, mods: Control, action: SpawnNewInstance }

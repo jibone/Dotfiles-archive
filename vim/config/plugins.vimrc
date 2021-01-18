@@ -196,6 +196,15 @@ let g:mucomplete#completion_delay = 1
 Plugin 'morhetz/gruvbox'
 
 " =============================================================================
+" typescripting
+" Adds advance language support for typescript
+Plugin 'prabirshrestha/async.vim'
+Plugin 'prabirshrestha/vim-lsp'
+Plugin 'prabirshrestha/asyncomplete.vim'
+Plugin 'prabirshrestha/asyncomplete-lsp.vim'
+Plugin 'ryanolsonx/vim-lsp-typescript'
+
+" =============================================================================
 " List all plugin before this line
 nmap <leader>pi :PluginInstall<cr>
 call vundle#end()
@@ -203,9 +212,6 @@ filetype plugin indent on
 
 
 " =============================================================================
-" =============================================================================
-" vim-mucomplete
-" Adds auto-complete for vim
 " To install new plugin:
 " <leader>so // reload source file
 " <leader>pi // run PluginInstall

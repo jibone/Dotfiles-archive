@@ -125,7 +125,7 @@ if hash tmux 2>/dev/null; then
   ln -s ~/Dotfiles/tmux/tmux.conf ~/.tmux.conf
 fi
 
-# Setup Hyper.js settings ----------------------------------------------------------
+# Setup Hyper.js settings ------------------------------------------------------
 if hash hyper 2>/dev/null; then
   if [ -f ~/.hyper.js ] || [ -L ~/.hyper.js ]; then
     echo "Backup hyper.js"
@@ -134,4 +134,10 @@ if hash hyper 2>/dev/null; then
 
   echo "Link hyper.js file"
   ln -s ~/Dotfiles/hyper/hyper.js ~/.hyper.js
+fi
+
+
+# Setup NeoVim settings --------------------------------------------------------
+if hash nvim 2>/dev/null; then
+  # TODO set the symlink for NeoVim
 fi
