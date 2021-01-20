@@ -5,3 +5,5 @@ source ~/Dotfiles/zsh/zsh_init.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source ~/.custom_paths
+
+source ~/.tokens

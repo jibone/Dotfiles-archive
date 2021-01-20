@@ -161,3 +161,6 @@ alt - t : yabai -m window --toggle float;\
 alt - p : yabai -m window --toggle sticky;\
           yabai -m window --toggle topmost;\
           yabai -m window --toggle pip
+
+# open alacritty
+cmd + ctrl - return : open -na /Applications/Alacritty.app
