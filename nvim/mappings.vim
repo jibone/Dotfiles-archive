@@ -42,6 +42,12 @@ nmap <leader>[ :bp<cr>
 vnoremap <S-j> :m '>+1<CR>gv=gv
 vnoremap <S-k> :m '<-2<CR>gv=gv
 
+" Shift line up and down normal mode single line
+nnoremap <S-k> :m-2<CR>
+nnoremap <S-j> :m+<CR>
+inoremap <S-k> <Esc>:m-2<CR>
+inoremap <S-j> <Esc>:m+<CR>
+
 " Search word selected in visual mode
 vnoremap // y/<C-R>"<CR>
 
