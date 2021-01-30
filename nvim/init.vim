@@ -15,3 +15,4 @@ source $HOME/Dotfiles/nvim/plug-config/coc/coc-extensions.vim
 source $HOME/Dotfiles/nvim/plug-config/fzf.vim
 source $HOME/Dotfiles/nvim/plug-config/which-key.vim
 source $HOME/Dotfiles/nvim/plug-config/sneak.vim
+source $HOME/Dotfiles/nvim/plug-config/quickscope.vim

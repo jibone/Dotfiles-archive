@@ -57,6 +57,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   "  Sneak
   Plug 'justinmk/vim-sneak'
+
+  " QuickScope
+  Plug 'unblevable/quick-scope'
 call plug#end()
 
 " Automatically install missing plugins on startup
