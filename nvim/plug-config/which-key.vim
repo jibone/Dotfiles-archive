@@ -27,19 +27,31 @@ let g:which_key_map['.'] = [ ':e $MYVIMRC', 'edit init']
 let g:which_key_map[','] = [ ':source $MYVIMRC', 'reload init']
 let g:which_key_map['f'] = [ ':Files', 'search files' ]
 
+" e is for explorer
+let g:which_key_map.e = {
+  \ 'name' : '+explorer',
+  \ 'e' : [ ':CocCommand explorer'                     , 'explorer drawer'   ],
+  \ 'f' : [ ':CocCommand explorer --position floating' , 'explorer floating' ]
+  \ }
 
 " s is for search
 let g:which_key_map.s = {
   \ 'name' : '+search',
-  \ 'f' : [ ':Files'    , 'search files' ],
+  \ 'f' : [ ':Files'    , 'search files'   ],
   \ 'b' : [ ':Buffers'  , 'search buffers' ]
   \ }
 
 " t is for tabs
-nnoremap <silent> <leader>tn :tabnew<cr>:Files<cr>
+nnoremap <silent> <leader>tn :tabnew<cr>
+nnoremap <silent> <leader>tf :tabnew<cr>:Files<cr>
+nnoremap <silent> <leader>tb :tabnew<cr>:Buffers<cr>
+nnoremap <silent> <leader>te :tabnew<cr>:CocCommand explorer --position floating<cr>
 let g:which_key_map.t = {
   \ 'name' : '+tabs',
-  \ 'n' : 'new tab'
+  \ 'n' : 'new tab',
+  \ 'f' : 'new tab files',
+  \ 'b' : 'new tab buffers',
+  \ 'e' : 'new tab explorer'
   \ }
 
 " Register which key map

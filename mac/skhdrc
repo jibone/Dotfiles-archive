@@ -164,3 +164,5 @@ alt - p : yabai -m window --toggle sticky;\
 
 # open alacritty
 cmd + ctrl - return : open -na /Applications/Alacritty.app
+
+echo "skhd configuration loaded.."

@@ -1,4 +1,4 @@
-nmap <leader>e :CocCommand explorer<CR>
+" "nmap <leader>e :CocCommand explorer<CR>
 
 " Explorer
 let g:coc_explorer_global_presets = {
