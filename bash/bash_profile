@@ -19,3 +19,4 @@ source ~/.tokens
 
 # Source .gopath --------------------------------------------------
 source ~/.gopath
+if [ -e /Users/jibone/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/jibone/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
