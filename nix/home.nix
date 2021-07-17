@@ -23,7 +23,7 @@
   home.packages = [
     pkgs.ripgrep # rg, faster grepper.
     pkgs.wget    # wget all the web things.
-    pkgs.jq      # making JSON look nice.
+    pkgs.jq      # playing nice with JSON look nice.
   ];
 
   # Install bat, a better cat
@@ -61,5 +61,10 @@
     enable = true;
     userName = "J Shamsul Bahri";
     userEmail = "jibone@gmail.com";
+    extraConfig = {
+      init.defaultBranch = "master";
+      core.editor = "nvim";
+      pull.rebase = "false";
+    };
   };
 }
