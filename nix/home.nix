@@ -54,4 +54,12 @@
     enable = true;
     # enableZshIntegration = true;
   };
+
+  # Setup Git
+  programs.git = {
+    package = pkgs.gitAndTools.gitFull;
+    enable = true;
+    userName = "J Shamsul Bahri";
+    userEmail = "jibone@gmail.com";
+  };
 }
